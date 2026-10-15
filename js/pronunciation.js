@@ -28,12 +28,24 @@ const PRONUNCIATION = (() => {
     });
   }
 
-  function playOne(syllable, rate, token) {
+  function recordingURL(syllable, online) {
+    const example = finalExample(syllable);
+    if (example) return 'media/pronunciation/' + PRONUNCIATION_FILES[example];
+    if (isPhoneme(syllable)) return 'media/phonemes/' + PHONEME_FILES[syllable];
+    if (has(syllable)) return (unified() ? 'media/voice-cuhk/' : 'media/pronunciation/') + files()[syllable];
+    if (!online || !/^[a-z]+[1-6]$/.test(syllable)) return null;
+    if (typeof PRONUNCIATION_FILES !== 'undefined' && Object.hasOwn(PRONUNCIATION_FILES, syllable)) return 'media/pronunciation/' + PRONUNCIATION_FILES[syllable];
+    if (typeof UNIFIED_VOICE_FILES !== 'undefined' && Object.hasOwn(UNIFIED_VOICE_FILES, syllable)) return 'media/voice-cuhk/' + UNIFIED_VOICE_FILES[syllable];
+    return typeof location !== 'undefined' && location.protocol !== 'file:' ?
+      '/api/yueyumao-audio?path=' + encodeURIComponent('/wav/' + syllable + '.mp3') :
+      'https://www.yueyumao.com/wav/' + syllable + '.mp3';
+  }
+
+  function playOne(syllable, rate, token, online, reusable) {
     return new Promise(resolve => {
-      const example = finalExample(syllable);
-      const src = example ? 'media/pronunciation/' + PRONUNCIATION_FILES[example] : isPhoneme(syllable) ? 'media/phonemes/' + PHONEME_FILES[syllable] :
-        (unified() ? 'media/voice-cuhk/' : 'media/pronunciation/') + files()[syllable];
-      const item = new Audio(src);
+      const src = recordingURL(syllable, online);
+      const item = reusable || new Audio(src);
+      if (reusable) item.src = src;
       audio = item;
       pending = resolve;
       item.playbackRate = Math.max(0.5, Math.min(1, rate));
@@ -53,18 +65,20 @@ const PRONUNCIATION = (() => {
   async function play(syllables, options = {}) {
     stop();
     const list = typeof syllables === 'string' ? [syllables] : syllables;
-    if (!list?.length || list.some(s => !has(s))) {
+    if (!list?.length || list.some(s => !recordingURL(s, options.online))) {
       options.onError?.(unified() ? '统一音色暂无这个音节；可在顶部选择「原录音（多位）」试听。' : '缺少对应的粤语录音，请运行 tools/fetch-pronunciation.js 补齐。');
       return false;
     }
     const token = generation;
+    const reusable = options.online ? new Audio() : null;
     for (let i = 0; i < list.length; i++) {
       if (token !== generation) return false;
       options.onStep?.(i, list[i]);
-      const ok = await playOne(list[i], options.rate || 0.8, token);
+      const ok = await playOne(list[i], options.rate || 1, token, options.online, reusable);
       if (token !== generation) return false;
-      if (!ok) { options.onError?.('录音播放失败，请检查本地音频文件。'); return false; }
-      if (i < list.length - 1 && !await wait(options.gapMs ?? 350)) return false;
+      if (!ok) { options.onError?.(options.online ? '粤语录音 ' + list[i] + ' 播放失败，请检查网络或音源；如微信限制播放，请在外部浏览器重试。' : '录音播放失败，请检查本地音频文件。'); return false; }
+      const gap = typeof options.gapMs === 'function' ? options.gapMs(i) : options.gapMs ?? 350;
+      if (i < list.length - 1 && !await wait(gap)) return false;
     }
     options.onDone?.();
     return true;

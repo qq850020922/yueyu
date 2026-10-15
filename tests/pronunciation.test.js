@@ -171,3 +171,41 @@ test('TTS refuses to substitute a Mandarin voice for Cantonese', () => {
   assert.equal(tts.speakLoop(['你好']), false);
   assert.equal(spoken, 0);
 });
+
+test('poem recordings reuse one audio element and preserve the supplied reading', async () => {
+  const { player, sounds } = playerFixture();
+  const gaps = [];
+  const done = player.play(['aa1', 'geoi2'], { online: true, gapMs: i => { gaps.push(i); return 0; } });
+  assert.equal(sounds.length, 1);
+  assert.equal(sounds[0].src, 'media/pronunciation/aa1.mp3');
+  sounds[0].onended();
+  await new Promise(resolve => setTimeout(resolve, 10));
+  assert.equal(sounds.length, 1);
+  assert.equal(sounds[0].src, 'https://www.yueyumao.com/wav/geoi2.mp3');
+  assert.equal(sounds[0].plays, 2);
+  sounds[0].onended();
+  assert.equal(await done, true);
+  assert.equal(gaps[0], 0);
+});
+
+test('poem online failure identifies the missing syllable and does not skip it', async () => {
+  const { player, sounds } = playerFixture();
+  let error = '';
+  const done = player.play(['geoi2', 'aa1'], { online: true, onError: message => { error = message; } });
+  sounds[0].onerror();
+  assert.equal(await done, false);
+  assert(error.includes('geoi2'));
+  assert.equal(sounds[0].plays, 1);
+  assert.equal(await player.play('../bad', { online: true }), false);
+});
+
+test('stopping a poem during a gap prevents the next online recording', async () => {
+  const { player, sounds } = playerFixture();
+  const done = player.play(['aa1', 'geoi2'], { online: true, gapMs: 25 });
+  sounds[0].onended();
+  await tick();
+  player.stop();
+  assert.equal(await done, false);
+  await new Promise(resolve => setTimeout(resolve, 40));
+  assert.equal(sounds[0].plays, 1);
+});

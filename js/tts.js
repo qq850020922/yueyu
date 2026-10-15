@@ -7,12 +7,12 @@ const TTS = (() => {
   const supported = typeof window !== 'undefined' && 'speechSynthesis' in window;
   let voices = [];
   let picked = null;          // 当前粤语语音
-  let rate = 0.8;
+  let rate = 1;
   let onStatus = () => {};    // 状态回调 (state, voiceName)
 
   function isCanto(v) {
-    const l = (v.lang || '').toLowerCase().replace('_', '-');
-    if (l === 'zh-hk' || l === 'yue' || l.startsWith('yue')) return true;
+    const l = (v.lang || '').toLowerCase().replace(/_/g, '-');
+    if (/^yue(?:-|$)/.test(l) || /^zh-(?:hant-)?hk$/.test(l)) return true;
     const n = (v.name || '').toLowerCase();
     return /cantonese|粤|yue/.test(n) && !/mandarin|普通话/.test(n);
   }
@@ -22,7 +22,7 @@ const TTS = (() => {
     if (canto.length) {
       // 优先自然语音（神经音），再按名称排序求稳定
       canto.sort((a, b) => (b.name.includes('Natural') ? 1 : 0) - (a.name.includes('Natural') ? 1 : 0));
-      picked = canto[0];
+      picked = canto.find(v => v.voiceURI === picked?.voiceURI) || canto[0];
       onStatus('ok', picked.name);
     } else {
       picked = null;
@@ -33,8 +33,8 @@ const TTS = (() => {
 
   function refresh() {
     if (!supported) return onStatus('bad', undefined);
-    voices = speechSynthesis.getVoices() || [];
-    if (voices.length) pickBest();
+    try { voices = speechSynthesis.getVoices() || []; } catch (_) { voices = []; }
+    pickBest();
   }
 
   function init(statusCb, savedVoiceURI) {
@@ -58,7 +58,7 @@ const TTS = (() => {
     return false;
   }
 
-  function setRate(r) { rate = Math.min(1, Math.max(0.5, +r || 0.8)); }
+  function setRate(r) { rate = Math.min(1, Math.max(0.5, +r || 1)); }
 
   function speak(text, opt = {}) {
     if (!supported || !picked) { return false; }
@@ -84,7 +84,7 @@ const TTS = (() => {
       const u = new SpeechSynthesisUtterance(t);
       if (picked) u.voice = picked;
       u.lang = picked ? picked.lang : 'zh-HK';
-      u.rate = opt.rate != null ? opt.rate : Math.max(0.55, rate - 0.15);
+      u.rate = opt.rate != null ? opt.rate : rate;
       if (i > 0) u.text = '，' + t; // 停顿感
       speechSynthesis.speak(u);
     });
@@ -107,7 +107,7 @@ const TTS = (() => {
       const u = new SpeechSynthesisUtterance(t);
       if (picked) u.voice = picked;
       u.lang = picked ? picked.lang : 'zh-HK';
-      u.rate = opt.rate != null ? opt.rate : 0.75;
+      u.rate = opt.rate != null ? opt.rate : rate;
       u.onend = () => { if (loopActive) loopTimer = setTimeout(step, gap); };
       u.onerror = () => { if (loopActive) loopTimer = setTimeout(step, gap); };
       speechSynthesis.speak(u);

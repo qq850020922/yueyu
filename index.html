@@ -7,6 +7,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c73e3a'/%3E%3Ctext x='32' y='45' font-size='36' text-anchor='middle' fill='%23fff' font-family='serif' font-weight='bold'%3E粤%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/song-study.css">
+<link rel="stylesheet" href="css/yueyumao.css">
 </head>
 <body>
 <div class="app">
@@ -32,10 +33,10 @@
         <span class="voice-chip" id="voiceChip"><span class="dot"></span>检测语音中…</span>
         <label class="rate-ctl" title="调整朗读速度：0.6 慢速跟读起步，熟练后调回 0.9–1.0">
           <span>语速</span>
-          <input type="range" id="rateSlider" min="0.5" max="1" step="0.05" value="0.8">
-          <b id="rateVal">0.80</b>
+          <input type="range" id="rateSlider" min="0.5" max="1" step="0.05" value="1">
+          <b id="rateVal">1.00</b>
         </label>
-        <select id="voiceSelect" title="选择发音语音：列表只显示电脑上可用的粤语语音（不同电脑可选项不同）；为空请改用 Edge / Chrome 打开本站"></select>
+        <select id="voiceSelect" aria-label="系统粤语朗读音色" title="只列出浏览器可用的系统粤语音色；手机和微信可能不提供，教材录音不依赖此选项"></select>
         <select id="recordingSource" aria-label="例字录音音色" title="声母呼读和例字的录音来源；韵母主按钮固定使用粤拼方案示范录音"><option value="unified">例字 · 陈京英</option><option value="original">例字 · 原录音（多位）</option></select>
       </div>
     </header>
@@ -49,6 +50,7 @@
       <section class="page" id="page-poems"></section>
       <section class="page" id="page-songs"></section>
       <section class="page" id="page-phrases"></section>
+      <section class="page" id="page-vocabulary"></section>
       <section class="page" id="page-plan"></section>
       <section class="page" id="page-quiz"></section>
       <section class="page" id="page-guide"></section>
@@ -77,6 +79,7 @@
 <script src="js/lyrics.js"></script>
 <script src="js/local-songs.js"></script>
 <script src="js/song-study.js"></script>
+<script src="js/yueyumao.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

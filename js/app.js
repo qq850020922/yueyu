@@ -28,6 +28,7 @@ const NAV = [
   { id: 'poems',    icon: '📖', label: '诗歌跟读' },
   { id: 'songs',    icon: '🎤', label: '歌曲跟唱' },
   { id: 'phrases',  icon: '💬', label: '日常用语' },
+  { id: 'vocabulary', icon: '📚', label: '粤语词组' },
   { id: 'plan',     icon: '🗓️', label: '90天计划' },
   { id: 'quiz',     icon: '🎮', label: '闯关测验' },
   { id: 'guide',    icon: '🧭', label: '学习指南' },
@@ -35,7 +36,12 @@ const NAV = [
 
 let checkedDays = new Set();
 let stats = { tone: 0, pinyin: 0, law: 0 };
-let settings = LS.get('ygt_settings', { rate: 0.8, voice: '' });
+let settings = LS.get('ygt_settings', { rate: 1, voice: '' });
+if (settings.rateVersion !== 1) {
+  settings.rate = 1;
+  settings.rateVersion = 1;
+  LS.set('ygt_settings', settings);
+}
 let currentMonth = 'm1';
 
 const allDays = PLAN.flatMap(m => m.weeks.flatMap(w => w.days));
@@ -60,15 +66,16 @@ function refreshVoiceChip(state, name) {
     chip.innerHTML = `<span class="dot"></span>粤语语音 ✓`;
   } else {
     chip.className = 'voice-chip bad';
-    chip.title = '未检测到粤语语音——建议用 Edge / Chrome 打开本站（详见学习指南）';
-    chip.innerHTML = `<span class="dot"></span>未检测到粤语语音`;
+    chip.title = '系统未提供粤语整句朗读；教材录音仍可播放。手机和微信的支持取决于系统与浏览器，详见学习指南。';
+    chip.innerHTML = `<span class="dot"></span>整句朗读不可用`;
   }
+  refreshVoiceOptions();
 }
 function refreshVoiceOptions() {
   const sel = $('#voiceSelect');
   const vs = TTS.cantoVoices;
   sel.innerHTML = '';
-  if (!vs.length) { sel.innerHTML = '<option>无粤语语音</option>'; sel.disabled = true; return; }
+  if (!vs.length) { sel.innerHTML = '<option>无系统粤语音色</option>'; sel.disabled = true; return; }
   sel.disabled = false;
   vs.forEach(v => {
     const o = document.createElement('option');
@@ -91,6 +98,8 @@ function switchPage(id) {
   const nav = NAV.find(n => n.id === id);
   $('#topbarTitle').textContent = nav ? nav.label : '';
   $('#sidebar').classList.remove('open');
+  if (id === 'vocabulary') YUEYU_CATALOG.activate('words');
+  if (id === 'phrases' && !$('#dailyOnline').hidden) YUEYU_CATALOG.activate('daily');
   window.scrollTo({ top: 0 });
 }
 function goto(id, anchor) {
@@ -378,7 +387,7 @@ function buildBlend() {
       </div>
       <div style="flex:1;min-width:130px"><div style="font-size:13px;color:var(--muted)">${esc(w.tip || '')}</div></div>
       <div style="display:flex;gap:8px;flex:0 0 auto">
-        <button class="btn small" data-say="${esc(w.w)}" data-jyutping="${esc(w.j.join(','))}" data-rate="0.75">🔊 按字连读</button>
+        <button class="btn small" data-say="${esc(w.w)}" data-jyutping="${esc(w.j.join(','))}">🔊 按字连读</button>
         <button class="btn small primary" data-bdemo="${idx}">▶ 逐字拼读</button>
       </div>
     </div>`;
@@ -518,23 +527,23 @@ function buildTones() {
    ruby 注音工具（F6/F7 共用；入声由 p/t/k 韵尾自动判定，
    oe/eo/yu 难点韵母自动高亮）
    ============================================================ */
-function rubyLine(h, j) {
+function rubyLine(h, j, recording = false) {
   const chars = [...h];
   const js = j.trim().split(/\s+/);
   if (chars.length !== js.length) return `<span class="poem-chars">${esc(h)}</span>`;
   return `<span class="poem-chars">${chars.map((c, i) => {
     const isStop = /([ptk])[1-6]?$/.test(js[i]);
     const isHard = /(oe|eo|yu)/.test(js[i]);
-    return `<button class="pchar${isStop ? ' stop' : ''}${isHard ? ' hard' : ''}" data-say="${c}" title="${esc(js[i])}">${c}<rt>${esc(js[i])}</rt></button>`;
+    return `<button class="pchar${isStop ? ' stop' : ''}${isHard ? ' hard' : ''}" data-say="${esc(c)}" ${recording ? `data-jyutping="${esc(js[i])}" data-poem-recording` : ''} title="${esc(js[i])}">${esc(c)}<rt>${esc(js[i])}</rt></button>`;
   }).join('')}</span>`;
 }
 function vidBtn(kw, label) {
   return `<a class="btn small ghost-blue" target="_blank" rel="noopener" href="https://search.bilibili.com/all?keyword=${encodeURIComponent(kw)}">📺 ${label || '视频教程'}</a>`;
 }
-function lineControls(lineText) {
+function lineControls(lineText, jyutping) {
   return `<span style="display:flex;gap:6px;flex:0 0 auto">
-    <button class="btn small" data-say="${esc(lineText)}" data-rate="0.75">🔊 原速</button>
-    <button class="btn small" data-say="${esc(lineText)}" data-rate="0.55">🐢 慢速</button>
+    <button class="btn small" data-say="${esc(lineText)}" data-jyutping="${esc(jyutping.trim().split(/\s+/).join(','))}" data-poem-recording data-rate="1">🔊 逐字</button>
+    <button class="btn small" data-say="${esc(lineText)}" data-jyutping="${esc(jyutping.trim().split(/\s+/).join(','))}" data-poem-recording data-rate="0.7">🐢 慢速</button>
   </span>`;
 }
 
@@ -558,7 +567,7 @@ function renderPoemList() {
   $('#page-poems').innerHTML = `
   <div class="page-head">
     <h1>📖 诗歌跟读 <span class="tag">人教版中学教材必背诗词 · 共 ${POEMS.length} 首</span></h1>
-    <div class="sub">为什么用粤语读诗词？粤语完整保留了<b>入声</b>和更多古音韵尾——很多诗用粤语读<b>更押韵、更带感</b>。<b>点击诗名进入跟读</b>：逐字注音自动标出入声（红角标）与难点韵母（蓝注音），全部用电脑语音直接朗读，无需任何音频文件。</div>
+    <div class="sub">为什么用粤语读诗词？粤语完整保留了<b>入声</b>和更多古音韵尾——很多诗用粤语读<b>更押韵、更带感</b>。<b>点击诗名进入跟读</b>：逐字注音自动标出入声（红角标）与难点韵母（蓝注音）。</div>
   </div>
   <div class="plan-tabs">
     ${POEM_STAGES.map(s => `<button class="plan-tab ${s === poemFilter ? 'active' : ''}" data-poem-filter="${s}">${s}${s === '全部' ? `（${POEMS.length}）` : `（${POEMS.filter(p => p.stage === s).length}）`}</button>`).join('')}
@@ -587,9 +596,11 @@ function openPoemDetail(i) {
   </div>
   <div class="card poem-card">
     <div class="poem-head">
-      <span style="margin-left:auto"><button class="btn small primary" data-say="${esc(p.lines.map(l => l.h).join('，'))}" data-rate="0.7">🔊 整首慢读</button></span>
+      <span style="margin-left:auto;display:flex;gap:6px;flex-wrap:wrap"><button class="btn small primary" data-say="${esc(p.lines.map(l => l.h).join('，'))}" data-jyutping="${esc(p.lines.flatMap(l => l.j.trim().split(/\s+/)).join(','))}" data-line-ends="${p.lines.reduce((ends, l) => { ends.push((ends.at(-1) || 0) + l.j.trim().split(/\s+/).length); return ends; }, []).join(',')}" data-poem-recording data-rate="0.7">🔊 整首逐字慢读</button><button class="btn small" data-stop-pronunciation>停止</button></span>
     </div>
-    ${p.lines.map(l => `<div class="poem-line">${rubyLine(l.h, l.j)}${lineControls(l.h)}</div>`).join('')}
+    <div class="note-box">逐字跟读使用字音录音，不是整句朗诵。缺少的字音首次从 <a href="https://www.yueyumao.com/" target="_blank" rel="noopener">粤语猫</a> 获取，保存后从本站加载。</div>
+    <div id="poemPlaybackStatus" role="status" aria-live="polite"></div>
+    ${p.lines.map(l => `<div class="poem-line">${rubyLine(l.h, l.j, true)}${lineControls(l.h, l.j)}</div>`).join('')}
     ${st.stops.length ? `<div class="warn-box" style="margin-top:12px">🔴 角标「入」= 入声字（-p/-t/-k 急停）：${esc(st.stops.join('、'))}——短促有力，别拖音。蓝注音 = 难点韵母（oe/eo/yu 系）。</div>` : ''}
     ${(p.notes || []).map(n => `<div class="note-box">💡 ${esc(n)}</div>`).join('')}
     <div class="local-player" data-lpp="${i}"></div>
@@ -639,9 +650,11 @@ function buildSongs() {
 function buildPhrases() {
   $('#page-phrases').innerHTML = `
   <div class="page-head">
-    <h1>💬 日常用语 <span class="tag">8 大场景 · 生存粤语</span></h1>
-    <div class="sub">学完当天就能用的句子。重点看"亮点注解"——粤语的字面和普通话哪里不一样（咗=了、冇=没有、喺=在、畀=给），理解了就不用死记。</div>
+    <h1>💬 日常用语</h1>
   </div>
+  <div class="plan-tabs" role="tablist" aria-label="日常用语来源"><button class="plan-tab active" id="dailyOnlineTab" role="tab" aria-selected="true" aria-controls="dailyOnline" data-phrase-source="online">日常粤语 · 粤语猫</button><button class="plan-tab" id="phraseLessonsTab" role="tab" aria-selected="false" aria-controls="phraseLessons" data-phrase-source="local">本站教材 · ${PHRASE_GROUPS.length} 个场景</button></div>
+  <div id="dailyOnline" role="tabpanel" aria-labelledby="dailyOnlineTab"></div>
+  <div id="phraseLessons" role="tabpanel" aria-labelledby="phraseLessonsTab" hidden>
   ${PHRASE_GROUPS.map(g => `
   <div class="group-head"><h3>${g.icon} ${esc(g.name)}</h3></div>
   <div class="grid cols-3">
@@ -654,7 +667,21 @@ function buildPhrases() {
         ${it.note ? `<div class="note">💡 ${esc(it.note)}</div>` : ''}
       </div>
     </div>`).join('')}
-  </div>`).join('')}`;
+  </div>`).join('')}</div>`;
+  const deps = { stopOthers: () => { TTS.stopLoop(); pauseAllMedia(false, true); } };
+  YUEYU_CATALOG.mount($('#dailyOnline'), 'daily', deps);
+  $('#page-vocabulary').innerHTML = '<div class="page-head"><h1>📚 粤语词组</h1></div><div id="wordsOnline"></div>';
+  YUEYU_CATALOG.mount($('#wordsOnline'), 'words', deps);
+  $$('[data-phrase-source]').forEach(button => {
+    button.onclick = () => {
+      TTS.stopLoop(); pauseAllMedia();
+      const online = button.dataset.phraseSource === 'online';
+      $('#dailyOnline').hidden = !online;
+      $('#phraseLessons').hidden = online;
+      $$('[data-phrase-source]').forEach(tab => { tab.classList.toggle('active', tab === button); tab.setAttribute('aria-selected', String(tab === button)); });
+      if (online) YUEYU_CATALOG.activate('daily');
+    };
+  });
 }
 
 /* ============================================================
@@ -764,7 +791,9 @@ function buildQuiz() {
 
 function startQuiz(mode) {
   quizState.mode = mode;
-  quizState.qs = shuffle(QUIZ[mode]).slice(0, QSIZE);
+  const pool = mode === 'tone' ? QUIZ[mode].filter(q => PRONUNCIATION.has(q.j)) : QUIZ[mode];
+  if (pool.length < QSIZE) { toast('当前音源的测验录音不足，请切换顶部例字音源。'); return; }
+  quizState.qs = shuffle(pool).slice(0, QSIZE);
   quizState.i = 0; quizState.score = 0; quizState.combo = 0; quizState.maxCombo = 0;
   renderQuizQ();
 }
@@ -777,7 +806,7 @@ function renderQuizQ() {
   const q = qs[i];
   const opts = mode === 'tone' ? toneOptions() : q.opts;
   let qHtml = '';
-  if (mode === 'tone') qHtml = `<div class="quiz-q">听一听，这是第几声？<button class="btn primary play-big" data-say="${esc(q.c)}">🔊 播放「${esc(q.c)}」</button></div>`;
+  if (mode === 'tone') qHtml = `<div class="quiz-q">听一听，这是第几声？<button class="btn primary play-big" data-say="${esc(q.c)}" data-jyutping="${esc(q.j)}">🔊 播放「${esc(q.c)}」</button></div>`;
   else if (mode === 'pinyin') qHtml = `<div class="quiz-q">这个字的粤拼是？<span class="big-char">${esc(q.c)}</span></div>`;
   else qHtml = `<div class="quiz-q">${esc(q.q)}</div>`;
   $('#page-quiz').innerHTML = `
@@ -793,7 +822,7 @@ function renderQuizQ() {
     </div>
     <div id="quizExp"></div>
   </div>`;
-  if (mode === 'tone') setTimeout(() => TTS.speak(q.c, { rate: 0.75 }), 250);
+  if (mode === 'tone') { TTS.stopLoop(); pauseAllMedia(); playSyllables([q.j]); }
 }
 function answerQuiz(k) {
   if (quizState.answered) return;
@@ -915,8 +944,9 @@ function buildGuide() {
   <div class="guide-sec card">
     <h3>🔊 关于电脑发音（TTS）</h3>
     <div class="kv" style="grid-template-columns:110px 1fr">
-      <div class="k">用什么浏览器</div><div class="v"><b>Microsoft Edge（推荐）</b>或 Chrome：自带高质量粤语语音（如 Microsoft HiuMaan / Google 粤語）。顶栏亮绿灯即正常。</div>
-      <div class="k">亮红灯怎么办</div><div class="v">① 换 Edge/Chrome 打开本站；② Windows 设置 → 时间和语言 → 语音 → 添加"中文(香港)"语音包后重启浏览器。</div>
+      <div class="k">系统语音支持</div><div class="v">整句朗读取决于设备安装的粤语语音及浏览器是否开放接口。微信、手机 Chrome 或 Edge 不保证提供粤语音色。</div>
+      <div class="k">无系统粤语音色</div><div class="v">声母、韵母、例字、拼读、听音辨调及已配置的歌曲和诗词录音仍可播放。日常句子、诗词和歌词的系统整句朗读不可用。</div>
+      <div class="k">手机如何处理</div><div class="v">iPhone 可在设置 → 辅助功能 → 朗读内容（部分版本称「朗读与语音」）→ 声音中检查中文／粤语音色，下载后用 Safari 重试；Android 可检查系统文字转语音引擎是否支持粤语。系统安装音色后，浏览器仍可能无法使用。微信中可尝试在外部浏览器打开。</div>
       <div class="k">发音太机械？</div><div class="v">正常现象。TTS 负责"随时可听"，感情和连读请跟诗歌页 + 歌曲页的原曲（网易云/B站链接）配合使用，效果翻倍。</div>
     </div>
   </div>
@@ -1153,8 +1183,9 @@ function resetLoopBtns() {
 const MEDIA = { manifest: null, songs: [], poems: [] };
 const AUDIO_EXTS = ['mp3', 'm4a', 'ogg', 'wav'];
 function fmtTime(t) { t = Math.max(0, Math.floor(t || 0)); return Math.floor(t / 60) + ':' + String(t % 60).padStart(2, '0'); }
-function pauseAllMedia(skipSong = false) {
+function pauseAllMedia(skipSong = false, skipCatalog = false) {
   PRONUNCIATION.stop();
+  if (!skipCatalog && typeof YUEYU_CATALOG !== 'undefined') YUEYU_CATALOG.stop();
   if (!skipSong && typeof SONG_STUDY !== 'undefined') SONG_STUDY.stop();
   [...MEDIA.songs, ...MEDIA.poems].forEach(m => { if (m && m.audio) { try { m.audio.pause(); } catch (e) {} } });
 }
@@ -1204,7 +1235,7 @@ function renderSongPlayer(i) {
     <button class="btn small primary" data-ap="play:${i}">▶ 播放</button>
     <button class="btn small" data-ap="seek:${i}:-5">⏪5s</button>
     <button class="btn small" data-ap="seek:${i}:5">⏩5s</button>
-    <label class="lp-rate">语速<select data-ap-rate="${i}">${RATE_OPTS.map(v => `<option value="${v}"${v === 0.75 ? ' selected' : ''}>${v}</option>`).join('')}</select></label>
+    <label class="lp-rate">语速<select data-ap-rate="${i}">${RATE_OPTS.map(v => `<option value="${v}"${v === 1 ? ' selected' : ''}>${v}</option>`).join('')}</select></label>
     <button class="btn small" data-ap="a:${i}">设A</button>
     <button class="btn small" data-ap="b:${i}">设B</button>
     <button class="btn small" data-ap="loop:${i}">🔁 循环AB</button>
@@ -1217,7 +1248,7 @@ function renderSongPlayer(i) {
   const row = box.closest('[data-songrow]'); if (row) row.style.display = '';
   const emptyHint = document.getElementById('localEmpty'); if (emptyHint) emptyHint.style.display = 'none';
   const a = m.audio;
-  a.playbackRate = 0.75;
+  a.playbackRate = 1;
   a.addEventListener('timeupdate', () => {
     const lbl = document.getElementById('lpt-' + i);
     if (lbl) lbl.textContent = fmtTime(a.currentTime) + ' / ' + fmtTime(a.duration);
@@ -1234,10 +1265,10 @@ function renderPoemPlayer(i) {
   <div class="lp-box">
     <span class="lp-badge">💿 本地朗读</span>
     <button class="btn small primary" data-pp="play:${i}">▶ 播放</button>
-    <label class="lp-rate">语速<select data-pp-rate="${i}">${RATE_OPTS.map(v => `<option value="${v}"${v === 0.8 ? ' selected' : ''}>${v}</option>`).join('')}</select></label>
+    <label class="lp-rate">语速<select data-pp-rate="${i}">${RATE_OPTS.map(v => `<option value="${v}"${v === 1 ? ' selected' : ''}>${v}</option>`).join('')}</select></label>
     <span class="lp-time" id="lppt-${i}">0:00 / 0:00</span>
   </div>`;
-  a.playbackRate = 0.8;
+  a.playbackRate = 1;
   a.addEventListener('timeupdate', () => {
     const lbl = document.getElementById('lppt-' + i);
     if (lbl) lbl.textContent = fmtTime(a.currentTime) + ' / ' + fmtTime(a.duration);
@@ -1273,9 +1304,9 @@ document.addEventListener('click', e => {
   const pmf = e.target.closest('[data-poem-filter]');
   if (pmf) { poemFilter = pmf.dataset.poemFilter; renderPoemList(); return; }
   const pmb = e.target.closest('[data-poem-back]');
-  if (pmb) { renderPoemList(); return; }
+  if (pmb) { TTS.stopLoop(); pauseAllMedia(); renderPoemList(); return; }
   const pm = e.target.closest('[data-poem]');
-  if (pm) { openPoemDetail(+pm.dataset.poem); return; }
+  if (pm) { TTS.stopLoop(); pauseAllMedia(); openPoemDetail(+pm.dataset.poem); return; }
   const cp = e.target.closest('[data-copy]');
   if (cp) { navigator.clipboard && navigator.clipboard.writeText(cp.dataset.copy).then(() => toast('已复制：' + cp.dataset.copy)).catch(() => {}); return; }
   const cut = e.target.closest('[data-cut]');
@@ -1319,7 +1350,18 @@ document.addEventListener('click', e => {
   const say = e.target.closest('[data-say]');
   if (say) {
     TTS.stopLoop(); resetLoopBtns(); pauseAllMedia();
-    if (say.dataset.jyutping) playSyllables(say.dataset.jyutping.split(','), { rate: parseFloat(say.dataset.rate || '') || settings.rate });
+    if (say.dataset.jyutping) {
+      const online = say.hasAttribute('data-poem-recording');
+      const lineEnds = new Set((say.dataset.lineEnds || '').split(',').map(Number));
+      const status = online ? $('#poemPlaybackStatus') : null;
+      playSyllables(say.dataset.jyutping.split(','), {
+        rate: parseFloat(say.dataset.rate || '') || settings.rate, online,
+        gapMs: online ? i => lineEnds.has(i + 1) ? 650 : 120 : 350,
+        onStep: (i, syllable) => { if (status) status.textContent = `逐字跟读 ${i + 1} / ${say.dataset.jyutping.split(',').length} · ${syllable}`; },
+        onDone: () => { if (status) status.textContent = '跟读结束'; },
+        onError: message => { toast(message); if (status) status.textContent = message; },
+      });
+    }
     else if (!TTS.speak(say.dataset.say, { rate: parseFloat(say.dataset.rate || '') || undefined })) {
       toast('未检测到粤语语音，无法朗读此内容；声母和韵母仍可使用本地录音。');
     }
@@ -1335,7 +1377,7 @@ document.addEventListener('click', e => {
     TTS.stopLoop(); resetLoopBtns(); pauseAllMedia();
     if (seq.dataset.jyutpingSeq) { playSyllables(seq.dataset.jyutpingSeq.split(',')); return; }
     const arr = seq.dataset.seq.split(/[,，]/).map(s => s.trim()).filter(Boolean);
-    if (!TTS.speakSeq(arr)) toast('当前浏览器不支持语音合成，请用 Edge / Chrome 打开');
+    if (!TTS.speakSeq(arr)) toast('系统未提供粤语整句朗读；教材录音仍可播放，详见学习指南。');
     return;
   }
   const loop = e.target.closest('[data-loop]');
@@ -1343,8 +1385,8 @@ document.addEventListener('click', e => {
     if (TTS.isLooping()) { TTS.stopLoop(); resetLoopBtns(); pauseAllMedia(); return; }
     pauseAllMedia();
     const lines = loop.dataset.loop.split('｜').map(s => s.trim()).filter(Boolean);
-    const ok = TTS.speakLoop(lines, { rate: 0.75, gapMs: 2800, onDone: resetLoopBtns });
-    if (!ok) { toast('当前浏览器不支持语音合成，请用 Edge / Chrome 打开'); return; }
+    const ok = TTS.speakLoop(lines, { rate: settings.rate, gapMs: 2800, onDone: resetLoopBtns });
+    if (!ok) { toast('系统未提供粤语整句朗读；教材录音仍可播放，详见学习指南。'); return; }
     resetLoopBtns();
     loop.classList.add('singing');
     loop.textContent = '⏹ 停止跟唱';
@@ -1413,7 +1455,7 @@ document.addEventListener('click', e => {
 /* ---------- 顶栏工具 ---------- */
 $('#recordingSource').value = PRONUNCIATION.source;
 $('#recordingSource').onchange = e => { TTS.stopLoop(); pauseAllMedia(); PRONUNCIATION.setSource(e.target.value); };
-$('#rateSlider').value = settings.rate || 0.8;
+$('#rateSlider').value = settings.rate || 1;
 $('#rateVal').textContent = (+$('#rateSlider').value).toFixed(2);
 TTS.setRate(+$('#rateSlider').value);
 $('#rateSlider').addEventListener('input', e => {
@@ -1425,7 +1467,7 @@ $('#voiceSelect').addEventListener('change', e => {
   if (TTS.setVoice(e.target.value)) {
     settings.voice = e.target.value; LS.set('ygt_settings', settings);
     toast('已切换语音，试听一下：');
-    TTS.speak('你好！我系你嘅粤语老师，一齐学粤语啦。', { rate: 0.85 });
+    TTS.speak('你好！我系你嘅粤语老师，一齐学粤语啦。', { rate: settings.rate });
   }
 });
 // 本地音频播放器语速

@@ -15,6 +15,8 @@ const ROOT = __dirname;
 const DATA_DIR = process.env.YGT_DATA_DIR || path.join(ROOT, 'server-data');
 const DB_FILE = path.join(DATA_DIR, 'users.json');
 const TOKEN_TTL = 30 * 24 * 3600 * 1000; // 30 天
+const yueyumaoSource = require('./tools/yueyumao-source').createSource(fetch, { directory: path.join(DATA_DIR, 'yueyumao-pages') });
+const yueyumaoAudio = require('./tools/yueyumao-audio').createAudioCache(path.join(ROOT, 'media', 'yueyumao'));
 
 const MIME = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8',
@@ -86,6 +88,17 @@ function send(res, code, obj, headers) {
 
 /* ---------- API ---------- */
 async function handleAPI(req, res, pathname) {
+  if (pathname === '/api/yueyumao-audio' && ['GET', 'HEAD'].includes(req.method)) {
+    try {
+      const requested = new URL(req.url, 'http://localhost').searchParams.get('path');
+      const result = await yueyumaoAudio(requested);
+      return serveStatic(req, res, '/media/yueyumao' + result.relative.split('/').map(encodeURIComponent).join('/'));
+    } catch (error) { return send(res, error.status || 502, { error: error.message }); }
+  }
+  if (pathname === '/api/yueyumao' && req.method === 'GET') {
+    try { return send(res, 200, await yueyumaoSource(new URL(req.url, 'http://localhost').searchParams)); }
+    catch (error) { return send(res, error.status || 502, { error: error.message }); }
+  }
   if (pathname === '/api/songs' && req.method === 'GET') {
     return send(res, 200, { songs:discoverSongs() });
   }
