@@ -1,0 +1,1580 @@
+{
+  "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/main.php",
+  "speaker": "陳京英（来源网页致谢）",
+  "license": "Source does not specify a redistribution license. Local study copies.",
+  "files": {
+    "aa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/aa1.wav",
+      "sha256": "53f364da6cd6c812e2e4d00b901e00f1f4df7950873375067925224e6d57a699"
+    },
+    "aai1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/aai1.wav",
+      "sha256": "0e491a34f5764a4f9933cf25edda56cafab2be14e46d1da7c27fc556f6ad533b"
+    },
+    "aak3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/aak3.wav",
+      "sha256": "8e7cafc2de804107cc5a759556a7f7fd709ca82b6a3c21fd69438d434a909b23"
+    },
+    "aam1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/aam1.wav",
+      "sha256": "35fb56c3a8ab698c3cbc42e6abc3747a947c6c646e3a996e5c22d720204df3d9"
+    },
+    "aan1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/aan1.wav",
+      "sha256": "971e9303ae30cc6061b89ffbd3e97f79f229d3080206c1a67d64c840e1125c0a"
+    },
+    "aang1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/aang1.wav",
+      "sha256": "e8d18ebdce5ca5bdc90f06ddee373ccb7f47a865d270b951cb006f40f6766bf7"
+    },
+    "aap3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/aap3.wav",
+      "sha256": "466bcee2268859cb9b818dbad2b9e9149beb29c317c4b8a0d418c9eebdbdfff6"
+    },
+    "aat3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/aat3.wav",
+      "sha256": "74eb06eb4733b0e2a278b124fe040710daf953d3c17259e695f363ad0713a9de"
+    },
+    "aau1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/aau1.wav",
+      "sha256": "066a926cfdcd09a1a8b7d604fb0936d23d9a9db15654b9aacaf21023f34ea146"
+    },
+    "aau3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/aau3.wav",
+      "sha256": "f17a5a5ec9d0d50497456473f53eb51aa183eafe84526a1044a92f79f85510bd"
+    },
+    "ai1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ai1.wav",
+      "sha256": "cb45b61165db7cc3cdb2bfeef9972b291b96c390188331cfdb6cd1b96fbe7c0b"
+    },
+    "ai2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ai2.wav",
+      "sha256": "d1097724ae8a5629a915ad4e336bc439aa984f108bd52655693477722d5c58c0"
+    },
+    "ak1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ak1.wav",
+      "sha256": "1759bb2e2ef6f3b9321579dc486c460210d5970e7effdb32b3f0650dce4ebc7a"
+    },
+    "am1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/am1.wav",
+      "sha256": "8d2b48f4923cd5a2056f0d6a8f693ea498f46ec607e5249aaf92cf448defaf5c"
+    },
+    "am3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/am3.wav",
+      "sha256": "31b84fdb1a9043f2d2ac984d1bb1932e8a8bed7e5098d634495eb53f3f764068"
+    },
+    "ang1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ang1.wav",
+      "sha256": "218ea9d303aa19481d0684fc8ebc0c38e2b9836c4390a0e688f63659d44ac676"
+    },
+    "ap1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ap1.wav",
+      "sha256": "6bd604f4aeefee53b98f6973de42485d5793c798cf3a1277f63e7dedebfe1cbd"
+    },
+    "au1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/au1.wav",
+      "sha256": "b848df05d00dfd18fe037c6b4988b93ba99f2009f9b8519bb136b6216860c7b3"
+    },
+    "baa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/baa1.wav",
+      "sha256": "48aa8402fcdf3c5f1d2927232a79d6cf12e8485f3857c1fa4f336ebeecbbb192"
+    },
+    "baak3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/baak3.wav",
+      "sha256": "293bea729acb8e34dace41ffc11fcacb7e18e131b201ce3cf46f31ea6ab0052a"
+    },
+    "baak6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/baak6.wav",
+      "sha256": "5a05bd459c101481fa002881e92c4eb5b26c80b05f383e89df6b9cb01a4a4277"
+    },
+    "baan6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/baan6.wav",
+      "sha256": "70828f89589b17b67753793ad46b8617c3323f0ff3a5906cfc1deb6afeaf9fe3"
+    },
+    "baat3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/baat3.wav",
+      "sha256": "7b02b5c9c1f0b3f8e34658fa1241daf5b38c6254867cf4af03c63835281e509a"
+    },
+    "baau1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/baau1.wav",
+      "sha256": "b168490a54be30a898932c7bd294f0dc269996ae68bb786cda08811180d1fbb8"
+    },
+    "bak1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/bak1.wav",
+      "sha256": "a071cf97c4cb390278fda34929cabec0e50f30b5aa28c446912e3835d2a74a6e"
+    },
+    "bat1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/bat1.wav",
+      "sha256": "09c0ab3d39d7f3939d961c49fae095976b533ff53ba5f184fd369315b17c37b8"
+    },
+    "bei6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/bei6.wav",
+      "sha256": "3bc5d149bf311f5239002baa20162570cda4fcb05188f05b476cd881a554f258"
+    },
+    "beng6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/beng6.wav",
+      "sha256": "568fbab0ccd0b604ce3cd549fd40d0c1b1ca97a26a18d934c08c2444d0028f06"
+    },
+    "bin1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/bin1.wav",
+      "sha256": "d1ad29978365371463e837210f6e115d5173921114cefd24c9895396f05a4873"
+    },
+    "bin3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/bin3.wav",
+      "sha256": "ca04d5935e0b1fb803a484bb5f09252a4d224d247a47e350b0c6b493013f5caf"
+    },
+    "bit6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/bit6.wav",
+      "sha256": "6e34934031b5adf34a5fead056dbe1c34a37dee4911152c497586bb45428b4d3"
+    },
+    "biu2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/biu2.wav",
+      "sha256": "b97c5d1875e2bdc82ebec05b1e91b2a7475f8427457479d27678da242108647d"
+    },
+    "bok3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/bok3.wav",
+      "sha256": "24ca492a4dc5e5401a891cb9a6217fde72ea76f64462fa81953714e5fbe3b3ba"
+    },
+    "bui1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/bui1.wav",
+      "sha256": "d1b5d7ebd73ff3aae1fbee859039c882e8b6575e8f47137cd6aff5968e19cadb"
+    },
+    "bun2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/bun2.wav",
+      "sha256": "6a5cadc088d99b9a608b8927f15dd503a62bbe5572a6ae8e26848a5a19b69f81"
+    },
+    "bun3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/bun3.wav",
+      "sha256": "1ded9e0df6a7ba6fc56b5ebd59bfa486e3e79c6491c3cc13fe3a834b4624122b"
+    },
+    "but6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/but6.wav",
+      "sha256": "e92dd1a28992af3d5d2b08ea955bff66ae32db5d7e81ce908da367640af21875"
+    },
+    "caa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/caa1.wav",
+      "sha256": "31ca9e368f592aed6dbcc046c55f57d0ac02d3974f002db49cd32a3c75ca0222"
+    },
+    "caa4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/caa4.wav",
+      "sha256": "81ebdae07fea720b12aa0617096770d0791c6bbaa14017ee692bf7b6f19633e7"
+    },
+    "caang1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/caang1.wav",
+      "sha256": "83b547feece77cf27470486e4ce26aee785406fab01844a9371e61c4d88f9e9f"
+    },
+    "can1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/can1.wav",
+      "sha256": "a48a10787506a8bf4c06468d686c95cfbb70421c3983b6786f2d88b3a222897b"
+    },
+    "cang4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/cang4.wav",
+      "sha256": "13a980cab535e47569b76b48b72b3c5024dfb256e32fc65084585d1c1ae9bea6"
+    },
+    "cat1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/cat1.wav",
+      "sha256": "f3f117fda83da54d67ed41d37deecfb39f324d1e4a11fbfe400404bc61898231"
+    },
+    "ce1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ce1.wav",
+      "sha256": "eea16992af40cefc4d45e5c6d1b2b313df6692c896ac4cd682723228404ccdac"
+    },
+    "cek3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/cek3.wav",
+      "sha256": "0d289fcffc13a6cf534a3295d7506d4ffbed83ca3657a3cfcdf8476de394c3c3"
+    },
+    "ceon1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ceon1.wav",
+      "sha256": "1a395e43f2b044edfdee4c4b2a9dd7a3f6f2b4254df0256389f4e3285c118925"
+    },
+    "ceot1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ceot1.wav",
+      "sha256": "7b71048ca7da9ff07ec5632ee0d2c7cdd1b0f5628c3acfcd9e899ef5460cbbf2"
+    },
+    "ci1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ci1.wav",
+      "sha256": "6df723b053c0061af7c1d7c2762428b637eb33ecc4e965278ab8c2b7160cf84e"
+    },
+    "cin1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/cin1.wav",
+      "sha256": "8258a1d599c8dc5c2155f7b78dfcc4740bac456ec5870af6f4bcc9beb558e6ff"
+    },
+    "cin4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/cin4.wav",
+      "sha256": "19350fa1239ba447089b3f9e98e9c914cae1e9e65837263ab3664b98a5ce2e9e"
+    },
+    "cing4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/cing4.wav",
+      "sha256": "9f1eb24e42697015d58492713593ac7fdb392efe5eb6cecb73491e1e96229b7b"
+    },
+    "cip3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/cip3.wav",
+      "sha256": "2fcbaf0f489a53692f8ac9416f27730d13c9966a8bfdd779b246bcd5a43e5173"
+    },
+    "coek3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/coek3.wav",
+      "sha256": "fe1e7926f2a34e0e55b6c35de30f7d3165d1b857a8eb24c45835edcf6daaf224"
+    },
+    "coeng1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/coeng1.wav",
+      "sha256": "b133230a3fbdced5e67ea6fcf874b8b3313224b84fb07b91e3915789d62de108"
+    },
+    "coeng3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/coeng3.wav",
+      "sha256": "25fc6a45872b4e2ede1715057cd25cfe639537566672a3dd5c0826352aaa6f67"
+    },
+    "coeng4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/coeng4.wav",
+      "sha256": "b7986d5153c4d144cb604861a2b66dd61f14759b14a9273f4851806a2891bfac"
+    },
+    "cong4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/cong4.wav",
+      "sha256": "24bcf6f473982d089e811b7d2cd84972524244229ad195d4af7df6524acef374"
+    },
+    "cou2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/cou2.wav",
+      "sha256": "5f083ac48e21832fb5b8a28ec3b39f45fab7975cf5a0f8f1e0f179542c1e7235"
+    },
+    "cyun4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/cyun4.wav",
+      "sha256": "e6781c8933f457ec970795ad802a782be1093f64df87777637c745b03b0d8bb8"
+    },
+    "daa2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/daa2.wav",
+      "sha256": "76a4755d4f35b5da76456824162c8af00b3b134aa56ff4ab6c400baa476ef2ee"
+    },
+    "daai6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/daai6.wav",
+      "sha256": "637861c4e31e8f896224ce4ad3f7215d342c15cb9bcc80737817718d43549f92"
+    },
+    "daan1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/daan1.wav",
+      "sha256": "e9bb17b21687fb0c316f4f8c8ff55b4d297f16858399cde062fe69efce2025fd"
+    },
+    "daap3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/daap3.wav",
+      "sha256": "7a944c0cdc013de1f80f17555b541c387b7b3b9da5a0c0860591f0a409f2606e"
+    },
+    "dai1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dai1.wav",
+      "sha256": "2079d151171976c17a2cb7e547ed9abaa51a32e41a3997896b9bbd2d9702579a"
+    },
+    "dak1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dak1.wav",
+      "sha256": "f3393d6e96d17db87d4f346a98d5c331dfd63940b5a954e2798331005e848303"
+    },
+    "dang1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dang1.wav",
+      "sha256": "b3cb1b8595792ad5473a253aeb90b00f221419513303ba6c99413ca61b361a09"
+    },
+    "dang2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dang2.wav",
+      "sha256": "3b84c035ef0d45f7150a726c293dbb2a78fc313c80c3313995a7ba3262150079"
+    },
+    "de1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/de1.wav",
+      "sha256": "af685161d68163a0f82d83e9d679664c6ce309d6e95b4cb85c0884e7e5d56639"
+    },
+    "dei6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dei6.wav",
+      "sha256": "edea0afe8d8e505eae8f080bc031c3824bf36d4e97e07a209717b028118af426"
+    },
+    "deoi6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/deoi6.wav",
+      "sha256": "52615288622e5bb84464c379b0647e9cafe0ba68099eeef02f2bbc87e7ed4f72"
+    },
+    "dim2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dim2.wav",
+      "sha256": "871fdd38e6c0c3db14f0c12deb8dda35482cec0e07489c178bde2657624691a8"
+    },
+    "dip6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dip6.wav",
+      "sha256": "161feb72acf528e6f49e8b4c7d4fe7fce0634a1e97d6a29bb0131f55d94b5275"
+    },
+    "do1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/do1.wav",
+      "sha256": "387b8851e2292c2c55f5d5eb0d3393cebc0494ad18b157f96efacfa0822d5e5e"
+    },
+    "doi6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/doi6.wav",
+      "sha256": "b35d4aeb7b49fc9f9b97dd4efd0cd31eb6854496fdc6ae3fcb0bb322366a64e6"
+    },
+    "dou2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dou2.wav",
+      "sha256": "7939e0e012a70c3cd859c98ae3381a80bbe6ab1cc727aef7f1279968074cf247"
+    },
+    "dou3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dou3.wav",
+      "sha256": "30a55e9e11acfb3f26bb2b17d21b05479412e959804a5b29166990751eb90570"
+    },
+    "dou6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dou6.wav",
+      "sha256": "a6c29ba155eb86b435f240ffba371311dcf2a78c6c53d00a29d6036867a1d165"
+    },
+    "dung1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dung1.wav",
+      "sha256": "0b467b95603d022c9870f5775c1a512006f8d418c8d365439567f659988faea2"
+    },
+    "dyun2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/dyun2.wav",
+      "sha256": "a777ef15739083a6e8a1fd2d4779b40bb8a8b98992737e03aa9b9b3d15c36854"
+    },
+    "faa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/faa1.wav",
+      "sha256": "2d1e7f1845b221e66347b4a3b854b72757f21c2176525d727d21d90003a88d9a"
+    },
+    "faai3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/faai3.wav",
+      "sha256": "0754dc3c5a901280884e6377974a6c0e799c4031dc8704a04f4819801921f253"
+    },
+    "faan1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/faan1.wav",
+      "sha256": "88be5665e77542a8006371fc346c789a8bcd286a324c57671f58666310fb62aa"
+    },
+    "faan6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/faan6.wav",
+      "sha256": "7ca631dcf707175c59f8726ffba9041ba2e3d9ab0fd90ef18826f4518ea8d33a"
+    },
+    "faat3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/faat3.wav",
+      "sha256": "77bcd2bc96332bac12db2dc7fbeecd9fb4f8ad81890228942382eb2e6ac2bcdf"
+    },
+    "fan3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fan3.wav",
+      "sha256": "fc210732e89976eeb31647ae204cd320571ebe6840c0e4e9ad3a8ff60103e4e5"
+    },
+    "fei1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fei1.wav",
+      "sha256": "24feec367505ac439240235b44be7aa51f643dda48cf027d25e4ba2e61a4ace0"
+    },
+    "fo2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fo2.wav",
+      "sha256": "8d568550951aef3b286c1b935c5dda8f57a485f6a37a70ae28458f0ac30a9146"
+    },
+    "fong3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fong3.wav",
+      "sha256": "85e12dccdc669cca1dc5b85847daedbb8a0db384bbb37c683e053b18ca2d6a45"
+    },
+    "fu1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fu1.wav",
+      "sha256": "5dc1891a5b1667c851b5848ec1f4c1cc979fa6990dff52632490c8a86c73e350"
+    },
+    "fu2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fu2.wav",
+      "sha256": "fab2bf711718714384a0d1a653dfbac62f802c42a9df6a423380fd3e22f052c3"
+    },
+    "fu3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fu3.wav",
+      "sha256": "f76a943e089640ac06278c81ea24283b059ea9e2d3c423845f261cf3e3046246"
+    },
+    "fui1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fui1.wav",
+      "sha256": "25692dfd93cd80a48b078fee0b3577176184fc7f8256489be173fd67eb2b4f5e"
+    },
+    "fuk1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fuk1.wav",
+      "sha256": "92e02b5f49a2d223964a19c327a98a68bf332610084b932bf259eb36d35f5793"
+    },
+    "fun1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fun1.wav",
+      "sha256": "42eabc6560b97cc55f185963e7b348cce178618eefb3716892bcbaaebd8b00fb"
+    },
+    "fung1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fung1.wav",
+      "sha256": "7b16865ea5c7592e4cf032a05d3c4868c40b01b4823b1e74850387f78a61d43d"
+    },
+    "fut3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/fut3.wav",
+      "sha256": "1677361981d62c02a069e26ef86e2fe4ab2da1d5e8aef95366774685ff1a4d06"
+    },
+    "gaa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gaa1.wav",
+      "sha256": "ef67d98254c8a7f50fe786a8127c7e75ec4a7618ee1b126004117cb233c03a10"
+    },
+    "gaai1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gaai1.wav",
+      "sha256": "5f39a5d214b917ec619e1444b6e6199ac2a607f3f93923e088a0f1f0d4c4863f"
+    },
+    "gaam2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gaam2.wav",
+      "sha256": "b1b9493b46c18e68ff4392094d8630dec14a6b5d5d2f49318dfe225e693a1264"
+    },
+    "gaap3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gaap3.wav",
+      "sha256": "5d28409f834e401f3c02b737ed097e16eea135144613e26e00cfc4f10c0239a7"
+    },
+    "gaau1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gaau1.wav",
+      "sha256": "73369447b64de1f9b021874aeee30dd9b3bdd0118e601739dc3595daa32e3cf8"
+    },
+    "gaau3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gaau3.wav",
+      "sha256": "86d11c205268cd4226f659d7cb5d05aec0e70e826f5df9b1ac694e1a2321fcec"
+    },
+    "gai1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gai1.wav",
+      "sha256": "3d41ffb0863abace50a12ea0f1a83ee2363e27ad10083efc1d07c0146bbaab27"
+    },
+    "gai3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gai3.wav",
+      "sha256": "04fac70ac71d287b94b76875a6014be26baa7d82b63ba528548eaacf96e85ae1"
+    },
+    "gam1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gam1.wav",
+      "sha256": "8f4a30737d5c0954198b99316310b22acfe0ebc23e176cb63ce19c78c6200c39"
+    },
+    "gam2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gam2.wav",
+      "sha256": "37f389fdd3470096634f66c73d5732661301e1d8c250e9b5a9c6c41629d427c2"
+    },
+    "gan2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gan2.wav",
+      "sha256": "9060b7e7be17bd177cfc92c89aa2d8c3bee276a532c8080a8781b8d8675d401a"
+    },
+    "gang1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gang1.wav",
+      "sha256": "e892439e8ed582a2611934e4f8db71bf948ae036439405c3e35f29fa9ec12338"
+    },
+    "gap1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gap1.wav",
+      "sha256": "2cb1064194976086b63fb9ab80cea105ad6c51a3034b375ce11a7a2718d1d710"
+    },
+    "gau2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gau2.wav",
+      "sha256": "34b0838e5f1776e83ff2e6f1078f450e171e4c7823a359b56e2d6dabf81e5456"
+    },
+    "gau6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gau6.wav",
+      "sha256": "e2bd618017868a74785e16b5a9f29c13a7fc22da43466c6f9798312d92fa7581"
+    },
+    "gei2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gei2.wav",
+      "sha256": "57215967b8a8e60de6f6ba793587b6f40ec2f479c770ff52ad555d0bffae8937"
+    },
+    "gei3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gei3.wav",
+      "sha256": "b05eb3178d61915b1fac8ebcbc7a31019421a2f7b90bb7add01c584848b18f22"
+    },
+    "geng1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/geng1.wav",
+      "sha256": "023933c6ef084be5f47f235c2b0201fab5e594f85d2500fc1b1c72553666f616"
+    },
+    "geng2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/geng2.wav",
+      "sha256": "2d303be76240118a7826223e14bc4ad327399ab647bcf9339ba1b4653409c003"
+    },
+    "geng3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/geng3.wav",
+      "sha256": "03fd072073c71f1f3fa88daad537ea18aaa7f570736c0f6ffca3bbc64a03a99f"
+    },
+    "gik6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gik6.wav",
+      "sha256": "80b8c9190531fe60fc600aee0fceb7e620f775f6c7a186b2053bf1929ea0f2a1"
+    },
+    "gim3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gim3.wav",
+      "sha256": "0750d9411ee45a7394cc77bc759a522ac8256d0900eb30f133d39fca7b818e71"
+    },
+    "gin3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gin3.wav",
+      "sha256": "fe9d9e20ae5a950b92acb37a72c2333e0a73746585574ea8e291abfb47cfeb04"
+    },
+    "git3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/git3.wav",
+      "sha256": "7ba6b7f9b6e6531d73879c2e49f05897eb0745b627173778d37860520aa3b8d9"
+    },
+    "go1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/go1.wav",
+      "sha256": "1845527295d75468ebdae65a0c4e3af85dad58ee8df10076bc0d0a3f21989165"
+    },
+    "goe3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/goe3.wav",
+      "sha256": "92fcccfea187632cd9a7fe9fa088806249fb4e447f97172ed0a09e6bb0c566ab"
+    },
+    "goek3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/goek3.wav",
+      "sha256": "ae618aab282bd95ce6a039e9aa7a2c1ceb4ee88f91badb809ff2f56a13dd972f"
+    },
+    "goeng1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/goeng1.wav",
+      "sha256": "7ced795dc153dc1f582e4d7325e7c1bb1d0c71f38ff23ab1806082db062894e1"
+    },
+    "goi1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/goi1.wav",
+      "sha256": "dc9d24645a01ad9c1486ff24e29c7b694a00b911f6a41dd574a12fb0637cf686"
+    },
+    "gong1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gong1.wav",
+      "sha256": "1c09dea987382748bf32851c4c307ae11323334a72d4842ca4b7bf6773969d40"
+    },
+    "gong2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gong2.wav",
+      "sha256": "37bef1b91ff13837df2acdb978fcf6ab49c0ae3eddf818a90ce836dfdbc8c68d"
+    },
+    "got3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/got3.wav",
+      "sha256": "34f36feda9ecf46ea39200fe1cc08bb2c4efeca80b0e976687569f93dd9984d8"
+    },
+    "gou1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gou1.wav",
+      "sha256": "ff1e71f1dff3d20a0dc7262a26837290b2e87f0d0b4a153c4b24a290a6ba27a1"
+    },
+    "guk1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/guk1.wav",
+      "sha256": "a20cbfab805b5fb13f17643087b92019e095b3b09f276789b9d8b311302f46bd"
+    },
+    "gung1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gung1.wav",
+      "sha256": "018944850cbe247a892ee35a56d7061ee5484d747cc59a6a47f18fcb07c05904"
+    },
+    "gwaa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gwaa1.wav",
+      "sha256": "0f21e51e917bdbf774354621f575985a6fc1c978e6460abc77f24a9a695ad23b"
+    },
+    "gwaa3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gwaa3.wav",
+      "sha256": "4815c6041de81be5aa9480dd402d46ddcf0af092051b47559fc645456637a33c"
+    },
+    "gwaan1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gwaan1.wav",
+      "sha256": "298cffa7e38299d375e3c5584e795ad0fd410a1da21b9bb0ac889024b775469c"
+    },
+    "gwaan3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gwaan3.wav",
+      "sha256": "4c6dce8429df8b9db9a287f951ee6a75a679879420e5843c71d86512f747a0a9"
+    },
+    "gwong1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gwong1.wav",
+      "sha256": "156bde1ac49171043c46fc2bb1eeb19b0943b264f3e90a01c4c5747bb518b152"
+    },
+    "gwong2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/gwong2.wav",
+      "sha256": "a25590e83efbf06cc9d7447c7906bb6c03e184f849c892e531554588caaa6190"
+    },
+    "haa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/haa1.wav",
+      "sha256": "4f56b025cbf5d9f7e8d584c2d59fc81ee2a3c426a03e1b1a876c37f704e072f3"
+    },
+    "haa6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/haa6.wav",
+      "sha256": "f5835a78e3f25eac495fd32d8884dd86f283086080d15523e49c405e9e87bdd6"
+    },
+    "haak3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/haak3.wav",
+      "sha256": "16eba5c837b7f8945d0e6b3198f03aca2335a8a72ff4b8af356aa87dfa13d8a2"
+    },
+    "haam3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/haam3.wav",
+      "sha256": "27ef22051843786b8760772a6c8dae3db03208575f4402aecc2cefb983879fc6"
+    },
+    "haang4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/haang4.wav",
+      "sha256": "fb1e080aff70ff7414a8292654a2db94f96ee238e7866fb42fddd6c710ded02c"
+    },
+    "hai6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hai6.wav",
+      "sha256": "c8aaa98d12162a0337317a50a60e26a61de70a8a435df958a195ddec7807e9bc"
+    },
+    "hak1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hak1.wav",
+      "sha256": "1d150a67bae10776d27492bf04d2b3219e194552c05d71dcb8e251d68e2d4a8b"
+    },
+    "han4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/han4.wav",
+      "sha256": "f860c61006681986acf581ee9c13d3453ed846d3cbc795af4896fa60364e1dd3"
+    },
+    "han6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/han6.wav",
+      "sha256": "0cd4cfffbe7a7bef97926e704ec4abf561e9c0bde39c187344e3b70bbfc81ba5"
+    },
+    "hang4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hang4.wav",
+      "sha256": "fd57e6996eeb73c292560b7c2ad92c0a8c8abe24daef1fda9c17db62a635b1eb"
+    },
+    "hat6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hat6.wav",
+      "sha256": "b73d5089bd2cd936fae129c8aadc70d72f8f3841e95dcd2ff0d159d00390c04c"
+    },
+    "hau2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hau2.wav",
+      "sha256": "33b63e0a242b7ef05931999c4b6427c71ad388d33dbeae5a8ab318b0dfbc09de"
+    },
+    "hau6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hau6.wav",
+      "sha256": "aef63c0234259167e922450caed2c6a66ba9759837be9b3a38f640c8b0b7b46d"
+    },
+    "hei3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hei3.wav",
+      "sha256": "35ada7d60037e8cdf109226358d27ba20e1f4cf751cd1a427ca0302bef3bb0cb"
+    },
+    "heoi3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/heoi3.wav",
+      "sha256": "6635e76be12c6b2a37c36f2f7fc078166e88584b1877cdb65f096054d2b95f55"
+    },
+    "ho4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ho4.wav",
+      "sha256": "e60fc4342c77ac424eb5c77a3df908fe7e54b60c4051bf6dc665548f66c6e50c"
+    },
+    "hoe1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hoe1.wav",
+      "sha256": "1771f01d2633a8e6cca418e7433587bbbefdac3221c19145316860a56d3ff02b"
+    },
+    "hoeng1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hoeng1.wav",
+      "sha256": "59011f02af0e41ecbf2dcef76729fa732e0cb866c91780658d03d2924ff519d7"
+    },
+    "hoi1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hoi1.wav",
+      "sha256": "a3d07294dabecce0013e14fcb6b8a348dbe536c974fd0018c0fb6d4d4dc1d922"
+    },
+    "hoi2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hoi2.wav",
+      "sha256": "7a84769fcc224d38cebd55e5cf81542b7a067844e631c771c679218ea227db8e"
+    },
+    "hok6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hok6.wav",
+      "sha256": "552c513e977fb386b14a2ccaf84f29353d6bf196b253b9a7b40f25934518599f"
+    },
+    "hon3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hon3.wav",
+      "sha256": "b2e61220c99e00a2c811c95f328799bfa1262e9e212713de87dc8c483e0fd96d"
+    },
+    "hon6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hon6.wav",
+      "sha256": "50baaa9969d81a29581a872abec065469643d0972a7dccd93b91da70febf101d"
+    },
+    "hot3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hot3.wav",
+      "sha256": "d4f0d4cc8db0aa2cc5e39a4e812c84204f1804f8af47338043d19051118ffe21"
+    },
+    "hou2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hou2.wav",
+      "sha256": "3aa3505fd73d22e8d067247cbfcd92b8fbea765994da0adefd4adf58785b5117"
+    },
+    "hung4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/hung4.wav",
+      "sha256": "c9032c34b19e2ed662f69510bc6e2e8a96a8f0e7919ac2f3d74c8740d2dda86c"
+    },
+    "jaa5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jaa5.wav",
+      "sha256": "b6178fc7063ad407bd97cec9f335fc40ef107c489234ee96bbfea516086f4d15"
+    },
+    "jam2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jam2.wav",
+      "sha256": "94adcd801df676f6a882f67c7ff2d41bf33c1ee012c38bb25cca273d8f465872"
+    },
+    "jan1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jan1.wav",
+      "sha256": "30c743ce1d580770d536948c8b2b263ccd2497c06928ef93d289a278d32a7e6b"
+    },
+    "jan4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jan4.wav",
+      "sha256": "96d513c67670513f495b28b91da2d8dae100ede829a5988f5079e0ae088af3b8"
+    },
+    "jat1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jat1.wav",
+      "sha256": "1b797dc9bc1521308343dc13952d7a987b942329e6707c1ae844d6c8526782b8"
+    },
+    "jat6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jat6.wav",
+      "sha256": "c76de9623a65ecc4f06b8d4d0fe52c77cb4c550dfbc45e4d7cfbf4e4d9bcfdea"
+    },
+    "jau1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jau1.wav",
+      "sha256": "6fd58d929a71155307c3048f05aebf03e59a36779c7309b041244d7c5e3c9405"
+    },
+    "jau5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jau5.wav",
+      "sha256": "9f01bf3fa848e51d1ff483d1b5759f87f7d639ff3902e649931682543e5419e2"
+    },
+    "jau6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jau6.wav",
+      "sha256": "261e9a65774cce779e5b7d0ce580248b15885fc4b5e146b30010bb27c24fcd42"
+    },
+    "je5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/je5.wav",
+      "sha256": "9efa8c17fe64bb43851fba8eea7d0fbc7b37bbccbde60b3b256b72c4bfd706a6"
+    },
+    "je6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/je6.wav",
+      "sha256": "ae3ebb486be65e2803fa0f53224becf4144edbca6afab0b9716d69653c6c696f"
+    },
+    "ji1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ji1.wav",
+      "sha256": "8274dd78b7dce8527558225a3f3a7151e5d34bf2848fffcc133465be82f2d5ec"
+    },
+    "ji2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ji2.wav",
+      "sha256": "bf4f2292bb5b8cf1ca32a728e455d1a614d449e5272704b179b06284e6d60413"
+    },
+    "ji3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ji3.wav",
+      "sha256": "c5a35c3af9ea0a31d696477e806786d91dade8e30f035dd0e442009983cdd1b0"
+    },
+    "ji5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ji5.wav",
+      "sha256": "8a9cd444dd1ee1496de614d78cf7b2ee0414ac391613949cf18756d136b619bd"
+    },
+    "ji6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ji6.wav",
+      "sha256": "b83b1c13caabea76781f4b51930e812aed2166f24c26c468454ec02ce95f024b"
+    },
+    "jim4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jim4.wav",
+      "sha256": "5dcb8cec4fb6e6102110ce87ea5d40a3073d77b0454f98aa47b2de4634ac4873"
+    },
+    "jim5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jim5.wav",
+      "sha256": "e81ec9ab4825f5174c985ac37dcdd05586f039f61bcd8ce17ce940d3f340158a"
+    },
+    "jin4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jin4.wav",
+      "sha256": "3e93dbccde30a5b096163f1097f666d6c7a507d83831c8f349bbb8380f7eed0b"
+    },
+    "jit6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jit6.wav",
+      "sha256": "c5f662689a19114fafa94690c536441c4f5bb937f825455ab9bcf5a580ea0634"
+    },
+    "jiu1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jiu1.wav",
+      "sha256": "6ba1988f2ab42f7bd644cac60cda2b9126f8d26a9ed9c7ab09554baa9a173fbc"
+    },
+    "jiu3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jiu3.wav",
+      "sha256": "3a7a37fbabe66de32844e84e98079babeee89db3adcb9cbbf9d570fbc1c061da"
+    },
+    "joek6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/joek6.wav",
+      "sha256": "1c709f4ff261e91f0a19e5dd73bf7ce88f0149794075f18d7db44dc6cde2c937"
+    },
+    "jyu1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jyu1.wav",
+      "sha256": "8877d912cd687b45620c8dc07ffca8741d9c8885503c0f6fcb49d9c211e0c42f"
+    },
+    "jyu4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jyu4.wav",
+      "sha256": "7f91164e178393c678c8ae8f6708c89628e35660611b0cd0a3e97fcff6da4d78"
+    },
+    "jyu5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jyu5.wav",
+      "sha256": "9a0ed451aa6318117d8824099504d16afb2694a1bd3de4551a6f35cb475a047a"
+    },
+    "jyu6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jyu6.wav",
+      "sha256": "0b37ca2066ca822ba3a63f1e59f5543dd37eda839c3205ef7cbb300936b8af20"
+    },
+    "jyun1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jyun1.wav",
+      "sha256": "0b66dfb11d712bd02e63a96c85f582886419803d49aa0958ea49112c29327afe"
+    },
+    "jyun4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jyun4.wav",
+      "sha256": "25e723b44a4b6432ac5f752d682707de853698d8f3703e4c2130ff597f965568"
+    },
+    "jyut3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jyut3.wav",
+      "sha256": "906ad22e019b32c6370badd52da12be17341543cdb84fbca0fbe5c07462ae3ca"
+    },
+    "jyut6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/jyut6.wav",
+      "sha256": "9741092eb2ad2c11067f94e6cda033664f71e54d2e9c1369b8163e795a0024af"
+    },
+    "kaa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/kaa1.wav",
+      "sha256": "a3102ae64ca0833cc93fd9a07eb4ae603beda40d9b0ad030ae73813d4795d501"
+    },
+    "kam4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/kam4.wav",
+      "sha256": "a2846cca9f3b02bc4daf9a5245e26f97a3e7b67b10a82a0b099355b7837354ff"
+    },
+    "kau4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/kau4.wav",
+      "sha256": "dc43e4555a7cc366b31a06c7aec7184bf7da63cbae6277b94c8edc0ad0dc6f7c"
+    },
+    "kei4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/kei4.wav",
+      "sha256": "dff61c8ded1b5d833c4aa4c4f920d9fd713c4ab69dfdfaa8c5d5c0197b117d3d"
+    },
+    "kei5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/kei5.wav",
+      "sha256": "06eb2c27c9f3302bc8816b18e4c82f2357a4044bea0054b7ddce6c0f23c72e26"
+    },
+    "keoi5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/keoi5.wav",
+      "sha256": "70de73e37675e4654e0c453c635c92118db220733177079e9e4c999420e8ad86"
+    },
+    "kiu4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/kiu4.wav",
+      "sha256": "544952895945e80b12acfa41609482c62243424c0ef4925b6d2d2313d00c3c44"
+    },
+    "koek3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/koek3.wav",
+      "sha256": "cadb45407b9bb7306c488cd81a69bbd8061512c3cf382689e68b91ec3bde10d6"
+    },
+    "kwaa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/kwaa1.wav",
+      "sha256": "4062b4e8cefbb006ce4c39b508bac41616f6a58776c82bfe09ce5fdb4625f916"
+    },
+    "kwai1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/kwai1.wav",
+      "sha256": "841a28a17171be5726cdf5187d8227e3162ccdd442aad39bf8476dd8e674ea3b"
+    },
+    "kwan3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/kwan3.wav",
+      "sha256": "988428f6283fc9fca75d7f51d23b18c667e3d5b5fe218175a8b61966035f97b1"
+    },
+    "kwan4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/kwan4.wav",
+      "sha256": "ee6bffcf45058c20ee07e5df1192cfb7e00ddc47ed631dd70ebb7f14ccf47dad"
+    },
+    "laa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/laa1.wav",
+      "sha256": "1494b6e0a3527fe65fa730dca53c8777b17e146c8c3c8470ad0d7fc7e86d067c"
+    },
+    "laam4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/laam4.wav",
+      "sha256": "f369465cb05921aeb7cc52a6a318ff7a7b75dd3ceece2c35f2ca931f3a00c273"
+    },
+    "laang5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/laang5.wav",
+      "sha256": "c26cf8a00fa5722b4c6605ba7609d6e58dd6e9186b20ec00e0aacda3c4ed4251"
+    },
+    "laap6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/laap6.wav",
+      "sha256": "f3c0482b35ca3c1521f19e60d9949f7f9cc1b073022ed4888a3c2aae4101ffe3"
+    },
+    "laat6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/laat6.wav",
+      "sha256": "fd95c3d6d252e37c85801a19c098f9f619c0d18380b3da09b364f5329f145c47"
+    },
+    "lei6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/lei6.wav",
+      "sha256": "03d3c21fc65409abfbcef3539e657c20b9e697f39e65fffe3289e7305c9035f2"
+    },
+    "leng3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/leng3.wav",
+      "sha256": "6f40f6c9d4dbc4c39a87c01715f5fb23db39289f4049c274ff1eed70ec9949b2"
+    },
+    "leot6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/leot6.wav",
+      "sha256": "7a0cda392e3f3b41fed42ea51f50ff0c9b1e4c29463bb3da58212bbf18b4c756"
+    },
+    "lik6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/lik6.wav",
+      "sha256": "06ec29540981fa84fa7c4ae2d349c121aa401d17a27385da0d738b383168e4ef"
+    },
+    "ling5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ling5.wav",
+      "sha256": "688c30cfe1ee053ac4fdc70096d7464b3aeea015919830ec52ede741dd3d9365"
+    },
+    "lit6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/lit6.wav",
+      "sha256": "e420871de6f0e28bbb703fcfe0a5a0f3bc153a73aab5f93a9646550ae54e9995"
+    },
+    "loi4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/loi4.wav",
+      "sha256": "5fccfcab541a1bb570bb3cb4280298f92364117c5494f9979bc9af49d3de6e06"
+    },
+    "lok6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/lok6.wav",
+      "sha256": "01953243265179bfc0a82e63c64f2fc1c46c2e7503a03ef43f86e98e78184cf4"
+    },
+    "lou5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/lou5.wav",
+      "sha256": "8ae512af43828d986a9f2e4385fc825bd68256804a3fbd862a8798f3ff108861"
+    },
+    "lou6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/lou6.wav",
+      "sha256": "e5e7b965c6535c2823ea2dc6f765fcc42eed1c647ae079ceaf1bfbe2e2425c0a"
+    },
+    "luk6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/luk6.wav",
+      "sha256": "85231e08a7a1b0ca1ee6b8f6dcb92c05b7c9a6e3bb307311c8796c31c112036f"
+    },
+    "lung4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/lung4.wav",
+      "sha256": "20b11e4c2e38358bb8b302e8842cd00366f761f0c227737e5dbde3c7041334a7"
+    },
+    "m4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/m4.wav",
+      "sha256": "4268a60166317b26027b58cb31e5618d95302068f9aa09fcc0ed7546a39bfc1b"
+    },
+    "maa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/maa1.wav",
+      "sha256": "27a6350266e70051a4ef9eba72b49db1b79ac36212d059c8df3cf0af8adc40b1"
+    },
+    "maai5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/maai5.wav",
+      "sha256": "2daa37b3cbbc14c8fe4d08ec3a7b890398ffb7db8e12736af23e83ec661fed69"
+    },
+    "maai6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/maai6.wav",
+      "sha256": "2bda33e08cf41f08783eddfaf00879d34b6a24e2efd9dbfed6322bafa6202ee3"
+    },
+    "maan5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/maan5.wav",
+      "sha256": "128a1458fe958456493d0a533cf8e2e6d9b9891974ec34f251c3b3a369cf7c64"
+    },
+    "maan6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/maan6.wav",
+      "sha256": "a19cfcc2ec90800859740ec4a8a9217bccec38a31192aa7c72e9daa6b0015584"
+    },
+    "maang5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/maang5.wav",
+      "sha256": "5ea57bd5120939c19712acedbbc20602dfa7ed0b244d34ea86d2ace65d5de990"
+    },
+    "maau1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/maau1.wav",
+      "sha256": "b2d995fa3375a1afe36dd732ec3e3a3b4d97838b1c04c560447570765cab3278"
+    },
+    "man6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/man6.wav",
+      "sha256": "330b30514734cebf058e664ab823d92fa34aad253e670c61f67f3b45223ecad3"
+    },
+    "mang4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/mang4.wav",
+      "sha256": "6305abd4c79554f7cc715cac5dc0da0420c74988e3cf85bbd86f6ca50b9d6d07"
+    },
+    "mat6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/mat6.wav",
+      "sha256": "89f8e974512c9c0e0bd83e8c551efe6e7f09349e30d2692b0a8ca10f6cc6409f"
+    },
+    "mei6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/mei6.wav",
+      "sha256": "4e48cd128ced645071dbdb74ea0a01a55af47713a73da9b91eed3a53db45f616"
+    },
+    "min6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/min6.wav",
+      "sha256": "43b855996cd487d5518b7a816f6626f36a17cb32c43277a7de6fe46921b7a572"
+    },
+    "ming4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ming4.wav",
+      "sha256": "454b58764d9b11a5766bae13f57f1c893793bf4a3074074d432003cd1948a7ab"
+    },
+    "ming6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ming6.wav",
+      "sha256": "2f6fa14fc8fcf7ace4f4f1ed1a9b86d71acb182b78dba0a9c33e8eb639550277"
+    },
+    "mong4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/mong4.wav",
+      "sha256": "874da331dca41b4e6ab4545efe9144718853a9f121b980b654ce1ccb962259ce"
+    },
+    "mou4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/mou4.wav",
+      "sha256": "6e2fa0f7ad7452bc202f86692329cd1a95822d3e82d5ce47ecd9a74eb683844a"
+    },
+    "mou5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/mou5.wav",
+      "sha256": "81ae6d2b873abf1d8dfea8d00a229510b97978696d0b8fd7b36fb99dcbea9e31"
+    },
+    "mui4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/mui4.wav",
+      "sha256": "e1b9ed1a909aad5baecd08188d3968a64baa9f16e5c29e8e591f33f10a9006ea"
+    },
+    "mui5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/mui5.wav",
+      "sha256": "2996b994e9e4a5ed4c586aefac9ea380d87bc104919433d97e720ea233a896f5"
+    },
+    "muk6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/muk6.wav",
+      "sha256": "c71da17900c92d0896c691fd1bc5bc6c151f0ae0c05cfeb006c59ab7d430d969"
+    },
+    "mun4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/mun4.wav",
+      "sha256": "c96c7f5be05e271ef96c753351f3b30c8aa8ad77f14522410cbe20fba6258bc4"
+    },
+    "mun5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/mun5.wav",
+      "sha256": "055721d2fa09f02cee7394ad63f2b9c87e3c39fb242bce50e050f6a1125689fa"
+    },
+    "mut6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/mut6.wav",
+      "sha256": "e7cb954fdbc63031d4b492c209ca826f52633a9f697a1935bfbb1db6a5544e02"
+    },
+    "naa4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/naa4.wav",
+      "sha256": "5c31d664135babac89a8bbed8e203ce4f550ba14b75236a5f72c7682b54559f1"
+    },
+    "naam4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/naam4.wav",
+      "sha256": "90b5a8b1708aaa93037068c6ffa1eea4ffaa9881a47b9a3ac40e41c303add024"
+    },
+    "nai4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/nai4.wav",
+      "sha256": "aad4ecd6cef12b3d5ff5d7a3987a6ed7a6a8662ba23cd5aca407cc8f24650b92"
+    },
+    "nau1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/nau1.wav",
+      "sha256": "cbdd2705ce02b34eceaf3971dd0406678011fd6f98169e56a301168ff5961751"
+    },
+    "nei5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/nei5.wav",
+      "sha256": "38534521f497a8f6b6bf01332a204c0ebbe1b6c6f17a5817cb121710bb8392d9"
+    },
+    "ng4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ng4.wav",
+      "sha256": "bcba49e5e74b31931b21c891eb0bc7e55db041a2d0f88de69b8388ae98c9baa6"
+    },
+    "ng5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ng5.wav",
+      "sha256": "8cc286dc63ad43bb36bed32d9276b1500aa23e1abbca7e80c0b76c99d23830c0"
+    },
+    "ng6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ng6.wav",
+      "sha256": "ca95a591f54e882170d09bcd69734dea12b5dd77af140be7bb2e3d5b03b07b36"
+    },
+    "ngaa4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ngaa4.wav",
+      "sha256": "bdd0ae72971b75577677bfa9b47f98db64509873f8b138ddacaa3fe6ff69498f"
+    },
+    "ngaak6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ngaak6.wav",
+      "sha256": "df51c8b527cfba74f0e330ddd6bd66aad34e96a1fff61edb390d01231a0c6058"
+    },
+    "ngaan5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ngaan5.wav",
+      "sha256": "77a79d797ba19d1c1c22339266b1954aa5aceafb5d12415801066e787642509d"
+    },
+    "ngau4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ngau4.wav",
+      "sha256": "0526344d70608e9e6b98385c4509e476023798eb25ec73c1d09a7a72ead5a3cc"
+    },
+    "ngo5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ngo5.wav",
+      "sha256": "47e63a714a25a8d0817bbd1a4e648972ffe00e8a67e1dffb60ba5c1665369e72"
+    },
+    "ngon6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ngon6.wav",
+      "sha256": "78e59ba0334ad09fdc7bc1c76d4ec539bcc866865a48b3a51a3ce95fafe5c678"
+    },
+    "nin4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/nin4.wav",
+      "sha256": "4af3c04bea941d53553828376a090736b200356845b0eb10d0fadf28754ef722"
+    },
+    "niu5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/niu5.wav",
+      "sha256": "ed837f330e47859118bb4dc55994869953407964edeb2d950bbb851afd6ffa46"
+    },
+    "nou5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/nou5.wav",
+      "sha256": "b5893b21f6bb4772db8a562a73f019664d593eca7d605d6ab45cf42681f794af"
+    },
+    "o1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/o1.wav",
+      "sha256": "1f68148196e687ed7601d54112d3b0c8086672f24028be27f689deb87e79f499"
+    },
+    "o2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/o2.wav",
+      "sha256": "547c8292596e7dd63768be7d6bda72cc2d5c8710bb7f5ff5a7e222c5b1fb9250"
+    },
+    "oi1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/oi1.wav",
+      "sha256": "2ccbda015b1c71a9053c0300911aabd53e9196c4acde7697ff3d846ad1e7843a"
+    },
+    "oi3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/oi3.wav",
+      "sha256": "1fc688d430876fd14d733ce79400fc515070d6a48a018bbe1a17b2a745c05114"
+    },
+    "ok3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ok3.wav",
+      "sha256": "10023a12f989cebd1b8e22747c1e3d9abb86c404884eff85cae3f1a65c6d5b83"
+    },
+    "on1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/on1.wav",
+      "sha256": "e3ee257658e58625acee5d92796388b82575c1016e719e573ceed0f5ec09e29a"
+    },
+    "ong1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ong1.wav",
+      "sha256": "2ec9d835f5126dcc129aa42602c09bb8e85c35236744ed627d7eedb370e1331d"
+    },
+    "ou1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ou1.wav",
+      "sha256": "c8aea2aa8d938f61cca8e09eb9c9ad5274deda192b459014c437de9aae0d7e5d"
+    },
+    "ou3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ou3.wav",
+      "sha256": "cf55caed914ccf890d58797d768be257529f4418a46009a97a3197202ab0e598"
+    },
+    "paa3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/paa3.wav",
+      "sha256": "f584f94f55d233a4f821be454d904b22d0af91d052e878a257023f4bc483d68d"
+    },
+    "paai4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/paai4.wav",
+      "sha256": "7c1bc73b0f2d7d20f67a7934626b7d5875a576a5f333a5914f1a9ff29544cbea"
+    },
+    "paak3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/paak3.wav",
+      "sha256": "376c5083e80b3b0efa117e2d3de438baa422bdd4fb2331774540663224b66987"
+    },
+    "pang4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/pang4.wav",
+      "sha256": "f344b0d9bfc877f676c05cb3e4c70e88121d4a3d22141b3193220a9adbbc95a4"
+    },
+    "ping1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ping1.wav",
+      "sha256": "8ba805813602d803419012f1e8ea2c9b1a7cb01fe59e8714c65be95b5f00ac22"
+    },
+    "ping4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ping4.wav",
+      "sha256": "2aeb1baa800aacd4f813c5b3421860a05d211f5de48d321be4a96f8408db98dc"
+    },
+    "pun4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/pun4.wav",
+      "sha256": "caa74d2864df2ca289be3c41bf0211ef869b94eb910956fffa7598bdfe0b276f"
+    },
+    "put3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/put3.wav",
+      "sha256": "35abc6ef77a65edc2a3143b7ca6b4d72f68807da98ee3bae83609420ed269ddf"
+    },
+    "saa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/saa1.wav",
+      "sha256": "82d4c145792e137fce79a1fb1b5ef56f20de6d02d918b18d41fe7274b5815f19"
+    },
+    "saai3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/saai3.wav",
+      "sha256": "b69624e88df9232e0f0b305ca81063a32bcdf607edec14139773f9043935b192"
+    },
+    "saam1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/saam1.wav",
+      "sha256": "5dc231b17de1c9b1c59bd8ceb295661a8d546938ff4ecacc3e7f1402f995146a"
+    },
+    "saan1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/saan1.wav",
+      "sha256": "432b5e4ec46b2775a89e283530a2a4a7efe8f2f826796a7cfd702d327dfd6931"
+    },
+    "saat3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/saat3.wav",
+      "sha256": "b8e8b8061a6499bbc8e5794ce14bb748db5d4400e15bb0696d8e38e8ee6c917f"
+    },
+    "sai1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sai1.wav",
+      "sha256": "794b0163641dad62afe1347268ee6265911a56a4ddd9859766454e8cdb41aaab"
+    },
+    "sai3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sai3.wav",
+      "sha256": "ab5239f5cb1b75aaf1eb71549960a0d7d047bd5d1d062608386fd3cce10ee668"
+    },
+    "sak1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sak1.wav",
+      "sha256": "ba33029251ad8d4b2e1f1701e6f331f91110acf30ac062ac7eaf23bc7e1cc2fc"
+    },
+    "sam1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sam1.wav",
+      "sha256": "18fd2e99e3b61f7ce8ba1d580e8c789c27173056274939e97bc911213e71a8f5"
+    },
+    "san1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/san1.wav",
+      "sha256": "ecf319d3a4434cf58eefa97770b549a6c8e42e32f9c4fc35b50946043dc3545a"
+    },
+    "san4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/san4.wav",
+      "sha256": "9c24e460292dae7871b1be446274bdac7737a54b95d22baf3c5e3dfd2089f871"
+    },
+    "sap1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sap1.wav",
+      "sha256": "2f15071371a1941c8e02a4dde8d8fd92b6b98ff8820c17d6e24476a960f8e8b2"
+    },
+    "sap6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sap6.wav",
+      "sha256": "555fa96ea26058a208a7fc696d1576feb00a2f8689222010694b4567aa496cc5"
+    },
+    "sat1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sat1.wav",
+      "sha256": "ec7c9cb2aee27c5002b6b2c635bf48d6fcae9309d68ce2fd13f8740f44f0632d"
+    },
+    "sau2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sau2.wav",
+      "sha256": "1f59a0ca4490ab823a3047d0601bd3d9c89311a065b1e4f864f5d6c55ee48a88"
+    },
+    "sau4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sau4.wav",
+      "sha256": "1d0a2096fccda937e86b9082b3328d9a680161afbef7523c1c070c146b2cc8d6"
+    },
+    "se1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/se1.wav",
+      "sha256": "6547cc91704a320069e2ad4ff0c0902a4116e5aad926a48ee65acfac077ee496"
+    },
+    "se2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/se2.wav",
+      "sha256": "a896c6e4c2b1d7c648c1cdbff9067dae839a251442ac4ba92091793468e43e26"
+    },
+    "sei3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sei3.wav",
+      "sha256": "7699098b895dadd5c772c3ee214e183fe4c598c60feca5e4eb5dcdcacdd389aa"
+    },
+    "sek3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sek3.wav",
+      "sha256": "b7ae0c329918e68a967e787a7d3bcf6563df9e2a06944f2dc0d56ee31dc6747a"
+    },
+    "sek6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sek6.wav",
+      "sha256": "c3d08aa095058ef35cd1e1d266e18035a74039e787636f6d58d6b8c5e546480a"
+    },
+    "seoi1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/seoi1.wav",
+      "sha256": "143558147b97cb924a200557171c80bdb2961dd5e258b5f10893672892ac1a44"
+    },
+    "seoi2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/seoi2.wav",
+      "sha256": "a6e5d3c8231f1d617f8a2b8902aef14075eb18aa942d87cf67be16fbe884beb6"
+    },
+    "seon1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/seon1.wav",
+      "sha256": "a647476519eb97db24a876943f23a898298bbb6b5d3d740d48c4c575107e3b0c"
+    },
+    "seon3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/seon3.wav",
+      "sha256": "d60d534f2774332f7d9a637e2940ecaf4a22695ecf6f7b57a2c348b5088d5fe8"
+    },
+    "seon6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/seon6.wav",
+      "sha256": "97f4a144be7019d58e97ac0cb04ea2720dbf57729cf1189141a72503c4c05237"
+    },
+    "seot1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/seot1.wav",
+      "sha256": "db28f89c6e71ca35e1f2dd8085f9681ada27388c0dd8786a208f26758b160f9a"
+    },
+    "seot6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/seot6.wav",
+      "sha256": "b778953b18bc0b7299e26f945c3588a5b0a404f4f784878a2592842f06bf71bc"
+    },
+    "si1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/si1.wav",
+      "sha256": "16179307765ec3cf125bde78d8368f992de5cf8990420ae8abd16b281a2bd8f8"
+    },
+    "si3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/si3.wav",
+      "sha256": "e6387caab5a6c578b975b581ba0d3245320948cfba1673db861dd16ef95accf9"
+    },
+    "sik1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sik1.wav",
+      "sha256": "9b6eef65bf0742ab2650bcfa68d5beb7c1a98511e2023f8e4bbfcf9129837b6f"
+    },
+    "sik6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sik6.wav",
+      "sha256": "8723dcf48566fe6ef3891799347b322f14f7159760f67bdd09552a0a353d6006"
+    },
+    "sim2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sim2.wav",
+      "sha256": "ac8f43fab297d6f890f3f8bac1cf74c2924351e69764016054244e379f8593f6"
+    },
+    "sin1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sin1.wav",
+      "sha256": "1db3657ee9cccb32453d5b5e8c51e61acb779fd983360d27a5468af253908481"
+    },
+    "sing1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sing1.wav",
+      "sha256": "6ec00e510b9cf24902f3c99a65857f4170228c63e099d1c7ef5d6403742794d1"
+    },
+    "sip3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sip3.wav",
+      "sha256": "4799d35bc5719586e8c79ce71c1e18cf35fe76d8729ffd591a3b1c564c9850b8"
+    },
+    "sit3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sit3.wav",
+      "sha256": "7851cf262ef93b430973480d30d1df51df435d847afad4014f10292eaabb646a"
+    },
+    "siu1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/siu1.wav",
+      "sha256": "51171eb1b748ef27f13c0723177f0afbd5dd9cc8e64c3d0422cf14bde54e2fe8"
+    },
+    "siu2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/siu2.wav",
+      "sha256": "a39090006ce1d2d125ca323bec906ae9a56bfbf469633d778ac66ea74b61962a"
+    },
+    "siu3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/siu3.wav",
+      "sha256": "4e7b599fc72d5370c89682913897d6fabbe2097fdac9bd81f0cd720b433c5506"
+    },
+    "soek3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/soek3.wav",
+      "sha256": "ce72768bb644cfdc746d39c6230ae4e07545fb7b9df7bdd7737af48945538f19"
+    },
+    "soeng1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/soeng1.wav",
+      "sha256": "c7e2d3f33b0b3045e606955bf60bcb6decea3bf979d3def006359c05f3e434da"
+    },
+    "soeng2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/soeng2.wav",
+      "sha256": "310d9beef28a072ecfbff5237073cabc9ff7a5a152af0437a88c12cb4c5a08b3"
+    },
+    "soeng6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/soeng6.wav",
+      "sha256": "8dab2efdb80e507660be243c9867e90d02923304f2fed4d5fa4b5771ccb914ab"
+    },
+    "sou3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/sou3.wav",
+      "sha256": "d58e8572c7acc88cd14ba11d34aee9a144dcd666ec66765edc3cec9db2636522"
+    },
+    "syu1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/syu1.wav",
+      "sha256": "027c86497a50af8ba6377d10763aa0d0d625ac869618cc167dd6a8deca30a693"
+    },
+    "syu6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/syu6.wav",
+      "sha256": "179c883d690784031e19b8bb20ca689058d43876c47e08c2397bec9092c791a3"
+    },
+    "syun1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/syun1.wav",
+      "sha256": "4339e17257c0c855fc1669987ae0584040b9252bf10872f53130f07a5a1023e4"
+    },
+    "syun4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/syun4.wav",
+      "sha256": "463e7d29cef1c2ac6d216163c7aefaa3bdd0462f47909bb854069543a3f0f2ed"
+    },
+    "syut3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/syut3.wav",
+      "sha256": "2552b85ea14ed9e1af0046111478f861622b3ba726f1f043c35f6a0c210e4419"
+    },
+    "taa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/taa1.wav",
+      "sha256": "329fa366e08bdc8e6c98271ad35886f1282b279459a34680dc84c9426fd870f9"
+    },
+    "taap3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/taap3.wav",
+      "sha256": "26b1a91910690c19751395d89fd7da093a862a93476cec4e9ac2b09203e609ad"
+    },
+    "tai2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tai2.wav",
+      "sha256": "e9f44e78dfaf3d08e36f8594cb1d829126dcb007692047fa159104c9898a1d5b"
+    },
+    "tau3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tau3.wav",
+      "sha256": "0814abb1c99c80058e128293b264b692e34fbac3d6331c04d11bbf460024b787"
+    },
+    "tau4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tau4.wav",
+      "sha256": "c41d8a4c2a79dcca54bcb4c9bf85739e6d99925acf9f728a3101d212d4bad8f1"
+    },
+    "teoi1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/teoi1.wav",
+      "sha256": "4cb5428164acfb3e067a0d5f426a41ba5d9ba9a98957a0f15a02df1f97628fd0"
+    },
+    "tim4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tim4.wav",
+      "sha256": "b973fd9c27330ad050f8bfea8ac69366d73b62a98b3d0fe2a4d472d0fccc5bf2"
+    },
+    "tin1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tin1.wav",
+      "sha256": "0cc0a59fd656bfa2fecad0bb620327b394bde23d09348300e89ef8e972bdb9e3"
+    },
+    "ting1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ting1.wav",
+      "sha256": "fd3d9d5cd238a3b2ea883bee75aae958e6b83101300d694bdf6e63724d237802"
+    },
+    "tip3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tip3.wav",
+      "sha256": "94444d21d3497c5c4ed0c61d52176e32ff3b7e8a3a5f4cd7e6246b81c36ce763"
+    },
+    "tit3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tit3.wav",
+      "sha256": "80290f801a80164f3f08a6a782fb6d26cee48b333f9462b3333f12a6bb7ba19d"
+    },
+    "tiu3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tiu3.wav",
+      "sha256": "28224939f4e6e151f5b21711a6f22a58582bd334f31d5afbb0b9a72a1cc7d96d"
+    },
+    "tong1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tong1.wav",
+      "sha256": "c70b9bd4a303c3843fceaaf70b59aeb4b1a01322e38a84803bd31b0ef94a9758"
+    },
+    "tong4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tong4.wav",
+      "sha256": "2def6260843ca68406b89b2595ff1791a898731a847db5cc8fb1a3adb48414ed"
+    },
+    "tou1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tou1.wav",
+      "sha256": "afa81c93584dbd8d5cd97c4be7fd760171fa75802f6c73c6d72e602150c451fd"
+    },
+    "tung3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/tung3.wav",
+      "sha256": "f374aff1adcd7af5e53eeae375ddf791e6e6c48f421b8676b87ae80b7be9eb99"
+    },
+    "uk1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/uk1.wav",
+      "sha256": "99492e95902183b56a089bf8ae927575d594f97d79c940a65db390f1fd9c5fcf"
+    },
+    "waa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/waa1.wav",
+      "sha256": "806a9e4b2d243a568b75876c989b754d125da221895be88d26797a263ecc70f0"
+    },
+    "waa2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/waa2.wav",
+      "sha256": "0945150a631d36908cc696d1d5fd2be7bdda097d5e95054d671531bae56cd5f3"
+    },
+    "waa6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/waa6.wav",
+      "sha256": "5a5e9a5f93257043e6be74182a5ba957cc5026878f32ccef30db6eefaa441d0b"
+    },
+    "waai6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/waai6.wav",
+      "sha256": "c419e2e9fa4d1a83079931f143c55bcf04b76a9856f7bbd5a9a889ed08eb0e44"
+    },
+    "waan1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/waan1.wav",
+      "sha256": "f5abf209cd735cd3bfd7464d1641a1d6db9aacff5f5caf124a3675f633e53677"
+    },
+    "waang4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/waang4.wav",
+      "sha256": "062b3ce2b1be6e80083a9c68862454cf2df23917b0d07b3fb68568596b46a624"
+    },
+    "wan1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/wan1.wav",
+      "sha256": "a34bb1da034761b650609de2bd19b2ee927577b8bcbd9ed5bc0fa5f8df35aae9"
+    },
+    "wan4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/wan4.wav",
+      "sha256": "c4e1a8c82bdcdb5f539637261b5ef14c77dc298b9fc454e0d5cd47c67371ff68"
+    },
+    "wan6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/wan6.wav",
+      "sha256": "e319de5bce658b33a59bd477b4c864c5cf3781c2a7d443a046c2ee9d34765ff7"
+    },
+    "wing5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/wing5.wav",
+      "sha256": "47b88ccb0dc485311422ea6d89d8b06f40ec0c2c09cb0078bc93a03a7e8030cd"
+    },
+    "wong4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/wong4.wav",
+      "sha256": "c70853c214e0df00c8cdd8342fde1ada8aa4dcf895a5e59d91b5ace6011ed974"
+    },
+    "wu1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/wu1.wav",
+      "sha256": "5e1eaa95312eb4149d66d0bdcceb74144ddbbcb4c0efe5a16fd7acf0a81b5d24"
+    },
+    "wui4": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/wui4.wav",
+      "sha256": "003c9ddc9827be7b61211b5ea78047af239ce66c9e5677109a5046de94aaa0ed"
+    },
+    "wui5": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/wui5.wav",
+      "sha256": "6707478564432fc9e28cedd13ac074ab1d12c44347483b3e85a7397be9b5b009"
+    },
+    "zaa1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zaa1.wav",
+      "sha256": "52d88ea18efa07223966eeb53d4c919f7a63d9f004aa267fd2cf3a9333ea0535"
+    },
+    "zaap6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zaap6.wav",
+      "sha256": "33d1cdfb3d406d991d6cc6511ce9d3ff3c5fed11da04d99229f804b80d9c32dd"
+    },
+    "zai1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zai1.wav",
+      "sha256": "6a53ab716dda5564ee649540cbd808df0da3b9ecae645737326c3452eae3532b"
+    },
+    "zan1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zan1.wav",
+      "sha256": "8ed2ec36a84199e802b7a4e40e48875e274c15f4ee3172fb81fa7ba8a61eb6cf"
+    },
+    "zap1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zap1.wav",
+      "sha256": "5205b55ea1e0142379279772b307ae58f7b160653f0e527461ae2fb89a17b49a"
+    },
+    "zau2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zau2.wav",
+      "sha256": "5d8ffeebf0c0c9c35bbe55d334c9f14bb60dccf7d0e8f75f200a335973563a12"
+    },
+    "ze1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ze1.wav",
+      "sha256": "d3722bdd89ffec28c6b6f04bfaa33c54b5f8afd2595c7ba8d725678dd563220f"
+    },
+    "ze2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ze2.wav",
+      "sha256": "ad9e851fb4f1ddb2a3c5711de621abf89503f55d0c16bde39441b449ad0caf64"
+    },
+    "ze6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/ze6.wav",
+      "sha256": "81e61355a607b984022fcd3316011f64f9a1876ea6ef0e562a55acddcebdc22c"
+    },
+    "zek3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zek3.wav",
+      "sha256": "4b35433b214a54228d12b0b13a2215bc7b1ef0c761941ea27194f4e4ebb6245f"
+    },
+    "zeng2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zeng2.wav",
+      "sha256": "6b94a7e76220ff5eb4a3d0bd50415be79e89a1c4f5fe7547ea14eeee13800964"
+    },
+    "zeng6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zeng6.wav",
+      "sha256": "139c7809647d5ff965385afae41234237ac7c18b704fec28a9dab8cf7bbb601e"
+    },
+    "zeoi3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zeoi3.wav",
+      "sha256": "7d812ed7e3f82f8e2aec00469b2d62ea142fae93287db2858003c1d11170530e"
+    },
+    "zeon2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zeon2.wav",
+      "sha256": "2f81de76b81eab135dc77fd347b2acb23c29c051c6e692eca11cdbe03b79463c"
+    },
+    "zeot1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zeot1.wav",
+      "sha256": "92173d8b001c88831facd26c9200325433eec7456407072d06e022e5784c1c72"
+    },
+    "zi1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zi1.wav",
+      "sha256": "171b7b06b8b31ebf2f16ec71de9afb4325ce485a989f3aa4d374aa0475a253ba"
+    },
+    "zi6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zi6.wav",
+      "sha256": "7703e26c32fbe2a7be98d9fc5a1d4cb171d80ace4d04f637e3ca006bf951c1dd"
+    },
+    "zip3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zip3.wav",
+      "sha256": "fa228811806bb2f26551af447a69e0bd6a1e2d9b837aa39d26eeb232bbc6e855"
+    },
+    "zo2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zo2.wav",
+      "sha256": "349524a33e091d1d0b515d8330db4c073fb74be8bdce0d9502588fad662b4737"
+    },
+    "zoek3": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zoek3.wav",
+      "sha256": "1829f94a0621065205b32948066cabc95929638aa66ca4cbddbb010201a41635"
+    },
+    "zoek6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zoek6.wav",
+      "sha256": "c3dfd83c4060c02d711f03eb084bbc2a28f10e5a8551029226c47646f56e5a80"
+    },
+    "zou2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zou2.wav",
+      "sha256": "6bf576015f06d3aaeeec2567b4391f108fc786fb9c40bcb35a40279ca4911924"
+    },
+    "zou6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zou6.wav",
+      "sha256": "82944131080bc9098eaca62003c193594d4b05b329c7ba89ed55d8097d281c1f"
+    },
+    "zung1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zung1.wav",
+      "sha256": "de20d42fedbbb130db6d08303253ef2eb068c100c3ca2eddd80c898eba3893ce"
+    },
+    "zyu1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zyu1.wav",
+      "sha256": "9f3716afa6e2d31e52d63e47acc35ee4c455e53b7bb9bf113dc75a2ea293b738"
+    },
+    "zyu6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zyu6.wav",
+      "sha256": "d5281980870b834e195f5e66f980aa25f93ae95b500f5453ba11a25d913c9678"
+    },
+    "zyun1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zyun1.wav",
+      "sha256": "91ebae3ec914b1bb22ddbee2470ef589afb8d9a30361b927181fae032df9c57a"
+    },
+    "zyun2": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zyun2.wav",
+      "sha256": "7515bb8b3ba6d053e8b804f527212fbbc43c24629feae7caf5a909d6996f15cd"
+    },
+    "zyut6": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/zyut6.wav",
+      "sha256": "9de1b83397c4b7b5115c06b8bf0efb73764cc03d628b5711d33cdfe96e82493b"
+    },
+    "seng1": {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/seng1.wav",
+      "sha256": "e7a62b0b78c6c777936d7e5e6c105960c95278869fd520a1dd1e65513dd1b4e0"
+    }
+  },
+  "unavailable": [
+    "ge3",
+    "hai2",
+    "nam2"
+  ]
+}

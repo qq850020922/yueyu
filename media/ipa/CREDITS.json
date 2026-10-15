@@ -1,0 +1,214 @@
+[
+  {
+    "id": "b",
+    "file": "media/ipa/b.ogg",
+    "commons": "voiceless bilabial plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:voiceless_bilabial_plosive.ogg"
+  },
+  {
+    "id": "m",
+    "file": "media/ipa/m.ogg",
+    "commons": "bilabial nasal.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:bilabial_nasal.ogg"
+  },
+  {
+    "id": "f",
+    "file": "media/ipa/f.ogg",
+    "commons": "voiceless labiodental fricative.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:voiceless_labiodental_fricative.ogg"
+  },
+  {
+    "id": "d",
+    "file": "media/ipa/d.ogg",
+    "commons": "voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:voiceless_alveolar_plosive.ogg"
+  },
+  {
+    "id": "p",
+    "file": "media/ipa/p.mp3",
+    "commons": "Aspirated voiceless bilabial stop.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:Aspirated_voiceless_bilabial_stop.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/1e/Aspirated_voiceless_bilabial_stop.ogg/Aspirated_voiceless_bilabial_stop.ogg.mp3"
+  },
+  {
+    "id": "t",
+    "file": "media/ipa/t.mp3",
+    "commons": "Aspirated voiceless alveolar stop.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:Aspirated_voiceless_alveolar_stop.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/69/Aspirated_voiceless_alveolar_stop.ogg/Aspirated_voiceless_alveolar_stop.ogg.mp3"
+  },
+  {
+    "id": "n",
+    "file": "media/ipa/n.mp3",
+    "commons": "alveolar nasal.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:alveolar_nasal.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/29/Alveolar_nasal.ogg/Alveolar_nasal.ogg.mp3"
+  },
+  {
+    "id": "l",
+    "file": "media/ipa/l.mp3",
+    "commons": "alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:alveolar_lateral_approximant.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/bc/Alveolar_lateral_approximant.ogg/Alveolar_lateral_approximant.ogg.mp3"
+  },
+  {
+    "id": "g",
+    "file": "media/ipa/g.mp3",
+    "commons": "voiceless velar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:voiceless_velar_plosive.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e3/Voiceless_velar_plosive.ogg/Voiceless_velar_plosive.ogg.mp3"
+  },
+  {
+    "id": "ng",
+    "file": "media/ipa/ng.mp3",
+    "commons": "velar nasal.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:velar_nasal.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/39/Velar_nasal.ogg/Velar_nasal.ogg.mp3"
+  },
+  {
+    "id": "h",
+    "file": "media/ipa/h.mp3",
+    "commons": "voiceless glottal fricative.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:voiceless_glottal_fricative.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/da/Voiceless_glottal_fricative.ogg/Voiceless_glottal_fricative.ogg.mp3"
+  },
+  {
+    "id": "z",
+    "file": "media/ipa/z.mp3",
+    "commons": "voiceless alveolar affricate.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:voiceless_alveolar_affricate.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/9d/Voiceless_alveolar_sibilant_affricate.oga/Voiceless_alveolar_sibilant_affricate.oga.mp3"
+  },
+  {
+    "id": "s",
+    "file": "media/ipa/s.mp3",
+    "commons": "voiceless alveolar sibilant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Peter Isotalo",
+    "source": "https://commons.wikimedia.org/wiki/File:voiceless_alveolar_sibilant.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/ac/Voiceless_alveolar_sibilant.ogg/Voiceless_alveolar_sibilant.ogg.mp3"
+  },
+  {
+    "id": "j",
+    "file": "media/ipa/j.mp3",
+    "commons": "palatal approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:palatal_approximant.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e8/Palatal_approximant.ogg/Palatal_approximant.ogg.mp3"
+  },
+  {
+    "id": "w",
+    "file": "media/ipa/w.mp3",
+    "commons": "voiced labio-velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "See source",
+    "source": "https://commons.wikimedia.org/wiki/File:voiced_labio-velar_approximant.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f2/Voiced_labio-velar_approximant.ogg/Voiced_labio-velar_approximant.ogg.mp3"
+  },
+  {
+    "id": "aa",
+    "file": "media/ipa/aa.mp3",
+    "commons": "open front unrounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "No machine-readable author provided.  Denelson83 assumed (based on copyright cla",
+    "source": "https://commons.wikimedia.org/wiki/File:open_front_unrounded_vowel.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/65/Open_front_unrounded_vowel.ogg/Open_front_unrounded_vowel.ogg.mp3"
+  },
+  {
+    "id": "a",
+    "file": "media/ipa/a.mp3",
+    "commons": "near-open central vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "No machine-readable author provided. Denelson83 assumed (based on copyright clai",
+    "source": "https://commons.wikimedia.org/wiki/File:near-open_central_vowel.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/22/Near-open_central_unrounded_vowel.ogg/Near-open_central_unrounded_vowel.ogg.mp3"
+  },
+  {
+    "id": "e",
+    "file": "media/ipa/e.mp3",
+    "commons": "open-mid front unrounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "No machine-readable author provided. Denelson83 assumed (based on copyright clai",
+    "source": "https://commons.wikimedia.org/wiki/File:open-mid_front_unrounded_vowel.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/71/Open-mid_front_unrounded_vowel.ogg/Open-mid_front_unrounded_vowel.ogg.mp3"
+  },
+  {
+    "id": "i",
+    "file": "media/ipa/i.mp3",
+    "commons": "close front unrounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "No machine-readable author provided. Denelson83 assumed (based on copyright clai",
+    "source": "https://commons.wikimedia.org/wiki/File:close_front_unrounded_vowel.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/91/Close_front_unrounded_vowel.ogg/Close_front_unrounded_vowel.ogg.mp3"
+  },
+  {
+    "id": "o",
+    "file": "media/ipa/o.mp3",
+    "commons": "open-mid back rounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "No machine-readable author provided. Denelson83 assumed (based on copyright clai",
+    "source": "https://commons.wikimedia.org/wiki/File:open-mid_back_rounded_vowel.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/02/Open-mid_back_rounded_vowel.ogg/Open-mid_back_rounded_vowel.ogg.mp3"
+  },
+  {
+    "id": "u",
+    "file": "media/ipa/u.mp3",
+    "commons": "close back rounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "No machine-readable author provided. Denelson83 assumed (based on copyright clai",
+    "source": "https://commons.wikimedia.org/wiki/File:close_back_rounded_vowel.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/Close_back_rounded_vowel.ogg/Close_back_rounded_vowel.ogg.mp3"
+  },
+  {
+    "id": "oe",
+    "file": "media/ipa/oe.mp3",
+    "commons": "open-mid front rounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "No machine-readable author provided. JøMa assumed (based on copyright claims).",
+    "source": "https://commons.wikimedia.org/wiki/File:open-mid_front_rounded_vowel.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/00/Open-mid_front_rounded_vowel.ogg/Open-mid_front_rounded_vowel.ogg.mp3"
+  },
+  {
+    "id": "eo",
+    "file": "media/ipa/eo.mp3",
+    "commons": "close-mid central rounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "No machine-readable author provided. Denelson83 assumed (based on copyright clai",
+    "source": "https://commons.wikimedia.org/wiki/File:close-mid_central_rounded_vowel.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b5/Close-mid_central_rounded_vowel.ogg/Close-mid_central_rounded_vowel.ogg.mp3"
+  },
+  {
+    "id": "yu",
+    "file": "media/ipa/yu.mp3",
+    "commons": "close front rounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "No machine-readable author provided. Denelson83 assumed (based on copyright clai",
+    "source": "https://commons.wikimedia.org/wiki/File:close_front_rounded_vowel.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/ea/Close_front_rounded_vowel.ogg/Close_front_rounded_vowel.ogg.mp3"
+  }
+]

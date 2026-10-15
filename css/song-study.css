@@ -1,0 +1,21 @@
+.study-import, .study-library, .study-actions, .study-detail { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.hudu-line { flex-wrap:wrap; }
+.phonetic-how { font-size:13px; line-height:1.65; margin:10px 0; overflow-wrap:anywhere; }
+.study-import { margin:16px 0; }
+.study-library { padding:16px 0; border-bottom:1px solid var(--line); }
+#songAudio audio { display:block; width:100%; max-width:700px; }
+#songText { width:100%; box-sizing:border-box; margin:12px 0; padding:12px; font:inherit; border:1px solid var(--line); border-radius:6px; }
+#songStatus { display:inline-block; padding:10px; font-size:13px; }
+.study-line { padding:18px 0; border-bottom:1px solid var(--line); }
+.study-line.learned { border-left:3px solid #31856b; padding-left:12px; }
+.study-chars { display:flex; flex-wrap:wrap; align-items:center; gap:5px; margin-bottom:12px; }
+.study-actions { font-size:13px; }
+.study-detail { position:sticky; top:0; background:var(--bg, #fff); padding:12px 0; z-index:2; }
+.study-detail:empty { display:none; }
+.study-detail input { width:85px; padding:6px; }
+.study-actions button:disabled { opacity:.4; cursor:default; }
+#recordingSource { max-width:165px; font-size:12px; padding:5px; }
+.topbar-tools { flex-wrap:wrap; }
+.study-actions label, .study-import label { display:inline-flex; align-items:center; gap:5px; }
+#page-songs .btn { white-space:normal; max-width:100%; overflow-wrap:anywhere; }
+@media(max-width:500px) { .study-actions { gap:8px; } .study-actions > span { flex-basis:100%; } }

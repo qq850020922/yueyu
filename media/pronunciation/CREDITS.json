@@ -1,0 +1,2407 @@
+{
+  "source": "https://jyutping.org/jyutping/",
+  "repository": "https://github.com/CanCLID/jyutping.org",
+  "licenseSource": "https://github.com/CanCLID/jyutping.org/blob/master/LICENSE",
+  "files": {
+    "aa1": {
+      "file": "aa1.mp3",
+      "url": "https://jyutping.org/audio/aa1.mp3",
+      "sha256": "30ae335ed4fb53738399ccd6bfae69c7b8f758ef59d4cb94b74e6d4bd8424de6",
+      "retrievedAt": "2026-10-15T08:57:26.096Z"
+    },
+    "aai1": {
+      "file": "aai1.mp3",
+      "url": "https://jyutping.org/audio/aai1.mp3",
+      "sha256": "32e031acda8f52dd210ed3a104b62ce839365f80c8028476c9b04374e1938f7b",
+      "retrievedAt": "2026-10-15T08:57:26.111Z"
+    },
+    "aak3": {
+      "file": "aak3.mp3",
+      "url": "https://jyutping.org/audio/aak3.mp3",
+      "sha256": "23a18519e7d1a2e8f30c1d0445ac423bf3cfd326d62c740d03c0a68b601fe4e4",
+      "retrievedAt": "2026-10-15T08:57:26.772Z"
+    },
+    "aan1": {
+      "file": "aan1.mp3",
+      "url": "https://jyutping.org/audio/aan1.mp3",
+      "sha256": "49ada9e6935e505253d356fac9ec77ed472672d6ae11305860239b88d7ad197f",
+      "retrievedAt": "2026-10-15T08:57:26.957Z"
+    },
+    "aam1": {
+      "file": "aam1.mp3",
+      "url": "https://jyutping.org/audio/aam1.mp3",
+      "sha256": "22d65654ae9938a1c20bb88c62306839748a297fcd0f0ba7edc563ad4dacfd71",
+      "retrievedAt": "2026-10-15T08:57:27.101Z"
+    },
+    "aang1": {
+      "file": "aang1.mp3",
+      "url": "https://jyutping.org/audio/aang1.mp3",
+      "sha256": "815dce6ec078841d6ac3c0a67098dfc65f79ec49dac9cc0047eb20a01c893c48",
+      "retrievedAt": "2026-10-15T08:57:27.638Z"
+    },
+    "aap3": {
+      "file": "aap3.mp3",
+      "url": "https://jyutping.org/audio/aap3.mp3",
+      "sha256": "49a63064386564d30a880d4ab222c135b9011c407a201cf4b98928d54eeee351",
+      "retrievedAt": "2026-10-15T08:57:27.819Z"
+    },
+    "aat3": {
+      "file": "aat3.mp3",
+      "url": "https://jyutping.org/audio/aat3.mp3",
+      "sha256": "da62a0feadb48563cec2c64e2c9799d38f4b56a8a99f1a32e8234c187175995d",
+      "retrievedAt": "2026-10-15T08:57:28.003Z"
+    },
+    "aau1": {
+      "file": "aau1.mp3",
+      "url": "https://jyutping.org/audio/aau1.mp3",
+      "sha256": "d806ea2f63756bccb6d9357f8b71bfd6520b94133b06cc346df7df0f4c618934",
+      "retrievedAt": "2026-10-15T08:57:28.557Z"
+    },
+    "aau3": {
+      "file": "aau3.mp3",
+      "url": "https://jyutping.org/audio/aau3.mp3",
+      "sha256": "48474e9d3dee51b87ac48895f16a31165610d62e437a25616bba95ff2fd5a962",
+      "retrievedAt": "2026-10-15T08:57:28.637Z"
+    },
+    "ai1": {
+      "file": "ai1.mp3",
+      "url": "https://jyutping.org/audio/ai1.mp3",
+      "sha256": "d182ce7a57b5f37e97bf27b6bd3ad8eb200c037952c4df6934549ebce0ed0adc",
+      "retrievedAt": "2026-10-15T08:57:28.931Z"
+    },
+    "ai2": {
+      "file": "ai2.mp3",
+      "url": "https://jyutping.org/audio/ai2.mp3",
+      "sha256": "47871d06d3963ce0d1f63717db7c5fa55ed324163a36724567089b5b9dc6863a",
+      "retrievedAt": "2026-10-15T08:57:29.420Z"
+    },
+    "ak1": {
+      "file": "ak1.mp3",
+      "url": "https://jyutping.org/audio/ak1.mp3",
+      "sha256": "d4c4fdc4753d3f9094e815779b516ed0fbb49ab39185d10b06ebef7f05b80a36",
+      "retrievedAt": "2026-10-15T08:57:29.561Z"
+    },
+    "am1": {
+      "file": "am1.mp3",
+      "url": "https://jyutping.org/audio/am1.mp3",
+      "sha256": "fc6c0f6cb0080f97cf4741b3b4c118b2a91b96ca43dc4838468ddb9056703575",
+      "retrievedAt": "2026-10-15T08:57:29.812Z"
+    },
+    "am3": {
+      "file": "am3.mp3",
+      "url": "https://jyutping.org/audio/am3.mp3",
+      "sha256": "157c4106e401185b86b86ca715ce0f3107f6754ea0bbc67f702b7567ae3fd047",
+      "retrievedAt": "2026-10-15T08:57:30.370Z"
+    },
+    "an1": {
+      "file": "an1.mp3",
+      "url": "https://jyutping.org/audio/an1.mp3",
+      "sha256": "e7aca24e55bbd7732e1b027dbd4e7154466472971bbb703b8ebb43528ce3f3f8",
+      "retrievedAt": "2026-10-15T08:57:30.449Z"
+    },
+    "ang1": {
+      "file": "ang1.mp3",
+      "url": "https://jyutping.org/audio/ang1.mp3",
+      "sha256": "2e0ea21e47a504a125a7b5ab9bdf4dae9fb3719511d540fc1e109436fa0c4f64",
+      "retrievedAt": "2026-10-15T08:57:30.823Z"
+    },
+    "ap1": {
+      "file": "ap1.mp3",
+      "url": "https://jyutping.org/audio/ap1.mp3",
+      "sha256": "eaf31f285ca88bd1dd7ca5108c7144fe7278b93a5b1413a1d82809b0888bc367",
+      "retrievedAt": "2026-10-15T08:57:31.228Z"
+    },
+    "at1": {
+      "file": "at1.mp3",
+      "url": "https://jyutping.org/audio/at1.mp3",
+      "sha256": "ccf6871470149cedee92f197fade2575c37b99d08821feae7102fcb5dc448033",
+      "retrievedAt": "2026-10-15T08:57:31.389Z"
+    },
+    "au1": {
+      "file": "au1.mp3",
+      "url": "https://jyutping.org/audio/au1.mp3",
+      "sha256": "c5a35a5857f362a311fe2182557c65ebc039aaeba8bf0c3f39e2d04d0a702e15",
+      "retrievedAt": "2026-10-15T08:57:31.773Z"
+    },
+    "baa1": {
+      "file": "baa1.mp3",
+      "url": "https://jyutping.org/audio/baa1.mp3",
+      "sha256": "a714280e52d3a2ede267f65081c4b99906c817ae9f7e22ce6f662a6727cfb8ef",
+      "retrievedAt": "2026-10-15T08:57:32.068Z"
+    },
+    "baak3": {
+      "file": "baak3.mp3",
+      "url": "https://jyutping.org/audio/baak3.mp3",
+      "sha256": "607651365e31099b4906f479bc2125f1344634ac97a1a431370cfb49af65480f",
+      "retrievedAt": "2026-10-15T08:57:32.252Z"
+    },
+    "baak6": {
+      "file": "baak6.mp3",
+      "url": "https://jyutping.org/audio/baak6.mp3",
+      "sha256": "c8b8592c32dc9a9c77f568b3cc143a18f2a625d629514191d5d2f1d3db00e7f5",
+      "retrievedAt": "2026-10-15T08:57:32.641Z"
+    },
+    "baan6": {
+      "file": "baan6.mp3",
+      "url": "https://jyutping.org/audio/baan6.mp3",
+      "sha256": "3396e3bcf7e4d6f0910647953401a48a5ab498e19ba59b17230d291cb8098a9d",
+      "retrievedAt": "2026-10-15T08:57:32.930Z"
+    },
+    "baat3": {
+      "file": "baat3.mp3",
+      "url": "https://jyutping.org/audio/baat3.mp3",
+      "sha256": "5f62c7acce67d189520d58fc54cbe0114b258dae2d218f5cceb16ecefd96bc07",
+      "retrievedAt": "2026-10-15T08:57:33.174Z"
+    },
+    "baau1": {
+      "file": "baau1.mp3",
+      "url": "https://jyutping.org/audio/baau1.mp3",
+      "sha256": "ef5d42d2d3b0b6f7fd42d20ba6b013244099207430c3a9bc7370864e1d028ca0",
+      "retrievedAt": "2026-10-15T08:57:33.447Z"
+    },
+    "bak1": {
+      "file": "bak1.mp3",
+      "url": "https://jyutping.org/audio/bak1.mp3",
+      "sha256": "35a4c3203839a1c36a4d94fa7fb70d329c35e5d1bb979b8a4e3b0c35faff058d",
+      "retrievedAt": "2026-10-15T08:57:33.780Z"
+    },
+    "bat1": {
+      "file": "bat1.mp3",
+      "url": "https://jyutping.org/audio/bat1.mp3",
+      "sha256": "4761c141319995089cff0c571b33a2731b2d03465b259f900ff586f645741798",
+      "retrievedAt": "2026-10-15T08:57:33.985Z"
+    },
+    "bei6": {
+      "file": "bei6.mp3",
+      "url": "https://jyutping.org/audio/bei6.mp3",
+      "sha256": "e579245eca247a012527a3ac546ddd9db9c04ba307ea650ea9b5b45917f78c3f",
+      "retrievedAt": "2026-10-15T08:57:34.355Z"
+    },
+    "beng6": {
+      "file": "beng6.mp3",
+      "url": "https://jyutping.org/audio/beng6.mp3",
+      "sha256": "52344eae278570b9d6c1b79a0287cdb585aff0519fc7bbd113e15aa6cc9753a2",
+      "retrievedAt": "2026-10-15T08:57:34.700Z"
+    },
+    "bin1": {
+      "file": "bin1.mp3",
+      "url": "https://jyutping.org/audio/bin1.mp3",
+      "sha256": "702a4a64fcf80eeb72d3fab8a0fb82038172224907c5d2b9d917ac9875b53e83",
+      "retrievedAt": "2026-10-15T08:57:34.834Z"
+    },
+    "bin3": {
+      "file": "bin3.mp3",
+      "url": "https://jyutping.org/audio/bin3.mp3",
+      "sha256": "2d209fc3f2b217f1b4d719e971923e8d1ca9340e6c13b49e6bead89546d8998a",
+      "retrievedAt": "2026-10-15T08:57:35.250Z"
+    },
+    "bit6": {
+      "file": "bit6.mp3",
+      "url": "https://jyutping.org/audio/bit6.mp3",
+      "sha256": "612525f036217937f7e7e9b70d085744f52151ce2982977f64a64443460da604",
+      "retrievedAt": "2026-10-15T08:57:35.647Z"
+    },
+    "biu2": {
+      "file": "biu2.mp3",
+      "url": "https://jyutping.org/audio/biu2.mp3",
+      "sha256": "ee2ae8e4add879ef39834561c1463233a6cd9ecbad78414cd708ef7691491e09",
+      "retrievedAt": "2026-10-15T08:57:35.700Z"
+    },
+    "bok3": {
+      "file": "bok3.mp3",
+      "url": "https://jyutping.org/audio/bok3.mp3",
+      "sha256": "7d2129ee679ebb8f4e3a0a0d235cebab00bb1176c2ef3606d68d784581684445",
+      "retrievedAt": "2026-10-15T08:57:36.280Z"
+    },
+    "bui1": {
+      "file": "bui1.mp3",
+      "url": "https://jyutping.org/audio/bui1.mp3",
+      "sha256": "2a2c6e73b86209cfdb909e38645f30992fd2c4fc3aa222d0161aeab84163c5e5",
+      "retrievedAt": "2026-10-15T08:57:36.350Z"
+    },
+    "bun2": {
+      "file": "bun2.mp3",
+      "url": "https://jyutping.org/audio/bun2.mp3",
+      "sha256": "50be25619cda20048c0f406fb276cdcbfda7563e9f5ca2da5e26880c659c58b5",
+      "retrievedAt": "2026-10-15T08:57:36.552Z"
+    },
+    "bun3": {
+      "file": "bun3.mp3",
+      "url": "https://jyutping.org/audio/bun3.mp3",
+      "sha256": "79abf4d4b9f2a1856f30ff2bb2f62db33576ab6c0f93d8af18a4f9ef5873c8d3",
+      "retrievedAt": "2026-10-15T08:57:37.102Z"
+    },
+    "but6": {
+      "file": "but6.mp3",
+      "url": "https://jyutping.org/audio/but6.mp3",
+      "sha256": "797b07042180512db55de7b16a124c197391184e93c9b984147aa88763f1a5f5",
+      "retrievedAt": "2026-10-15T08:57:37.168Z"
+    },
+    "caa1": {
+      "file": "caa1.mp3",
+      "url": "https://jyutping.org/audio/caa1.mp3",
+      "sha256": "cf0213936e511403a36c03749e93f39444f2cf1275b631291651644111d6a555",
+      "retrievedAt": "2026-10-15T08:57:37.285Z"
+    },
+    "caang1": {
+      "file": "caang1.mp3",
+      "url": "https://jyutping.org/audio/caang1.mp3",
+      "sha256": "89c1b8b9807a0f77e6be1093b5f6de40f3473c3901c2ea1e080e74c0c91580d2",
+      "retrievedAt": "2026-10-15T08:57:37.990Z"
+    },
+    "can1": {
+      "file": "can1.mp3",
+      "url": "https://jyutping.org/audio/can1.mp3",
+      "sha256": "f1326f0636906c2cd6646198706b99a93a93f5f6372d6fcdf8103eb762b2301b",
+      "retrievedAt": "2026-10-15T08:57:38.274Z"
+    },
+    "caa4": {
+      "file": "caa4.mp3",
+      "url": "https://jyutping.org/audio/caa4.mp3",
+      "sha256": "fcb404afa47e911aa938e84688ee002422735715daab6c3b1230309f42515162",
+      "retrievedAt": "2026-10-15T08:57:38.462Z"
+    },
+    "cang4": {
+      "file": "cang4.mp3",
+      "url": "https://jyutping.org/audio/cang4.mp3",
+      "sha256": "63049f42c4ff9d2eb65d7f6471f80ea4821eb586f43e05de241a200c4bfe4331",
+      "retrievedAt": "2026-10-15T08:57:38.798Z"
+    },
+    "cat1": {
+      "file": "cat1.mp3",
+      "url": "https://jyutping.org/audio/cat1.mp3",
+      "sha256": "2114cd26e41c91d127352017304802d10f3cbe261397eb7546908336c6dd067d",
+      "retrievedAt": "2026-10-15T08:57:39.183Z"
+    },
+    "ce1": {
+      "file": "ce1.mp3",
+      "url": "https://jyutping.org/audio/ce1.mp3",
+      "sha256": "9f39b3cc4b3d1f8280dd123b480c622e66a0a670865d5c02f335ede2032a5c62",
+      "retrievedAt": "2026-10-15T08:57:39.213Z"
+    },
+    "cek3": {
+      "file": "cek3.mp3",
+      "url": "https://jyutping.org/audio/cek3.mp3",
+      "sha256": "3ba31a8e6f3b54798174c91123e52e4d6bdaccd685199604e78ae1656f3cc576",
+      "retrievedAt": "2026-10-15T08:57:39.668Z"
+    },
+    "ceot1": {
+      "file": "ceot1.mp3",
+      "url": "https://jyutping.org/audio/ceot1.mp3",
+      "sha256": "64024e38c0f2d9f8a9538e24aa98d9b2ee8031cdf35fef584145994814dc57ec",
+      "retrievedAt": "2026-10-15T08:57:39.983Z"
+    },
+    "ceon1": {
+      "file": "ceon1.mp3",
+      "url": "https://jyutping.org/audio/ceon1.mp3",
+      "sha256": "ac154ca4a0be73d7fcbb6029288cd75a25f3c4edffb3a96ef1b24317e9c29897",
+      "retrievedAt": "2026-10-15T08:57:40.057Z"
+    },
+    "ci1": {
+      "file": "ci1.mp3",
+      "url": "https://jyutping.org/audio/ci1.mp3",
+      "sha256": "3a91261826f0056f4e57630550b671fcbc3130d5c3b99dd2307f8a3bc2821786",
+      "retrievedAt": "2026-10-15T08:57:40.507Z"
+    },
+    "cin1": {
+      "file": "cin1.mp3",
+      "url": "https://jyutping.org/audio/cin1.mp3",
+      "sha256": "7a4578609629ce03734dc1373206d46c60678eac95beb180fa9f6aafa7ad8fde",
+      "retrievedAt": "2026-10-15T08:57:40.823Z"
+    },
+    "cin4": {
+      "file": "cin4.mp3",
+      "url": "https://jyutping.org/audio/cin4.mp3",
+      "sha256": "117919ae66d1299227882be1872dd547e881bbe8ce768597d30b0daf95035465",
+      "retrievedAt": "2026-10-15T08:57:40.885Z"
+    },
+    "cing4": {
+      "file": "cing4.mp3",
+      "url": "https://jyutping.org/audio/cing4.mp3",
+      "sha256": "c13042709105093b0a4156af14d18a5224afcc1f4cd49816ba10d8ce25323c30",
+      "retrievedAt": "2026-10-15T08:57:41.401Z"
+    },
+    "cip3": {
+      "file": "cip3.mp3",
+      "url": "https://jyutping.org/audio/cip3.mp3",
+      "sha256": "887f288c4ba332e9b571d8723b73b65d9112f7ea8ae3adaa17163e239db8a2d3",
+      "retrievedAt": "2026-10-15T08:57:41.642Z"
+    },
+    "coek3": {
+      "file": "coek3.mp3",
+      "url": "https://jyutping.org/audio/coek3.mp3",
+      "sha256": "dcd3d950dec982576ab7cccccca042885f5823da8445ef44c7d46cc4bcb7189e",
+      "retrievedAt": "2026-10-15T08:57:41.837Z"
+    },
+    "coeng1": {
+      "file": "coeng1.mp3",
+      "url": "https://jyutping.org/audio/coeng1.mp3",
+      "sha256": "617d577129954b44c259c3bacfa104d8a25de1d29cf8db12e5986f1fd34ff1a3",
+      "retrievedAt": "2026-10-15T08:57:42.251Z"
+    },
+    "coeng3": {
+      "file": "coeng3.mp3",
+      "url": "https://jyutping.org/audio/coeng3.mp3",
+      "sha256": "6c65bbdb7870f01cb25eeeb20d6c3c65eb251d482c93715fa34b6275f2f73066",
+      "retrievedAt": "2026-10-15T08:57:42.533Z"
+    },
+    "coeng4": {
+      "file": "coeng4.mp3",
+      "url": "https://jyutping.org/audio/coeng4.mp3",
+      "sha256": "42f96045f09633c00e6d0fcc2cd6cffcc252cb5d7b38565f54b184261c133c2d",
+      "retrievedAt": "2026-10-15T08:57:42.694Z"
+    },
+    "cong4": {
+      "file": "cong4.mp3",
+      "url": "https://jyutping.org/audio/cong4.mp3",
+      "sha256": "96e99924b0a108586a231dbd69f434ea22f759ea7ee2f8d15181240e2a774a5b",
+      "retrievedAt": "2026-10-15T08:57:43.114Z"
+    },
+    "cou2": {
+      "file": "cou2.mp3",
+      "url": "https://jyutping.org/audio/cou2.mp3",
+      "sha256": "cc3b04a76d4c45cd86f2363e0ecd41f3bc1e4f63101f361ef2950027b7ad0ec4",
+      "retrievedAt": "2026-10-15T08:57:43.406Z"
+    },
+    "cyun4": {
+      "file": "cyun4.mp3",
+      "url": "https://jyutping.org/audio/cyun4.mp3",
+      "sha256": "3dfea974917499644a7382ed62b727ff75fc2b0f0fffac98f5a603fe8e475f73",
+      "retrievedAt": "2026-10-15T08:57:43.695Z"
+    },
+    "daa2": {
+      "file": "daa2.mp3",
+      "url": "https://jyutping.org/audio/daa2.mp3",
+      "sha256": "a34d70f656996f7414ecd7fd8778e2e20803ce1c5da0fcaceb5cacb3c4e0d72e",
+      "retrievedAt": "2026-10-15T08:57:43.899Z"
+    },
+    "daai6": {
+      "file": "daai6.mp3",
+      "url": "https://jyutping.org/audio/daai6.mp3",
+      "sha256": "83f48feac7369b2ed9e9ba7f26c52d78dfe63313c8e539d3d0f9baca6e966b79",
+      "retrievedAt": "2026-10-15T08:57:44.145Z"
+    },
+    "daan1": {
+      "file": "daan1.mp3",
+      "url": "https://jyutping.org/audio/daan1.mp3",
+      "sha256": "27c8b3f146671ceb4968ec17f8e47ebc93f479d71d07ab9ba3cae44dc9e6f113",
+      "retrievedAt": "2026-10-15T08:57:44.496Z"
+    },
+    "daap3": {
+      "file": "daap3.mp3",
+      "url": "https://jyutping.org/audio/daap3.mp3",
+      "sha256": "bef5b30e0341a226f5afe77259faf68f52962a53051986e42a1c72a901a9c86d",
+      "retrievedAt": "2026-10-15T08:57:44.767Z"
+    },
+    "dai1": {
+      "file": "dai1.mp3",
+      "url": "https://jyutping.org/audio/dai1.mp3",
+      "sha256": "a3c1f4ed7b2e4076f6fcc53e03f77a807f764ef7c956867a915cac2acecdb674",
+      "retrievedAt": "2026-10-15T08:57:44.970Z"
+    },
+    "dak1": {
+      "file": "dak1.mp3",
+      "url": "https://jyutping.org/audio/dak1.mp3",
+      "sha256": "541778882a8f8d38350a63528050cbb38cc8038adc7a2b81f2f03342ffde5d7a",
+      "retrievedAt": "2026-10-15T08:57:45.377Z"
+    },
+    "dang1": {
+      "file": "dang1.mp3",
+      "url": "https://jyutping.org/audio/dang1.mp3",
+      "sha256": "d4e196ed2b994c92ab1952b82f39f3c9488b616984c0a7fc026c3a58ff5284ca",
+      "retrievedAt": "2026-10-15T08:57:45.637Z"
+    },
+    "dang2": {
+      "file": "dang2.mp3",
+      "url": "https://jyutping.org/audio/dang2.mp3",
+      "sha256": "0ef43ffb3c7287db8d0e8f7fd971bf8586b353bfac9f75de0c95cef2d88f0cd0",
+      "retrievedAt": "2026-10-15T08:57:45.826Z"
+    },
+    "de1": {
+      "file": "de1.mp3",
+      "url": "https://jyutping.org/audio/de1.mp3",
+      "sha256": "19b69fc8fb9d12fd5851eef1ccd4bb6d3b7bd5a6949de49da7b8e11e4c3daa81",
+      "retrievedAt": "2026-10-15T08:57:46.208Z"
+    },
+    "dei6": {
+      "file": "dei6.mp3",
+      "url": "https://jyutping.org/audio/dei6.mp3",
+      "sha256": "38a2bc3a98f02a7fcbd79578fd0a43676a34404b336080ee56b338c313ec9538",
+      "retrievedAt": "2026-10-15T08:57:46.398Z"
+    },
+    "deoi6": {
+      "file": "deoi6.mp3",
+      "url": "https://jyutping.org/audio/deoi6.mp3",
+      "sha256": "554db485b184d2eac0e897b5b9fb5fdca27595c2a2bd5b327d999249df8f7013",
+      "retrievedAt": "2026-10-15T08:57:46.658Z"
+    },
+    "dim2": {
+      "file": "dim2.mp3",
+      "url": "https://jyutping.org/audio/dim2.mp3",
+      "sha256": "db12728921a5000895d793afdbbb0378f96ae615329582a9b58b507dacd73ae2",
+      "retrievedAt": "2026-10-15T08:57:46.958Z"
+    },
+    "dip6": {
+      "file": "dip6.mp3",
+      "url": "https://jyutping.org/audio/dip6.mp3",
+      "sha256": "5df31d30fe10e1772a986fce129d7a14fff9e3c949b2bdead786f9c92839e1a2",
+      "retrievedAt": "2026-10-15T08:57:47.227Z"
+    },
+    "do1": {
+      "file": "do1.mp3",
+      "url": "https://jyutping.org/audio/do1.mp3",
+      "sha256": "3de9a0a620fad8b7cc82ec1efd583d668771fa5482883c499226a7be5f916b5a",
+      "retrievedAt": "2026-10-15T08:57:47.494Z"
+    },
+    "dou2": {
+      "file": "dou2.mp3",
+      "url": "https://jyutping.org/audio/dou2.mp3",
+      "sha256": "5524ae48a0733762fe6a0629d5a9efd26a024a8eb1951877472af8320b22afe2",
+      "retrievedAt": "2026-10-15T08:57:47.943Z"
+    },
+    "doi6": {
+      "file": "doi6.mp3",
+      "url": "https://jyutping.org/audio/doi6.mp3",
+      "sha256": "5da2b61c4b99c795053e5ff9e877abae1421d32e35ea1e9d8f8022384e57fefd",
+      "retrievedAt": "2026-10-15T08:57:48.098Z"
+    },
+    "dou3": {
+      "file": "dou3.mp3",
+      "url": "https://jyutping.org/audio/dou3.mp3",
+      "sha256": "04eb90daf54e5613098453652928340e98e049802d8deafad2360d90b35c6230",
+      "retrievedAt": "2026-10-15T08:57:48.232Z"
+    },
+    "dou6": {
+      "file": "dou6.mp3",
+      "url": "https://jyutping.org/audio/dou6.mp3",
+      "sha256": "3515054e8804900650fe1f0a7067b9e389fddd0302fc6a66a86d3bf798d85443",
+      "retrievedAt": "2026-10-15T08:57:48.697Z"
+    },
+    "dung1": {
+      "file": "dung1.mp3",
+      "url": "https://jyutping.org/audio/dung1.mp3",
+      "sha256": "35f289661e705f95b75be4d97d025392f468a3576a7a8185745e051062885487",
+      "retrievedAt": "2026-10-15T08:57:48.948Z"
+    },
+    "dyun2": {
+      "file": "dyun2.mp3",
+      "url": "https://jyutping.org/audio/dyun2.mp3",
+      "sha256": "752b1d5c2d750e9e1f2032c0e014e434b7d9d3a7685e1087f26b8c0bdf14e279",
+      "retrievedAt": "2026-10-15T08:57:49.101Z"
+    },
+    "e1": {
+      "file": "e1.mp3",
+      "url": "https://jyutping.org/audio/e1.mp3",
+      "sha256": "4a51c5a7d60aed6d3197873de93546ea68fa7d22035b599ff6f91c396265bcb5",
+      "retrievedAt": "2026-10-15T08:57:49.535Z"
+    },
+    "ei1": {
+      "file": "ei1.mp3",
+      "url": "https://jyutping.org/audio/ei1.mp3",
+      "sha256": "de673e653ad483801606012241c8dd442b10ccef572491f5fb2df7e099fa4094",
+      "retrievedAt": "2026-10-15T08:57:49.791Z"
+    },
+    "faa1": {
+      "file": "faa1.mp3",
+      "url": "https://jyutping.org/audio/faa1.mp3",
+      "sha256": "1bce728c783f0a0d148031c8ef8d9c2ed795e49e4b003a0f817f8322d11a7a2d",
+      "retrievedAt": "2026-10-15T08:57:49.901Z"
+    },
+    "faai3": {
+      "file": "faai3.mp3",
+      "url": "https://jyutping.org/audio/faai3.mp3",
+      "sha256": "e60b08e1ae8f992f14f905654c3d356ca40db3b897771af69e19f21d1ab8faa9",
+      "retrievedAt": "2026-10-15T08:57:50.318Z"
+    },
+    "faan1": {
+      "file": "faan1.mp3",
+      "url": "https://jyutping.org/audio/faan1.mp3",
+      "sha256": "7327d40c9fd994ef33a8e4c1eccd81b9f1fef425bee5ea683b3045fa17914098",
+      "retrievedAt": "2026-10-15T08:57:50.634Z"
+    },
+    "faan6": {
+      "file": "faan6.mp3",
+      "url": "https://jyutping.org/audio/faan6.mp3",
+      "sha256": "d1b76afb57bf881b658587e43eea6e6459d0c3881a32157e689a43bd183d9917",
+      "retrievedAt": "2026-10-15T08:57:50.758Z"
+    },
+    "faat3": {
+      "file": "faat3.mp3",
+      "url": "https://jyutping.org/audio/faat3.mp3",
+      "sha256": "c6c289c4bd8745ac4001979e77e3b5c44a84bdc1cb999f79b752e8919233d506",
+      "retrievedAt": "2026-10-15T08:57:51.238Z"
+    },
+    "fan3": {
+      "file": "fan3.mp3",
+      "url": "https://jyutping.org/audio/fan3.mp3",
+      "sha256": "4b47c2666f0c4a1e2ef98baefa872ddfb3b3ab060b7cb6f3373de30ff3376a05",
+      "retrievedAt": "2026-10-15T08:57:51.491Z"
+    },
+    "fei1": {
+      "file": "fei1.mp3",
+      "url": "https://jyutping.org/audio/fei1.mp3",
+      "sha256": "09d59f6b2faaaef1973450217239ea0f4200c50cb2ba4a3e531ef363ca4bd639",
+      "retrievedAt": "2026-10-15T08:57:51.606Z"
+    },
+    "fo2": {
+      "file": "fo2.mp3",
+      "url": "https://jyutping.org/audio/fo2.mp3",
+      "sha256": "5b878f739a22c9c4d43e77149e35ee9e86a88df447078578c6dd9dc239071ff1",
+      "retrievedAt": "2026-10-15T08:57:52.065Z"
+    },
+    "fong3": {
+      "file": "fong3.mp3",
+      "url": "https://jyutping.org/audio/fong3.mp3",
+      "sha256": "14a20f52e9ab478855ddca45c6a9a48c03c4ba28fa75e7f96060d486c05c9d46",
+      "retrievedAt": "2026-10-15T08:57:52.330Z"
+    },
+    "fu1": {
+      "file": "fu1.mp3",
+      "url": "https://jyutping.org/audio/fu1.mp3",
+      "sha256": "2dea510b6e00b379d21310380849c13c2e839704f2d84fde2550788b024771dc",
+      "retrievedAt": "2026-10-15T08:57:52.431Z"
+    },
+    "fu2": {
+      "file": "fu2.mp3",
+      "url": "https://jyutping.org/audio/fu2.mp3",
+      "sha256": "c26978cdf0ddcc6168c900a91eca72da0e9721c712a3f97eea58ea36dea369a5",
+      "retrievedAt": "2026-10-15T08:57:52.955Z"
+    },
+    "fu3": {
+      "file": "fu3.mp3",
+      "url": "https://jyutping.org/audio/fu3.mp3",
+      "sha256": "46f9a25f4ce021549e55093341d4fb6bdea5cb6b130405764471697511a25f10",
+      "retrievedAt": "2026-10-15T08:57:53.127Z"
+    },
+    "fui1": {
+      "file": "fui1.mp3",
+      "url": "https://jyutping.org/audio/fui1.mp3",
+      "sha256": "da6d1fd1d359d4d723a031b72255071ed9f56a65614d15db0b201f00139a1a66",
+      "retrievedAt": "2026-10-15T08:57:53.223Z"
+    },
+    "fuk1": {
+      "file": "fuk1.mp3",
+      "url": "https://jyutping.org/audio/fuk1.mp3",
+      "sha256": "06f89f1db91a9f08b92d3925d6fea34a03482678c854d578ccd965b55977ed35",
+      "retrievedAt": "2026-10-15T08:57:53.693Z"
+    },
+    "fung1": {
+      "file": "fung1.mp3",
+      "url": "https://jyutping.org/audio/fung1.mp3",
+      "sha256": "256e61c7da70718e1b4e690e1b4cd8a175355d0ae9dc815e9a5e3d8667c27db1",
+      "retrievedAt": "2026-10-15T08:57:53.986Z"
+    },
+    "fun1": {
+      "file": "fun1.mp3",
+      "url": "https://jyutping.org/audio/fun1.mp3",
+      "sha256": "60e9b167d4a4c0c6950d556df123f641d33fea61678d2710d2e16ddef745e9b5",
+      "retrievedAt": "2026-10-15T08:57:54.111Z"
+    },
+    "gaa1": {
+      "file": "gaa1.mp3",
+      "url": "https://jyutping.org/audio/gaa1.mp3",
+      "sha256": "30e53e50cca000237b19215d368af86f990cf8fca21c863c4273cb06f6c8d0f2",
+      "retrievedAt": "2026-10-15T08:57:54.710Z"
+    },
+    "fut3": {
+      "file": "fut3.mp3",
+      "url": "https://jyutping.org/audio/fut3.mp3",
+      "sha256": "db3504ffb027399ad25f199419dffc4c3ad38df5a75aad0d1927d15a80036c86",
+      "retrievedAt": "2026-10-15T08:57:54.775Z"
+    },
+    "gaai1": {
+      "file": "gaai1.mp3",
+      "url": "https://jyutping.org/audio/gaai1.mp3",
+      "sha256": "909b955838941c857a2bafd0f70ccbbcd88e670da6dcc0baa14ce71646eac436",
+      "retrievedAt": "2026-10-15T08:57:54.929Z"
+    },
+    "gaam2": {
+      "file": "gaam2.mp3",
+      "url": "https://jyutping.org/audio/gaam2.mp3",
+      "sha256": "1510bdf5a86f1feb1d5d6ed4c88ffeaca7c70219dc1ba2b82faf5347849e7388",
+      "retrievedAt": "2026-10-15T08:57:55.527Z"
+    },
+    "gaap3": {
+      "file": "gaap3.mp3",
+      "url": "https://jyutping.org/audio/gaap3.mp3",
+      "sha256": "0592851e57bea8ac256dd6e4ec96eec49332e8806d51ca111a0d106d7a4da0b6",
+      "retrievedAt": "2026-10-15T08:57:55.600Z"
+    },
+    "gaau1": {
+      "file": "gaau1.mp3",
+      "url": "https://jyutping.org/audio/gaau1.mp3",
+      "sha256": "653b8f2a915a11a74d340049020ebfd96e1d07a877ebe16c6dd66d8f80c5d512",
+      "retrievedAt": "2026-10-15T08:57:55.727Z"
+    },
+    "gaau3": {
+      "file": "gaau3.mp3",
+      "url": "https://jyutping.org/audio/gaau3.mp3",
+      "sha256": "a16833ac2676ba3f182c6235edb5d5272e541a982b162d7b94ae62ed658c29c9",
+      "retrievedAt": "2026-10-15T08:57:56.331Z"
+    },
+    "gai1": {
+      "file": "gai1.mp3",
+      "url": "https://jyutping.org/audio/gai1.mp3",
+      "sha256": "2527fd2074f56dd5c7b24536eccbd002f4f667d7c600efe3695d38ed35f73c87",
+      "retrievedAt": "2026-10-15T08:57:56.458Z"
+    },
+    "gai3": {
+      "file": "gai3.mp3",
+      "url": "https://jyutping.org/audio/gai3.mp3",
+      "sha256": "dd70b45e6ad3d0c65ffb7d37fc34ce355141ee0b5f32681d12b93bb6f1ceca53",
+      "retrievedAt": "2026-10-15T08:57:56.477Z"
+    },
+    "gam1": {
+      "file": "gam1.mp3",
+      "url": "https://jyutping.org/audio/gam1.mp3",
+      "sha256": "58736c6d2734a963f44ac8e3f9923aee34f5d285efe237306a30262104253944",
+      "retrievedAt": "2026-10-15T08:57:57.093Z"
+    },
+    "gam2": {
+      "file": "gam2.mp3",
+      "url": "https://jyutping.org/audio/gam2.mp3",
+      "sha256": "90da8bd9d95f3512ee9d28445bfe93f82a785d60bc0705b96129d326d4f518d8",
+      "retrievedAt": "2026-10-15T08:57:57.228Z"
+    },
+    "gan2": {
+      "file": "gan2.mp3",
+      "url": "https://jyutping.org/audio/gan2.mp3",
+      "sha256": "a911647bb1c0451ee1c3be0ace56f7bfe981c59b8b3cbfcad1aa9a7a7b3f70eb",
+      "retrievedAt": "2026-10-15T08:57:57.258Z"
+    },
+    "gang1": {
+      "file": "gang1.mp3",
+      "url": "https://jyutping.org/audio/gang1.mp3",
+      "sha256": "8d12c164e13768c5f9e4d59a9ed335bb4d7543f9491c6004d503fae840beab75",
+      "retrievedAt": "2026-10-15T08:57:57.904Z"
+    },
+    "gau2": {
+      "file": "gau2.mp3",
+      "url": "https://jyutping.org/audio/gau2.mp3",
+      "sha256": "d8c626c9472381488d30df12907eab3afc11bdbd2aa2a93e877afb730153907d",
+      "retrievedAt": "2026-10-15T08:57:58.035Z"
+    },
+    "gap1": {
+      "file": "gap1.mp3",
+      "url": "https://jyutping.org/audio/gap1.mp3",
+      "sha256": "37f6cc4cb4ffae0fe801869397ed7b9b9aaef99ddbcbd0e5e08cf2180ebe9b3b",
+      "retrievedAt": "2026-10-15T08:57:58.077Z"
+    },
+    "gau6": {
+      "file": "gau6.mp3",
+      "url": "https://jyutping.org/audio/gau6.mp3",
+      "sha256": "7bf02981fe403ac364c842b00fb0ad81204e31794ab2b66303b9ec42ab0fa324",
+      "retrievedAt": "2026-10-15T08:57:58.698Z"
+    },
+    "ge3": {
+      "file": "ge3.mp3",
+      "url": "https://jyutping.org/audio/ge3.mp3",
+      "sha256": "bde19a5381e418529f2bd788329484e35dec13fbc9057b1ccfa5149b3c1f6076",
+      "retrievedAt": "2026-10-15T08:57:58.957Z"
+    },
+    "gei2": {
+      "file": "gei2.mp3",
+      "url": "https://jyutping.org/audio/gei2.mp3",
+      "sha256": "9d44063566c2fdab92c292d664e7e7be57e0ed2594f1cd4f0b147e63767993a6",
+      "retrievedAt": "2026-10-15T08:57:58.970Z"
+    },
+    "gei3": {
+      "file": "gei3.mp3",
+      "url": "https://jyutping.org/audio/gei3.mp3",
+      "sha256": "39437e366f63c1628aef758708e52fb70f392440cd23fb4d4160a94e2ec70cc7",
+      "retrievedAt": "2026-10-15T08:57:59.425Z"
+    },
+    "geng1": {
+      "file": "geng1.mp3",
+      "url": "https://jyutping.org/audio/geng1.mp3",
+      "sha256": "6b33013d83c193d3e917e899ad3265e997e541dff3a6f262d42f948e6e7c3c4e",
+      "retrievedAt": "2026-10-15T08:57:59.772Z"
+    },
+    "geng2": {
+      "file": "geng2.mp3",
+      "url": "https://jyutping.org/audio/geng2.mp3",
+      "sha256": "aaf930ba534bb35bbc5c6da365841dc3506011274d3cada6c58f57f37b743d85",
+      "retrievedAt": "2026-10-15T08:57:59.813Z"
+    },
+    "geng3": {
+      "file": "geng3.mp3",
+      "url": "https://jyutping.org/audio/geng3.mp3",
+      "sha256": "f9f822a38faa6ef8a7db8ecf9257a6f27de1bf2fa0549b5e560ccf273d2253db",
+      "retrievedAt": "2026-10-15T08:58:00.240Z"
+    },
+    "gik6": {
+      "file": "gik6.mp3",
+      "url": "https://jyutping.org/audio/gik6.mp3",
+      "sha256": "587deafadd71af8c38b37816f81ee479aa2e08e59dc54dc9de13c7f9780bd70a",
+      "retrievedAt": "2026-10-15T08:58:00.678Z"
+    },
+    "gim3": {
+      "file": "gim3.mp3",
+      "url": "https://jyutping.org/audio/gim3.mp3",
+      "sha256": "c170e312ccacbc01703069d27bf6831e22887957b8d14aa38861e2f565dd8688",
+      "retrievedAt": "2026-10-15T08:58:00.689Z"
+    },
+    "gin3": {
+      "file": "gin3.mp3",
+      "url": "https://jyutping.org/audio/gin3.mp3",
+      "sha256": "39a83b12e0c5904d0ddfbc66868bc59a62c87f5dca44eb19a1452f0cade00f02",
+      "retrievedAt": "2026-10-15T08:58:01.047Z"
+    },
+    "go1": {
+      "file": "go1.mp3",
+      "url": "https://jyutping.org/audio/go1.mp3",
+      "sha256": "205e693599c22418c49df6b88b742cc37e9d9c4b9f770275af332c57252d932c",
+      "retrievedAt": "2026-10-15T08:58:01.465Z"
+    },
+    "git3": {
+      "file": "git3.mp3",
+      "url": "https://jyutping.org/audio/git3.mp3",
+      "sha256": "97f52e7a501eb2fb511cf7e729923f55d3ea99a5dafeee88437b352a57cf0e04",
+      "retrievedAt": "2026-10-15T08:58:01.529Z"
+    },
+    "goek3": {
+      "file": "goek3.mp3",
+      "url": "https://jyutping.org/audio/goek3.mp3",
+      "sha256": "95b42a06a8b51dfe6f4c8adbbb0566df156d4695b5a07a7827409371e77cd7af",
+      "retrievedAt": "2026-10-15T08:58:01.989Z"
+    },
+    "goi1": {
+      "file": "goi1.mp3",
+      "url": "https://jyutping.org/audio/goi1.mp3",
+      "sha256": "65190c588dc4c1e270f58cf7e8b7cae2b4b6f91a719219c0afb4a82ca1147b91",
+      "retrievedAt": "2026-10-15T08:58:02.361Z"
+    },
+    "goeng1": {
+      "file": "goeng1.mp3",
+      "url": "https://jyutping.org/audio/goeng1.mp3",
+      "sha256": "cae69962dec8450e3eaffd272f51cb68dc55b1a7d7236ddffc75a4f9bfbafed3",
+      "retrievedAt": "2026-10-15T08:58:02.517Z"
+    },
+    "gong1": {
+      "file": "gong1.mp3",
+      "url": "https://jyutping.org/audio/gong1.mp3",
+      "sha256": "f2b9d6eb53d6a50d62eacd6b31357060da245e2cfe2e990d1018f72363aab12c",
+      "retrievedAt": "2026-10-15T08:58:02.691Z"
+    },
+    "got3": {
+      "file": "got3.mp3",
+      "url": "https://jyutping.org/audio/got3.mp3",
+      "sha256": "6eebe73b30edda6aa6c28bc447a22a068ed4a10532f28ea62f12aecbbbfbb838",
+      "retrievedAt": "2026-10-15T08:58:03.342Z"
+    },
+    "gou1": {
+      "file": "gou1.mp3",
+      "url": "https://jyutping.org/audio/gou1.mp3",
+      "sha256": "37b52e9bd491b4749ae16f823cc54069a8d4ddfddd19ac11854f8c94745c15a9",
+      "retrievedAt": "2026-10-15T08:58:03.409Z"
+    },
+    "gung1": {
+      "file": "gung1.mp3",
+      "url": "https://jyutping.org/audio/gung1.mp3",
+      "sha256": "aa8c3ea71d1b57e21547e324633e824f842799caf152cb5116b37b4437e91c57",
+      "retrievedAt": "2026-10-15T08:58:04.135Z"
+    },
+    "guk1": {
+      "file": "guk1.mp3",
+      "url": "https://jyutping.org/audio/guk1.mp3",
+      "sha256": "5762ba7b0bd1a21847d7e08280e89f87f156bc9dafa5b39ca6f45458353def39",
+      "retrievedAt": "2026-10-15T08:58:04.149Z"
+    },
+    "gong2": {
+      "file": "gong2.mp3",
+      "url": "https://jyutping.org/audio/gong2.mp3",
+      "sha256": "f307bb5534a9073dddddc3e12af05f7ae945dc890bd881e47929f63d3830a36b",
+      "retrievedAt": "2026-10-15T08:58:04.471Z"
+    },
+    "gwaa1": {
+      "file": "gwaa1.mp3",
+      "url": "https://jyutping.org/audio/gwaa1.mp3",
+      "sha256": "60ed3473ad31ba94f1dc1cdbe9be35fee13ef1d3f73129978c8e807d0ee335d3",
+      "retrievedAt": "2026-10-15T08:58:04.910Z"
+    },
+    "gwaa3": {
+      "file": "gwaa3.mp3",
+      "url": "https://jyutping.org/audio/gwaa3.mp3",
+      "sha256": "f38d0297381f557bdfa546164bbfe19483b1378944eabb4aada8e403156c540e",
+      "retrievedAt": "2026-10-15T08:58:04.992Z"
+    },
+    "gwaan1": {
+      "file": "gwaan1.mp3",
+      "url": "https://jyutping.org/audio/gwaan1.mp3",
+      "sha256": "c34b42fecb389ecb649a55edeab12f3005af9b2407bb880fc0f111330aea07f6",
+      "retrievedAt": "2026-10-15T08:58:05.295Z"
+    },
+    "gwaan3": {
+      "file": "gwaan3.mp3",
+      "url": "https://jyutping.org/audio/gwaan3.mp3",
+      "sha256": "22d886eb00b4ef836aa8d0f608ee5815e8e5b89e1c05d24ca2d2a17d054399f1",
+      "retrievedAt": "2026-10-15T08:58:05.719Z"
+    },
+    "gwong1": {
+      "file": "gwong1.mp3",
+      "url": "https://jyutping.org/audio/gwong1.mp3",
+      "sha256": "e33da1cb70086547dd5f003e7457e26e2d803e4e4a18dbd009d935b1576ae493",
+      "retrievedAt": "2026-10-15T08:58:05.902Z"
+    },
+    "gwong2": {
+      "file": "gwong2.mp3",
+      "url": "https://jyutping.org/audio/gwong2.mp3",
+      "sha256": "5a7df0fadacd1a487f2ac803d4d35e3370a6ef485d5bb9c70f1a2faed863b162",
+      "retrievedAt": "2026-10-15T08:58:06.501Z"
+    },
+    "haa6": {
+      "file": "haa6.mp3",
+      "url": "https://jyutping.org/audio/haa6.mp3",
+      "sha256": "26d77c2da5fd33eed699e64c995e61f6d3844e9b71ad7872d51789079c415eb5",
+      "retrievedAt": "2026-10-15T08:58:07.222Z"
+    },
+    "haa1": {
+      "file": "haa1.mp3",
+      "url": "https://jyutping.org/audio/haa1.mp3",
+      "sha256": "6ebed0e8a6c5635a2e140e74b0b01a1f37eba6b97c90be29f5ecb7b8d1aee08c",
+      "retrievedAt": "2026-10-15T08:58:07.475Z"
+    },
+    "haam3": {
+      "file": "haam3.mp3",
+      "url": "https://jyutping.org/audio/haam3.mp3",
+      "sha256": "5c939812a5c4ec94e48f0d70bfc5347b73c0b3d82f50389cce9f909f5c2706de",
+      "retrievedAt": "2026-10-15T08:58:08.057Z"
+    },
+    "haak3": {
+      "file": "haak3.mp3",
+      "url": "https://jyutping.org/audio/haak3.mp3",
+      "sha256": "0388dff12ac7addde398c6c164fdf07ecbbc574a7b3fcaf8c40525e04db30ec2",
+      "retrievedAt": "2026-10-15T08:58:08.365Z"
+    },
+    "haang4": {
+      "file": "haang4.mp3",
+      "url": "https://jyutping.org/audio/haang4.mp3",
+      "sha256": "b3f55c1d8fd5f17cd483052f1db9437c25bdd38607c4c37b171204538a3f80fc",
+      "retrievedAt": "2026-10-15T08:58:08.533Z"
+    },
+    "hai2": {
+      "file": "hai2.mp3",
+      "url": "https://jyutping.org/audio/hai2.mp3",
+      "sha256": "556cbbbd5111020053334d0e50772ddd5dbe3b17df53e65fa5eefe19fe2e72a3",
+      "retrievedAt": "2026-10-15T08:58:08.719Z"
+    },
+    "hai6": {
+      "file": "hai6.mp3",
+      "url": "https://jyutping.org/audio/hai6.mp3",
+      "sha256": "f8646f9fe8dfb243a4d8436f26e7974a0ccf8cfffcee632fd8803199767f365a",
+      "retrievedAt": "2026-10-15T08:58:09.263Z"
+    },
+    "hak1": {
+      "file": "hak1.mp3",
+      "url": "https://jyutping.org/audio/hak1.mp3",
+      "sha256": "0bd392be24e0ae0273c6abd18bb1361d16d01befce0d47a7b0b830d45b075deb",
+      "retrievedAt": "2026-10-15T08:58:09.554Z"
+    },
+    "han4": {
+      "file": "han4.mp3",
+      "url": "https://jyutping.org/audio/han4.mp3",
+      "sha256": "90fc33d8c867f1fd830b80a56df160520902bace779fb483de8562bc71e4cd91",
+      "retrievedAt": "2026-10-15T08:58:09.606Z"
+    },
+    "han6": {
+      "file": "han6.mp3",
+      "url": "https://jyutping.org/audio/han6.mp3",
+      "sha256": "ae81ee41ef09f4fbb3fea95f1de125bfb721161741c26f2603a9f4ffc5934723",
+      "retrievedAt": "2026-10-15T08:58:10.099Z"
+    },
+    "hang4": {
+      "file": "hang4.mp3",
+      "url": "https://jyutping.org/audio/hang4.mp3",
+      "sha256": "01f5b9238ba71308ff85f577ffa243e25b34c5af7a67457193eef366d74756b4",
+      "retrievedAt": "2026-10-15T08:58:10.277Z"
+    },
+    "hat6": {
+      "file": "hat6.mp3",
+      "url": "https://jyutping.org/audio/hat6.mp3",
+      "sha256": "75852c91e30e85ef2a28997d0db257541e44a173ca568169c04b00b1a1ef7229",
+      "retrievedAt": "2026-10-15T08:58:10.515Z"
+    },
+    "hau2": {
+      "file": "hau2.mp3",
+      "url": "https://jyutping.org/audio/hau2.mp3",
+      "sha256": "0f8c6c3e8cdca11ab72901f59991c1dfe24fcdc76e597cbbdfdbec54871c0c9e",
+      "retrievedAt": "2026-10-15T08:58:10.897Z"
+    },
+    "hau6": {
+      "file": "hau6.mp3",
+      "url": "https://jyutping.org/audio/hau6.mp3",
+      "sha256": "7b5a8c2ea2771828d88bceb2ddd125f9012093335d8d59b9e904df4857632df0",
+      "retrievedAt": "2026-10-15T08:58:11.096Z"
+    },
+    "hei3": {
+      "file": "hei3.mp3",
+      "url": "https://jyutping.org/audio/hei3.mp3",
+      "sha256": "6a29c25e62fbe46bc43a9b6602ebcd772bdebf4fa5710b0973347119c5a7f443",
+      "retrievedAt": "2026-10-15T08:58:11.284Z"
+    },
+    "heoi3": {
+      "file": "heoi3.mp3",
+      "url": "https://jyutping.org/audio/heoi3.mp3",
+      "sha256": "637d70cbbd3ecf2b5e64edef68282b27ebc98f81a848700427cdbe6893ac5c32",
+      "retrievedAt": "2026-10-15T08:58:11.707Z"
+    },
+    "ho4": {
+      "file": "ho4.mp3",
+      "url": "https://jyutping.org/audio/ho4.mp3",
+      "sha256": "55eb9b7d31a59a8869345d534cc33b473dfdea581c91c2df1877f014c72492a2",
+      "retrievedAt": "2026-10-15T08:58:11.970Z"
+    },
+    "hoe1": {
+      "file": "hoe1.mp3",
+      "url": "https://jyutping.org/audio/hoe1.mp3",
+      "sha256": "4405e4ad3902194bb9adeabf873c14190bb0833f5f8abec2cc5c36de9ce8c1d1",
+      "retrievedAt": "2026-10-15T08:58:12.128Z"
+    },
+    "hoeng1": {
+      "file": "hoeng1.mp3",
+      "url": "https://jyutping.org/audio/hoeng1.mp3",
+      "sha256": "31f3207fc8bdf88c9cae3294cbd642bfcaa3d20a9e3090c0d4e2038d37f2d948",
+      "retrievedAt": "2026-10-15T08:58:12.492Z"
+    },
+    "hoi1": {
+      "file": "hoi1.mp3",
+      "url": "https://jyutping.org/audio/hoi1.mp3",
+      "sha256": "b6e6639ef67dfe48052c9a52d41f14b87093c22c4f00f5e8876187c7bf5de857",
+      "retrievedAt": "2026-10-15T08:58:12.889Z"
+    },
+    "hoi2": {
+      "file": "hoi2.mp3",
+      "url": "https://jyutping.org/audio/hoi2.mp3",
+      "sha256": "dd9c09f96c2e074c295a3bcb09f3e12adb4243fff4421f38d61dc8fe9c93e181",
+      "retrievedAt": "2026-10-15T08:58:13.056Z"
+    },
+    "hok6": {
+      "file": "hok6.mp3",
+      "url": "https://jyutping.org/audio/hok6.mp3",
+      "sha256": "aed6c67bab7076e06ff6e22ad9c173e441018e6ee0b989ff6c99fd70ad53e801",
+      "retrievedAt": "2026-10-15T08:58:13.362Z"
+    },
+    "hon6": {
+      "file": "hon6.mp3",
+      "url": "https://jyutping.org/audio/hon6.mp3",
+      "sha256": "03b64d0faabdb04addf4566d9542a5c180bf05b17af97aabc4d1dcdad65ab89b",
+      "retrievedAt": "2026-10-15T08:58:13.832Z"
+    },
+    "hon3": {
+      "file": "hon3.mp3",
+      "url": "https://jyutping.org/audio/hon3.mp3",
+      "sha256": "9632d015d802b97cccbacacda96fe1d7f1057566eff90218dd93cc07e8c01fa7",
+      "retrievedAt": "2026-10-15T08:58:13.979Z"
+    },
+    "hot3": {
+      "file": "hot3.mp3",
+      "url": "https://jyutping.org/audio/hot3.mp3",
+      "sha256": "0d69c4295f2637680e1a3e2bab474a6a3f47257e398b966957bb0bf138dccf9b",
+      "retrievedAt": "2026-10-15T08:58:14.325Z"
+    },
+    "hou2": {
+      "file": "hou2.mp3",
+      "url": "https://jyutping.org/audio/hou2.mp3",
+      "sha256": "eda127db9863a50c68a145f494614d54982eb298d1d3c6ae461cbc0b2e58db84",
+      "retrievedAt": "2026-10-15T08:58:14.604Z"
+    },
+    "hung4": {
+      "file": "hung4.mp3",
+      "url": "https://jyutping.org/audio/hung4.mp3",
+      "sha256": "de41beb2eef50713d3c9200f434b434507abd04c1cc477d62ac768862567636c",
+      "retrievedAt": "2026-10-15T08:58:14.803Z"
+    },
+    "jaa5": {
+      "file": "jaa5.mp3",
+      "url": "https://jyutping.org/audio/jaa5.mp3",
+      "sha256": "b4a7999fdacb6bae1597210143e301c1b3cbd9f5c09fc7357ae0a6201582a089",
+      "retrievedAt": "2026-10-15T08:58:15.098Z"
+    },
+    "jam2": {
+      "file": "jam2.mp3",
+      "url": "https://jyutping.org/audio/jam2.mp3",
+      "sha256": "a5edaf3b851e32f76157406c77e2c0f60329417c7e8c7bc71db1332958b8a599",
+      "retrievedAt": "2026-10-15T08:58:15.425Z"
+    },
+    "jan1": {
+      "file": "jan1.mp3",
+      "url": "https://jyutping.org/audio/jan1.mp3",
+      "sha256": "c1e072f0c4523913f1986e23ea49b3e8c71660e564133062fd9ccf4c32579e61",
+      "retrievedAt": "2026-10-15T08:58:15.497Z"
+    },
+    "jan4": {
+      "file": "jan4.mp3",
+      "url": "https://jyutping.org/audio/jan4.mp3",
+      "sha256": "25f31a7520100c76c0c52d28c7be21e2ea735d7bd1b6507e52e3222906fa0658",
+      "retrievedAt": "2026-10-15T08:58:15.829Z"
+    },
+    "jat1": {
+      "file": "jat1.mp3",
+      "url": "https://jyutping.org/audio/jat1.mp3",
+      "sha256": "ba21f33a4bb4a95242c2d54c8a52f4ec0604613b5442f7ea553d20f6bfe09e2f",
+      "retrievedAt": "2026-10-15T08:58:16.195Z"
+    },
+    "jat6": {
+      "file": "jat6.mp3",
+      "url": "https://jyutping.org/audio/jat6.mp3",
+      "sha256": "12b1b7d3fb60b3777e4e9868f9d71e610521892a167037c971b62f48b6d3270a",
+      "retrievedAt": "2026-10-15T08:58:16.319Z"
+    },
+    "jau1": {
+      "file": "jau1.mp3",
+      "url": "https://jyutping.org/audio/jau1.mp3",
+      "sha256": "f7c8a374ee43941122402aec6714f81b19f13898783b169e523f2188e6db6925",
+      "retrievedAt": "2026-10-15T08:58:16.656Z"
+    },
+    "jau6": {
+      "file": "jau6.mp3",
+      "url": "https://jyutping.org/audio/jau6.mp3",
+      "sha256": "a275bfd586bdbdbd990158a5353d11d82de22e537df89b538e8625342ab68d9b",
+      "retrievedAt": "2026-10-15T08:58:17.028Z"
+    },
+    "jau5": {
+      "file": "jau5.mp3",
+      "url": "https://jyutping.org/audio/jau5.mp3",
+      "sha256": "3ecd0fe75ed10a63d5b5de30cd1ecd228ea1fb06851ffa82531b2ef89e4babce",
+      "retrievedAt": "2026-10-15T08:58:17.275Z"
+    },
+    "je5": {
+      "file": "je5.mp3",
+      "url": "https://jyutping.org/audio/je5.mp3",
+      "sha256": "8322423d6bd733ec5a2b76673d58d0658139f0dd28225272431c1ffd3af2bd1b",
+      "retrievedAt": "2026-10-15T08:58:17.580Z"
+    },
+    "je6": {
+      "file": "je6.mp3",
+      "url": "https://jyutping.org/audio/je6.mp3",
+      "sha256": "6756e87d1372420ec57f39204d03b9e4b4a66f4ad5a20d947af8df0cc56cf6b6",
+      "retrievedAt": "2026-10-15T08:58:17.755Z"
+    },
+    "ji1": {
+      "file": "ji1.mp3",
+      "url": "https://jyutping.org/audio/ji1.mp3",
+      "sha256": "cb1df4424bbfe634e7c93ef2d0e0bb8f243da1c8bf3fc28f0d94a546615090ef",
+      "retrievedAt": "2026-10-15T08:58:18.008Z"
+    },
+    "ji2": {
+      "file": "ji2.mp3",
+      "url": "https://jyutping.org/audio/ji2.mp3",
+      "sha256": "5babe056c20fceac0d1a02152dbdaecbf75afcb0c96f126c1eac44b5cd4e4cf4",
+      "retrievedAt": "2026-10-15T08:58:18.420Z"
+    },
+    "ji3": {
+      "file": "ji3.mp3",
+      "url": "https://jyutping.org/audio/ji3.mp3",
+      "sha256": "8d7f74e3251b0313f46e93233c35f4e8cddd32dc404d5a1b95fd3614fbb7fb0d",
+      "retrievedAt": "2026-10-15T08:58:18.646Z"
+    },
+    "ji5": {
+      "file": "ji5.mp3",
+      "url": "https://jyutping.org/audio/ji5.mp3",
+      "sha256": "4b5b1f1ec9662a26a9d6111a38afc3b8dd6ad577b2160b82e264d5ba4290ecf6",
+      "retrievedAt": "2026-10-15T08:58:18.697Z"
+    },
+    "ji6": {
+      "file": "ji6.mp3",
+      "url": "https://jyutping.org/audio/ji6.mp3",
+      "sha256": "b08b59383045af92f4f2fef9ebba798e3937f36fe59333f19c6314090d31701f",
+      "retrievedAt": "2026-10-15T08:58:19.140Z"
+    },
+    "jim4": {
+      "file": "jim4.mp3",
+      "url": "https://jyutping.org/audio/jim4.mp3",
+      "sha256": "f71e679a9224c14954241e33e2a5b708b59558baac74323c38f3b9a82755aa01",
+      "retrievedAt": "2026-10-15T08:58:19.499Z"
+    },
+    "jim5": {
+      "file": "jim5.mp3",
+      "url": "https://jyutping.org/audio/jim5.mp3",
+      "sha256": "d89dd56a164ba0ca62e010c90e9855e919b57f9b0c17ba730ced5b0c0bd6aa5e",
+      "retrievedAt": "2026-10-15T08:58:19.555Z"
+    },
+    "jin4": {
+      "file": "jin4.mp3",
+      "url": "https://jyutping.org/audio/jin4.mp3",
+      "sha256": "2f1d741c003a6f9de180c3f86e04c81790736ee2e2b63881efa9f419a6bd1f03",
+      "retrievedAt": "2026-10-15T08:58:20.047Z"
+    },
+    "jit6": {
+      "file": "jit6.mp3",
+      "url": "https://jyutping.org/audio/jit6.mp3",
+      "sha256": "89568c875d939b430fbddba05ff4ee8eb0f4a9791ecaba862f808cb581ad376c",
+      "retrievedAt": "2026-10-15T08:58:20.301Z"
+    },
+    "jiu1": {
+      "file": "jiu1.mp3",
+      "url": "https://jyutping.org/audio/jiu1.mp3",
+      "sha256": "63434781c59700c15489de4c80dd13417b709f0183e838fe9842865c2c38736e",
+      "retrievedAt": "2026-10-15T08:58:20.431Z"
+    },
+    "jiu3": {
+      "file": "jiu3.mp3",
+      "url": "https://jyutping.org/audio/jiu3.mp3",
+      "sha256": "39ff42aa9cd8494d021b1854387eb51197f44fe622846ac7c64a6bf3914b7436",
+      "retrievedAt": "2026-10-15T08:58:20.871Z"
+    },
+    "joek6": {
+      "file": "joek6.mp3",
+      "url": "https://jyutping.org/audio/joek6.mp3",
+      "sha256": "7e70bcec7714f9b4f54c759fd6bf72c77fb631c89fa53d29f2d9169fd1d53fa4",
+      "retrievedAt": "2026-10-15T08:58:21.120Z"
+    },
+    "jyu1": {
+      "file": "jyu1.mp3",
+      "url": "https://jyutping.org/audio/jyu1.mp3",
+      "sha256": "7bd77720a958d03faee1898df9523e5cdc33cda61a3c9b132ee72e893e888511",
+      "retrievedAt": "2026-10-15T08:58:21.675Z"
+    },
+    "jyu4": {
+      "file": "jyu4.mp3",
+      "url": "https://jyutping.org/audio/jyu4.mp3",
+      "sha256": "ed0bb20d27816adba5a1c0de1f725871ead4b4d819b3a7e576985abc482de1da",
+      "retrievedAt": "2026-10-15T08:58:21.978Z"
+    },
+    "jyu5": {
+      "file": "jyu5.mp3",
+      "url": "https://jyutping.org/audio/jyu5.mp3",
+      "sha256": "dfe3da370b25aebcdb9f4f38587a38e8360ec7095f32b4fd3e064cd523d8dc02",
+      "retrievedAt": "2026-10-15T08:58:22.157Z"
+    },
+    "jyu6": {
+      "file": "jyu6.mp3",
+      "url": "https://jyutping.org/audio/jyu6.mp3",
+      "sha256": "85c939250eb7cf2895e9b1a12aaf8f56b2061e04cdbdbc2fe4b4a5470388e75a",
+      "retrievedAt": "2026-10-15T08:58:22.502Z"
+    },
+    "jyun1": {
+      "file": "jyun1.mp3",
+      "url": "https://jyutping.org/audio/jyun1.mp3",
+      "sha256": "0e9e71a08442cbd702b2eb9be51a430913a3c2697bebe0d58248112de84d464b",
+      "retrievedAt": "2026-10-15T08:58:22.809Z"
+    },
+    "jyun4": {
+      "file": "jyun4.mp3",
+      "url": "https://jyutping.org/audio/jyun4.mp3",
+      "sha256": "cd657c9a7a292df4fe33b584bf061edfd78cbc0b9985506abc65887ea99ea580",
+      "retrievedAt": "2026-10-15T08:58:22.866Z"
+    },
+    "jyut3": {
+      "file": "jyut3.mp3",
+      "url": "https://jyutping.org/audio/jyut3.mp3",
+      "sha256": "88b646b7cd6f0a023aa5376e4a87acc8e1edf6b06471618d1ff23a9274f0595f",
+      "retrievedAt": "2026-10-15T08:58:23.350Z"
+    },
+    "jyut6": {
+      "file": "jyut6.mp3",
+      "url": "https://jyutping.org/audio/jyut6.mp3",
+      "sha256": "511f6f4d8b638edd5b4859c65b7da28029aa9e58aeeb3d42ade0a81d56aa5d8c",
+      "retrievedAt": "2026-10-15T08:58:23.560Z"
+    },
+    "kaa1": {
+      "file": "kaa1.mp3",
+      "url": "https://jyutping.org/audio/kaa1.mp3",
+      "sha256": "f6a6f4c369323a53327fcbbd80b3d196e160cd0fb3fee98fe9d915dd74780778",
+      "retrievedAt": "2026-10-15T08:58:23.688Z"
+    },
+    "kam4": {
+      "file": "kam4.mp3",
+      "url": "https://jyutping.org/audio/kam4.mp3",
+      "sha256": "5ebe8c1edbadf1eb969b40eedfc1169d177adac4cfb4125e7e8dca2f0d2e9574",
+      "retrievedAt": "2026-10-15T08:58:24.176Z"
+    },
+    "kau4": {
+      "file": "kau4.mp3",
+      "url": "https://jyutping.org/audio/kau4.mp3",
+      "sha256": "a2594bc4db5af665921962bba3222db8afed359aed948bf2db102f64ae532ad5",
+      "retrievedAt": "2026-10-15T08:58:24.401Z"
+    },
+    "kei5": {
+      "file": "kei5.mp3",
+      "url": "https://jyutping.org/audio/kei5.mp3",
+      "sha256": "6805191eee3c2f5f13605640ad5b3defbe6e1c6a9a69b741c95645e785dc17a0",
+      "retrievedAt": "2026-10-15T08:58:24.563Z"
+    },
+    "kiu4": {
+      "file": "kiu4.mp3",
+      "url": "https://jyutping.org/audio/kiu4.mp3",
+      "sha256": "c4f2765ee24ffcb30807cb205c559b161da3582fcefcb6a54aa0f9c9c0133a6c",
+      "retrievedAt": "2026-10-15T08:58:25.221Z"
+    },
+    "koek3": {
+      "file": "koek3.mp3",
+      "url": "https://jyutping.org/audio/koek3.mp3",
+      "sha256": "b9dbb957cb42af9407b8b80d36f458df5352558b1e38a27d1aa35bbef3099946",
+      "retrievedAt": "2026-10-15T08:58:25.371Z"
+    },
+    "keoi5": {
+      "file": "keoi5.mp3",
+      "url": "https://jyutping.org/audio/keoi5.mp3",
+      "sha256": "5185e26078afceceb8c390ee7e26d7ba51296de12eb8a66c44acdc21120ed730",
+      "retrievedAt": "2026-10-15T08:58:25.669Z"
+    },
+    "kwaa1": {
+      "file": "kwaa1.mp3",
+      "url": "https://jyutping.org/audio/kwaa1.mp3",
+      "sha256": "a240a18f71ba7a6832964e2ebe04a57a47cf4ecdf19a51eeeaf6dda8195932d3",
+      "retrievedAt": "2026-10-15T08:58:26.026Z"
+    },
+    "kwai1": {
+      "file": "kwai1.mp3",
+      "url": "https://jyutping.org/audio/kwai1.mp3",
+      "sha256": "35707c301ce84933302623ff753ed8354c1780a51f8c75260c1090cb90161cc4",
+      "retrievedAt": "2026-10-15T08:58:26.242Z"
+    },
+    "kwan3": {
+      "file": "kwan3.mp3",
+      "url": "https://jyutping.org/audio/kwan3.mp3",
+      "sha256": "aa5fbffd86dbafd8609df7a8a46e0a1a35daabdfb502426da213b2a444f016d7",
+      "retrievedAt": "2026-10-15T08:58:26.513Z"
+    },
+    "kwan4": {
+      "file": "kwan4.mp3",
+      "url": "https://jyutping.org/audio/kwan4.mp3",
+      "sha256": "e679cc29a3cf7fbf6948fbff5601dc705cbaa1f44852567d766e30b6d2d62b3b",
+      "retrievedAt": "2026-10-15T08:58:26.847Z"
+    },
+    "laa1": {
+      "file": "laa1.mp3",
+      "url": "https://jyutping.org/audio/laa1.mp3",
+      "sha256": "53d594bf6c4e5fea5d082e443bc075ee8191f5d8fa935def1f6c4ffb8b1b281c",
+      "retrievedAt": "2026-10-15T08:58:26.960Z"
+    },
+    "laam4": {
+      "file": "laam4.mp3",
+      "url": "https://jyutping.org/audio/laam4.mp3",
+      "sha256": "5a38e432b306d5b884cb2b273f721cfafd437333fe3a5e70f20d034704390115",
+      "retrievedAt": "2026-10-15T08:58:27.378Z"
+    },
+    "laang5": {
+      "file": "laang5.mp3",
+      "url": "https://jyutping.org/audio/laang5.mp3",
+      "sha256": "d776553cb618bc1ab9757475fe7490ad72fcf5ab19e19014094c5fb279db1483",
+      "retrievedAt": "2026-10-15T08:58:27.709Z"
+    },
+    "laap6": {
+      "file": "laap6.mp3",
+      "url": "https://jyutping.org/audio/laap6.mp3",
+      "sha256": "0b9032126a9395fa3ff04919a121379d4cd51eafea5fcdb3e0ca93443226c864",
+      "retrievedAt": "2026-10-15T08:58:27.814Z"
+    },
+    "laat6": {
+      "file": "laat6.mp3",
+      "url": "https://jyutping.org/audio/laat6.mp3",
+      "sha256": "7a755ada38aec30550fe8fbb9be82b110398319b9b58d22d3e9f2755ef4dfb14",
+      "retrievedAt": "2026-10-15T08:58:28.242Z"
+    },
+    "lei6": {
+      "file": "lei6.mp3",
+      "url": "https://jyutping.org/audio/lei6.mp3",
+      "sha256": "22e3ee195f342aef170484b52a596fe7baf80196aaf3b9e31c30bc3bfc9b4d93",
+      "retrievedAt": "2026-10-15T08:58:28.407Z"
+    },
+    "leng3": {
+      "file": "leng3.mp3",
+      "url": "https://jyutping.org/audio/leng3.mp3",
+      "sha256": "0530b9ccdfafb5fbfedf78cdee59925936d2b556f90db3a03e997fdbd66ab283",
+      "retrievedAt": "2026-10-15T08:58:28.656Z"
+    },
+    "leot6": {
+      "file": "leot6.mp3",
+      "url": "https://jyutping.org/audio/leot6.mp3",
+      "sha256": "0784c56d952e1d1abb956279d456188bdf5bd4882b78a24a47f0329fc0fd042b",
+      "retrievedAt": "2026-10-15T08:58:29.133Z"
+    },
+    "lik6": {
+      "file": "lik6.mp3",
+      "url": "https://jyutping.org/audio/lik6.mp3",
+      "sha256": "32a11a2dedb57ff975f8329d2fff4839f8d30fad26783b22cc2ebe838322acc0",
+      "retrievedAt": "2026-10-15T08:58:29.276Z"
+    },
+    "ling5": {
+      "file": "ling5.mp3",
+      "url": "https://jyutping.org/audio/ling5.mp3",
+      "sha256": "9ce7e1ca711a51d090847064c68cac9f0dbe642fd8b5e8eda8fc4bc0e37e8c8a",
+      "retrievedAt": "2026-10-15T08:58:29.500Z"
+    },
+    "lit6": {
+      "file": "lit6.mp3",
+      "url": "https://jyutping.org/audio/lit6.mp3",
+      "sha256": "0e48af5e5103e95bd048c44910dc41584f3c8828853fd32122ecfed7df2ac9bf",
+      "retrievedAt": "2026-10-15T08:58:29.979Z"
+    },
+    "loi4": {
+      "file": "loi4.mp3",
+      "url": "https://jyutping.org/audio/loi4.mp3",
+      "sha256": "4a602395812413801993153a57d2f71bbcd365e5ec28ccdfc0b47c6e573b3425",
+      "retrievedAt": "2026-10-15T08:58:30.102Z"
+    },
+    "lok6": {
+      "file": "lok6.mp3",
+      "url": "https://jyutping.org/audio/lok6.mp3",
+      "sha256": "f559eca028faa5d9515c4f7daf41b66dcb2c1a07484e2f058b0ab63ca2085078",
+      "retrievedAt": "2026-10-15T08:58:30.347Z"
+    },
+    "lou6": {
+      "file": "lou6.mp3",
+      "url": "https://jyutping.org/audio/lou6.mp3",
+      "sha256": "2dd5d68f2da9cc6fbed07f1d20186733d839be1d072eae8c05e650bb3f853bc7",
+      "retrievedAt": "2026-10-15T08:58:30.863Z"
+    },
+    "lou5": {
+      "file": "lou5.mp3",
+      "url": "https://jyutping.org/audio/lou5.mp3",
+      "sha256": "69183f4d92574bd13e5ed6aa4f2de849186175925432dc91e19b657e6f0e63de",
+      "retrievedAt": "2026-10-15T08:58:30.877Z"
+    },
+    "luk6": {
+      "file": "luk6.mp3",
+      "url": "https://jyutping.org/audio/luk6.mp3",
+      "sha256": "364af211eb47b5890db03357ab05458c8846f0ba2794ea6f8ae5eea3b8b4e046",
+      "retrievedAt": "2026-10-15T08:58:31.070Z"
+    },
+    "m4": {
+      "file": "m4.mp3",
+      "url": "https://jyutping.org/audio/m4.mp3",
+      "sha256": "406db25006aa4171b3269a7af233598e277ef5f04178b2b84a53961666ab4798",
+      "retrievedAt": "2026-10-15T08:58:31.655Z"
+    },
+    "lung4": {
+      "file": "lung4.mp3",
+      "url": "https://jyutping.org/audio/lung4.mp3",
+      "sha256": "1d21057c73c4c7ecc360f9a2706fec76a6afef87d5bf12ed9e7b2004fc10066c",
+      "retrievedAt": "2026-10-15T08:58:31.729Z"
+    },
+    "maa1": {
+      "file": "maa1.mp3",
+      "url": "https://jyutping.org/audio/maa1.mp3",
+      "sha256": "05aecc313277d348c6902536937496c892e4003e389572911172dd7f0c663c90",
+      "retrievedAt": "2026-10-15T08:58:31.778Z"
+    },
+    "maai5": {
+      "file": "maai5.mp3",
+      "url": "https://jyutping.org/audio/maai5.mp3",
+      "sha256": "793439eb14d1d88ab12f395d181b673d3a28e677dc929ffe111e266a6c54a505",
+      "retrievedAt": "2026-10-15T08:58:32.507Z"
+    },
+    "maai6": {
+      "file": "maai6.mp3",
+      "url": "https://jyutping.org/audio/maai6.mp3",
+      "sha256": "567ba9c87b72e9735808de398447232f183469050fa274bd4efa5d591c116b08",
+      "retrievedAt": "2026-10-15T08:58:32.654Z"
+    },
+    "maan5": {
+      "file": "maan5.mp3",
+      "url": "https://jyutping.org/audio/maan5.mp3",
+      "sha256": "bbc213f01230e8d56b9136ce38118eae4d4b513a1a345324a106c894557f7b56",
+      "retrievedAt": "2026-10-15T08:58:32.686Z"
+    },
+    "maan6": {
+      "file": "maan6.mp3",
+      "url": "https://jyutping.org/audio/maan6.mp3",
+      "sha256": "654514ea4dd16f23183c0e568eb77653a64009a700d9fdd71d5f426f92f1697d",
+      "retrievedAt": "2026-10-15T08:58:33.265Z"
+    },
+    "maang5": {
+      "file": "maang5.mp3",
+      "url": "https://jyutping.org/audio/maang5.mp3",
+      "sha256": "dcb18c6eb29f0dca26eb610b1fb9ab143c596330b9f46948781c9fadb01249cd",
+      "retrievedAt": "2026-10-15T08:58:33.471Z"
+    },
+    "maau1": {
+      "file": "maau1.mp3",
+      "url": "https://jyutping.org/audio/maau1.mp3",
+      "sha256": "5d7bcbd83bebc4910f74d740027da7e4e13d6e619e51d9155db22f8d2dd90bf3",
+      "retrievedAt": "2026-10-15T08:58:33.507Z"
+    },
+    "man6": {
+      "file": "man6.mp3",
+      "url": "https://jyutping.org/audio/man6.mp3",
+      "sha256": "65aa5478c3ba6d4ebc39f5ec7853bea8b9a4fce865d43e746353db719d656a14",
+      "retrievedAt": "2026-10-15T08:58:34.124Z"
+    },
+    "mang4": {
+      "file": "mang4.mp3",
+      "url": "https://jyutping.org/audio/mang4.mp3",
+      "sha256": "e487141e55c99ac34d932608014784ab3da5ebc231a7c97e8009127438c675cb",
+      "retrievedAt": "2026-10-15T08:58:34.342Z"
+    },
+    "mat6": {
+      "file": "mat6.mp3",
+      "url": "https://jyutping.org/audio/mat6.mp3",
+      "sha256": "b166468544c9a5fee731441a6abe7a37922184f674666ba72bb8fd802b548a50",
+      "retrievedAt": "2026-10-15T08:58:34.586Z"
+    },
+    "mei6": {
+      "file": "mei6.mp3",
+      "url": "https://jyutping.org/audio/mei6.mp3",
+      "sha256": "90869abf4ea3519a9f02209b54bd25e1b3a812ece82051c02615150c7a951878",
+      "retrievedAt": "2026-10-15T08:58:34.811Z"
+    },
+    "min6": {
+      "file": "min6.mp3",
+      "url": "https://jyutping.org/audio/min6.mp3",
+      "sha256": "3021ff07d1a2649416c38703978ac02ef507983f1d282e3e831652ffc10bf349",
+      "retrievedAt": "2026-10-15T08:58:35.084Z"
+    },
+    "ming6": {
+      "file": "ming6.mp3",
+      "url": "https://jyutping.org/audio/ming6.mp3",
+      "sha256": "61fad9533597e5f4bc401fce049bc34a3fb98e7c539305e7b07d955f8f8dbadf",
+      "retrievedAt": "2026-10-15T08:58:35.668Z"
+    },
+    "ming4": {
+      "file": "ming4.mp3",
+      "url": "https://jyutping.org/audio/ming4.mp3",
+      "sha256": "c629946d2d3656cdea4a31394c3e44d89fe6ed2c3ecc13aedd0bf758ce954902",
+      "retrievedAt": "2026-10-15T08:58:35.767Z"
+    },
+    "mou4": {
+      "file": "mou4.mp3",
+      "url": "https://jyutping.org/audio/mou4.mp3",
+      "sha256": "7d95a6020d9aed0fc689be2ed906e8e752b400e97b40c068d9e91810f5ffcfcd",
+      "retrievedAt": "2026-10-15T08:58:36.486Z"
+    },
+    "mong4": {
+      "file": "mong4.mp3",
+      "url": "https://jyutping.org/audio/mong4.mp3",
+      "sha256": "dc4003a49a523cf5f1d5e94badcbf72ce85d0aea2a6de571444c90d369acc118",
+      "retrievedAt": "2026-10-15T08:58:36.528Z"
+    },
+    "mou5": {
+      "file": "mou5.mp3",
+      "url": "https://jyutping.org/audio/mou5.mp3",
+      "sha256": "3c710e5f3f0949b2c882610bc4f6f7f09eaa8b6c9be00c5250c19a061a7818f3",
+      "retrievedAt": "2026-10-15T08:58:36.541Z"
+    },
+    "muk6": {
+      "file": "muk6.mp3",
+      "url": "https://jyutping.org/audio/muk6.mp3",
+      "sha256": "1553f6a2ed62d4817b43e39da74ae4f7ca001f30691cfd24320c64c14fade7e4",
+      "retrievedAt": "2026-10-15T08:58:37.289Z"
+    },
+    "mui5": {
+      "file": "mui5.mp3",
+      "url": "https://jyutping.org/audio/mui5.mp3",
+      "sha256": "3e2f61b846d9d4727c17ba9612701d6781da1269c89d6865ceaf5a6a39a7eb0d",
+      "retrievedAt": "2026-10-15T08:58:37.368Z"
+    },
+    "mui4": {
+      "file": "mui4.mp3",
+      "url": "https://jyutping.org/audio/mui4.mp3",
+      "sha256": "2d592bbd98f3d4f851bef2aaa35f62a61f41dd9fac9751b2addb77cc11a9d9e9",
+      "retrievedAt": "2026-10-15T08:58:37.430Z"
+    },
+    "mun4": {
+      "file": "mun4.mp3",
+      "url": "https://jyutping.org/audio/mun4.mp3",
+      "sha256": "160da408053c27beba0b36149134263a18053f8b8cd0bc900bb6ba255d1cedae",
+      "retrievedAt": "2026-10-15T08:58:38.128Z"
+    },
+    "mun5": {
+      "file": "mun5.mp3",
+      "url": "https://jyutping.org/audio/mun5.mp3",
+      "sha256": "9cd245f0c043a0354c2361ef4cedb4e8615ac83fc9d4d89b9b870faecc19816d",
+      "retrievedAt": "2026-10-15T08:58:38.256Z"
+    },
+    "mut6": {
+      "file": "mut6.mp3",
+      "url": "https://jyutping.org/audio/mut6.mp3",
+      "sha256": "8e53df36956ccabd22a74ee58488c85144116e46028ab57ed3b6cc753d5fb037",
+      "retrievedAt": "2026-10-15T08:58:38.274Z"
+    },
+    "naa4": {
+      "file": "naa4.mp3",
+      "url": "https://jyutping.org/audio/naa4.mp3",
+      "sha256": "66de7f0191253184b7a0a92255d70664eb56f94e56e3ee0e14bb09c8e32abf06",
+      "retrievedAt": "2026-10-15T08:58:38.947Z"
+    },
+    "nai4": {
+      "file": "nai4.mp3",
+      "url": "https://jyutping.org/audio/nai4.mp3",
+      "sha256": "0fae2f8d7841120feddd1b73ba6ad260574d1086f77938a202e7ccc7dae1a75a",
+      "retrievedAt": "2026-10-15T08:58:39.101Z"
+    },
+    "naam4": {
+      "file": "naam4.mp3",
+      "url": "https://jyutping.org/audio/naam4.mp3",
+      "sha256": "07f1e85442178846463473c54c9c316c4ff0b2d71b8b0b1cf435ea8719fb3b91",
+      "retrievedAt": "2026-10-15T08:58:39.111Z"
+    },
+    "nam2": {
+      "file": "nam2.mp3",
+      "url": "https://jyutping.org/audio/nam2.mp3",
+      "sha256": "851b2a9164dffbe4defb2874f4e8533eb8311a27f7e7a43efbfbbbd85637937a",
+      "retrievedAt": "2026-10-15T08:58:39.798Z"
+    },
+    "nei5": {
+      "file": "nei5.mp3",
+      "url": "https://jyutping.org/audio/nei5.mp3",
+      "sha256": "4de431213698212f5d7f2882aa144275a44aaad1519a4aa56a49928023ab247b",
+      "retrievedAt": "2026-10-15T08:58:39.911Z"
+    },
+    "nau1": {
+      "file": "nau1.mp3",
+      "url": "https://jyutping.org/audio/nau1.mp3",
+      "sha256": "18e7b4cd9a82cae9bb68457103c849c5cf39bc68c099359e37a54465b3061ef0",
+      "retrievedAt": "2026-10-15T08:58:40.000Z"
+    },
+    "ng4": {
+      "file": "ng4.mp3",
+      "url": "https://jyutping.org/audio/ng4.mp3",
+      "sha256": "3c38defdeb74d9b05374873598d7c1d4a6d0566f5d67c979fe913d0c7b936817",
+      "retrievedAt": "2026-10-15T08:58:40.482Z"
+    },
+    "ng5": {
+      "file": "ng5.mp3",
+      "url": "https://jyutping.org/audio/ng5.mp3",
+      "sha256": "c68f118faa0ee4b768d9aa50e3ece35d8c747adc71fcc002bde9bd751adc9f3d",
+      "retrievedAt": "2026-10-15T08:58:40.716Z"
+    },
+    "ng6": {
+      "file": "ng6.mp3",
+      "url": "https://jyutping.org/audio/ng6.mp3",
+      "sha256": "f0ffe63fd3fbba1a7f42cfebe64655bae95b093051980aa15b16af5ffe301978",
+      "retrievedAt": "2026-10-15T08:58:40.838Z"
+    },
+    "ngaa4": {
+      "file": "ngaa4.mp3",
+      "url": "https://jyutping.org/audio/ngaa4.mp3",
+      "sha256": "748a44078541811602f5f7521a527a2c4ce543fc96e38cb6ff582e4dcee8f226",
+      "retrievedAt": "2026-10-15T08:58:41.203Z"
+    },
+    "ngaak6": {
+      "file": "ngaak6.mp3",
+      "url": "https://jyutping.org/audio/ngaak6.mp3",
+      "sha256": "130f8714b108a37c5517ac0f3b3e18449ac7f30f7319ddfb7c68615f4755eb0a",
+      "retrievedAt": "2026-10-15T08:58:41.550Z"
+    },
+    "ngaan5": {
+      "file": "ngaan5.mp3",
+      "url": "https://jyutping.org/audio/ngaan5.mp3",
+      "sha256": "8c3e071c4f7a8369f5fbd3681138bf9892f99c9296f545dc860ba51741e7657e",
+      "retrievedAt": "2026-10-15T08:58:41.670Z"
+    },
+    "ngau4": {
+      "file": "ngau4.mp3",
+      "url": "https://jyutping.org/audio/ngau4.mp3",
+      "sha256": "3b37ebd6c3c631a76c893d60b0ba4385ed709bbb1bbd116299574ccf32909dbf",
+      "retrievedAt": "2026-10-15T08:58:42.316Z"
+    },
+    "ngo5": {
+      "file": "ngo5.mp3",
+      "url": "https://jyutping.org/audio/ngo5.mp3",
+      "sha256": "21b63173c5b996c240cdc07da3ffdb6e02c300f326f6a78af2fb3025df524178",
+      "retrievedAt": "2026-10-15T08:58:42.332Z"
+    },
+    "ngon6": {
+      "file": "ngon6.mp3",
+      "url": "https://jyutping.org/audio/ngon6.mp3",
+      "sha256": "f82aa92be18c6c626dc234660a3530bc204418a72d85807b652e2a30c15be44a",
+      "retrievedAt": "2026-10-15T08:58:42.836Z"
+    },
+    "nin4": {
+      "file": "nin4.mp3",
+      "url": "https://jyutping.org/audio/nin4.mp3",
+      "sha256": "e04a7da4e2c0c9adec3d5530571580b62ccdd2a64ae43dbe8aacc2518521fe56",
+      "retrievedAt": "2026-10-15T08:58:43.162Z"
+    },
+    "niu5": {
+      "file": "niu5.mp3",
+      "url": "https://jyutping.org/audio/niu5.mp3",
+      "sha256": "4338a3dbae4e83f19ebe13f7115e9097a29fa18e5b20b1ed54b78910445ce033",
+      "retrievedAt": "2026-10-15T08:58:43.187Z"
+    },
+    "nou5": {
+      "file": "nou5.mp3",
+      "url": "https://jyutping.org/audio/nou5.mp3",
+      "sha256": "a6a0ad1133b47cc952c5de2c04e1e753db69e30d2b3413b9171b7b5e20fc5a3f",
+      "retrievedAt": "2026-10-15T08:58:43.662Z"
+    },
+    "o2": {
+      "file": "o2.mp3",
+      "url": "https://jyutping.org/audio/o2.mp3",
+      "sha256": "bf6b01ef492932bbcbaa2cc64c171d15129bb23eaac3f078c1273a820aeb8aa5",
+      "retrievedAt": "2026-10-15T08:58:43.975Z"
+    },
+    "o1": {
+      "file": "o1.mp3",
+      "url": "https://jyutping.org/audio/o1.mp3",
+      "sha256": "8fe8f17c1e8ef959227afc9a5146b84a4408334bc62a3c345bf4c13332bc5d76",
+      "retrievedAt": "2026-10-15T08:58:44.016Z"
+    },
+    "oe1": {
+      "file": "oe1.mp3",
+      "url": "https://jyutping.org/audio/oe1.mp3",
+      "sha256": "986422d466b2be924c5d89fdd1c9e8ff35a1cbaffcc0fdfb5dab5296256ee105",
+      "retrievedAt": "2026-10-15T08:58:44.505Z"
+    },
+    "oi3": {
+      "file": "oi3.mp3",
+      "url": "https://jyutping.org/audio/oi3.mp3",
+      "sha256": "fcd156471f16a311e2795bff6b4b16c3c79a6d8a7179ab8a86be4e204b1abaf7",
+      "retrievedAt": "2026-10-15T08:58:45.089Z"
+    },
+    "ok3": {
+      "file": "ok3.mp3",
+      "url": "https://jyutping.org/audio/ok3.mp3",
+      "sha256": "134b0fdf24dd2b0463fec1a523618b0ab76ea580ab5400beb130f90f814e8fa8",
+      "retrievedAt": "2026-10-15T08:58:45.382Z"
+    },
+    "oi1": {
+      "file": "oi1.mp3",
+      "url": "https://jyutping.org/audio/oi1.mp3",
+      "sha256": "1a8379d8a48ab2d44cc42caebdcfb279affa3aa907d8f942a418a55190306a56",
+      "retrievedAt": "2026-10-15T08:58:45.427Z"
+    },
+    "on1": {
+      "file": "on1.mp3",
+      "url": "https://jyutping.org/audio/on1.mp3",
+      "sha256": "f3228699db534d9d82bdf6f692949d6cc69a8fdc229198a0829dd7aee6e4ea4d",
+      "retrievedAt": "2026-10-15T08:58:45.880Z"
+    },
+    "ong1": {
+      "file": "ong1.mp3",
+      "url": "https://jyutping.org/audio/ong1.mp3",
+      "sha256": "b6da76bacc3100b90b26c35642a702984c6f255d0fe000b113e60c14cae6bfbd",
+      "retrievedAt": "2026-10-15T08:58:46.234Z"
+    },
+    "ou1": {
+      "file": "ou1.mp3",
+      "url": "https://jyutping.org/audio/ou1.mp3",
+      "sha256": "0da1fb04262aa04d8c66edbf69acafef0b2703bc4247a7094e00f75495ade623",
+      "retrievedAt": "2026-10-15T08:58:46.321Z"
+    },
+    "ou3": {
+      "file": "ou3.mp3",
+      "url": "https://jyutping.org/audio/ou3.mp3",
+      "sha256": "3e0a5a086e419d9dff5d7fb6a393e5a1eda227fe8b34654df7001bf3756f9e6a",
+      "retrievedAt": "2026-10-15T08:58:46.698Z"
+    },
+    "paa3": {
+      "file": "paa3.mp3",
+      "url": "https://jyutping.org/audio/paa3.mp3",
+      "sha256": "0be7a4bb64d09403d6a649bbd1f919870f5a284c4204716051c2884ab638c71d",
+      "retrievedAt": "2026-10-15T08:58:46.929Z"
+    },
+    "paai4": {
+      "file": "paai4.mp3",
+      "url": "https://jyutping.org/audio/paai4.mp3",
+      "sha256": "889bea4d312685ded648f7007a03a9d55900a7d6214744b5b033801fb31d04d1",
+      "retrievedAt": "2026-10-15T08:58:47.174Z"
+    },
+    "paak3": {
+      "file": "paak3.mp3",
+      "url": "https://jyutping.org/audio/paak3.mp3",
+      "sha256": "d58400d81fcf182a5f9456e76f223ea0ea209590501368cfc1e6c3a0e2301c85",
+      "retrievedAt": "2026-10-15T08:58:47.533Z"
+    },
+    "pang4": {
+      "file": "pang4.mp3",
+      "url": "https://jyutping.org/audio/pang4.mp3",
+      "sha256": "a025c37001be64f406c2de453c724e5d05592a05ccb9752fe372296c10315607",
+      "retrievedAt": "2026-10-15T08:58:47.826Z"
+    },
+    "ping1": {
+      "file": "ping1.mp3",
+      "url": "https://jyutping.org/audio/ping1.mp3",
+      "sha256": "c20a7cf85babea95c47e82d93332a7f0e426925b96a2e5c45897482f4a4e9fda",
+      "retrievedAt": "2026-10-15T08:58:48.028Z"
+    },
+    "ping4": {
+      "file": "ping4.mp3",
+      "url": "https://jyutping.org/audio/ping4.mp3",
+      "sha256": "99db965cf64c67387a8b861e3ffe18ad6c7b74b3a1b192dc27513891bcc179f5",
+      "retrievedAt": "2026-10-15T08:58:48.422Z"
+    },
+    "pun4": {
+      "file": "pun4.mp3",
+      "url": "https://jyutping.org/audio/pun4.mp3",
+      "sha256": "de78528719861e1997e64956e992e0b2ca30d33739f8b942138b3941e117a3fd",
+      "retrievedAt": "2026-10-15T08:58:48.686Z"
+    },
+    "put3": {
+      "file": "put3.mp3",
+      "url": "https://jyutping.org/audio/put3.mp3",
+      "sha256": "19537cd4ef1c03d098dce96e350d8aea6b93906f8e482794524b8359532e64d9",
+      "retrievedAt": "2026-10-15T08:58:48.903Z"
+    },
+    "saa1": {
+      "file": "saa1.mp3",
+      "url": "https://jyutping.org/audio/saa1.mp3",
+      "sha256": "6419684e29156ad43eaef578d1db3c690239ca8fd058a6abef3be51b16f4beba",
+      "retrievedAt": "2026-10-15T08:58:49.158Z"
+    },
+    "saai3": {
+      "file": "saai3.mp3",
+      "url": "https://jyutping.org/audio/saai3.mp3",
+      "sha256": "4023264f46c7f8ba193a0cd38bca254f5a6c1eb0118e95e3fe9c407cfe9520f9",
+      "retrievedAt": "2026-10-15T08:58:49.495Z"
+    },
+    "saam1": {
+      "file": "saam1.mp3",
+      "url": "https://jyutping.org/audio/saam1.mp3",
+      "sha256": "c4ac2dd077224ffd3131a990b05c9ced2b40e2f58b0ec24f1d9aecf989cbb7bb",
+      "retrievedAt": "2026-10-15T08:58:49.573Z"
+    },
+    "saan1": {
+      "file": "saan1.mp3",
+      "url": "https://jyutping.org/audio/saan1.mp3",
+      "sha256": "3bd372e906ce38faf76b77a826790d2876a9fbe83ef7754205c0e8e48d6be79d",
+      "retrievedAt": "2026-10-15T08:58:49.844Z"
+    },
+    "sai1": {
+      "file": "sai1.mp3",
+      "url": "https://jyutping.org/audio/sai1.mp3",
+      "sha256": "b4fa99f4a5cdf0eae5e21483a25b4af97f4be106e4d8722f0378b8d603264aea",
+      "retrievedAt": "2026-10-15T08:58:50.276Z"
+    },
+    "saat3": {
+      "file": "saat3.mp3",
+      "url": "https://jyutping.org/audio/saat3.mp3",
+      "sha256": "9980b8ba6e1c8ffaf8cf647adf410715d9aaa9c13157cc40d548b1e14641235e",
+      "retrievedAt": "2026-10-15T08:58:50.352Z"
+    },
+    "sai3": {
+      "file": "sai3.mp3",
+      "url": "https://jyutping.org/audio/sai3.mp3",
+      "sha256": "03486d314238c92cfbcfe5e454f2aa806a02b804bcbcfdea9d5697b0f7b11876",
+      "retrievedAt": "2026-10-15T08:58:50.924Z"
+    },
+    "sak1": {
+      "file": "sak1.mp3",
+      "url": "https://jyutping.org/audio/sak1.mp3",
+      "sha256": "db6813d8f127cffd33c7ffbd449b58acd4358b24cc4a9029562c515059c587ae",
+      "retrievedAt": "2026-10-15T08:58:50.980Z"
+    },
+    "sam1": {
+      "file": "sam1.mp3",
+      "url": "https://jyutping.org/audio/sam1.mp3",
+      "sha256": "b3708c2df08056b346860ff5d9b3d6ce91f7ec686fb60fa21ca4dfe8a7d5b796",
+      "retrievedAt": "2026-10-15T08:58:51.122Z"
+    },
+    "san1": {
+      "file": "san1.mp3",
+      "url": "https://jyutping.org/audio/san1.mp3",
+      "sha256": "44d2dd7218a52be8f25efe5f0254e513927fbf7b074ed5f36b331b0c18d7c397",
+      "retrievedAt": "2026-10-15T08:58:51.688Z"
+    },
+    "san4": {
+      "file": "san4.mp3",
+      "url": "https://jyutping.org/audio/san4.mp3",
+      "sha256": "7f996bb5be80e3623c4eb4d4aa58c4482e6dc58d0d2f06ae8ebe3b7c36060794",
+      "retrievedAt": "2026-10-15T08:58:51.821Z"
+    },
+    "sap1": {
+      "file": "sap1.mp3",
+      "url": "https://jyutping.org/audio/sap1.mp3",
+      "sha256": "0d44e7df1c1b287d723780982b7314726c47ac0de83a4a50a1669bc128b9abed",
+      "retrievedAt": "2026-10-15T08:58:51.851Z"
+    },
+    "sau2": {
+      "file": "sau2.mp3",
+      "url": "https://jyutping.org/audio/sau2.mp3",
+      "sha256": "3680022ac647af572eb1c05ba5f96c517e2f104ea778536013536c679f112f3b",
+      "retrievedAt": "2026-10-15T08:58:52.504Z"
+    },
+    "sap6": {
+      "file": "sap6.mp3",
+      "url": "https://jyutping.org/audio/sap6.mp3",
+      "sha256": "87507a6711d53f0346bff72537f4c4f014ed2ed4e534e8c3fe6f7ff4d1308b19",
+      "retrievedAt": "2026-10-15T08:58:52.534Z"
+    },
+    "sau4": {
+      "file": "sau4.mp3",
+      "url": "https://jyutping.org/audio/sau4.mp3",
+      "sha256": "169b3cb786b9dc0683ee118102d8373f73a6cbfda7ebac392517101b7564b88e",
+      "retrievedAt": "2026-10-15T08:58:52.769Z"
+    },
+    "se2": {
+      "file": "se2.mp3",
+      "url": "https://jyutping.org/audio/se2.mp3",
+      "sha256": "a80faea0a4f1c7db1148e26e10d2b3dc04c1c193f7418c43eb63923e451c4e63",
+      "retrievedAt": "2026-10-15T08:58:53.208Z"
+    },
+    "se1": {
+      "file": "se1.mp3",
+      "url": "https://jyutping.org/audio/se1.mp3",
+      "sha256": "1b7825e2116e732a160943a5530e715a2d673b1a0416a1a6a6c963c7a13ba504",
+      "retrievedAt": "2026-10-15T08:58:53.390Z"
+    },
+    "sei3": {
+      "file": "sei3.mp3",
+      "url": "https://jyutping.org/audio/sei3.mp3",
+      "sha256": "93068f83985dda765e60ec56408d3ade69422094aef2cd35b969917546469629",
+      "retrievedAt": "2026-10-15T08:58:53.480Z"
+    },
+    "sek3": {
+      "file": "sek3.mp3",
+      "url": "https://jyutping.org/audio/sek3.mp3",
+      "sha256": "86188600114d93f3d3216b17e7f41147074cc549ec272b4c91f47d57e3e123a9",
+      "retrievedAt": "2026-10-15T08:58:54.034Z"
+    },
+    "seoi1": {
+      "file": "seoi1.mp3",
+      "url": "https://jyutping.org/audio/seoi1.mp3",
+      "sha256": "5fec156566f6d6d134c83c9e12068eb4e33d4f3d759d7cd8db1a02fa2d56b511",
+      "retrievedAt": "2026-10-15T08:58:54.440Z"
+    },
+    "sek6": {
+      "file": "sek6.mp3",
+      "url": "https://jyutping.org/audio/sek6.mp3",
+      "sha256": "2902514c08ab532893dad557a7fc15dabcbaad6ab684fd19877db1ff11b68268",
+      "retrievedAt": "2026-10-15T08:58:54.505Z"
+    },
+    "seoi2": {
+      "file": "seoi2.mp3",
+      "url": "https://jyutping.org/audio/seoi2.mp3",
+      "sha256": "c631f1b42f622928942b299cbebadd6c0d93d4139235d7be3c8f9d4d89c34b61",
+      "retrievedAt": "2026-10-15T08:58:54.798Z"
+    },
+    "seon1": {
+      "file": "seon1.mp3",
+      "url": "https://jyutping.org/audio/seon1.mp3",
+      "sha256": "ff70a4b4aae968a10db832aa99d8c97f14ba39e3859a20f068fc15b3d4c16f54",
+      "retrievedAt": "2026-10-15T08:58:55.360Z"
+    },
+    "seon3": {
+      "file": "seon3.mp3",
+      "url": "https://jyutping.org/audio/seon3.mp3",
+      "sha256": "8299afaef0fbc88ef04e6252eaabb3a02f8319e8d3c1f284f55546e9456c2d77",
+      "retrievedAt": "2026-10-15T08:58:55.396Z"
+    },
+    "seon6": {
+      "file": "seon6.mp3",
+      "url": "https://jyutping.org/audio/seon6.mp3",
+      "sha256": "6d320856d430ecba40930c8e32661d33327f9d75a835d679e40933724dad461b",
+      "retrievedAt": "2026-10-15T08:58:55.566Z"
+    },
+    "seot1": {
+      "file": "seot1.mp3",
+      "url": "https://jyutping.org/audio/seot1.mp3",
+      "sha256": "a82a0e6d7107da6dcae0bd538f2d4caa96d25aa57a81f43899f0f1a5ff760bc0",
+      "retrievedAt": "2026-10-15T08:58:56.081Z"
+    },
+    "seot6": {
+      "file": "seot6.mp3",
+      "url": "https://jyutping.org/audio/seot6.mp3",
+      "sha256": "7bae7be6a3558378140f2d92b1dabe3361e3bcaace2f3cb9d0633e5067dd8b1e",
+      "retrievedAt": "2026-10-15T08:58:56.189Z"
+    },
+    "si1": {
+      "file": "si1.mp3",
+      "url": "https://jyutping.org/audio/si1.mp3",
+      "sha256": "2f5f9147af96278d351e64b6b05a8551e0fff83c401103dc326d3563d96afc9d",
+      "retrievedAt": "2026-10-15T08:58:56.261Z"
+    },
+    "si3": {
+      "file": "si3.mp3",
+      "url": "https://jyutping.org/audio/si3.mp3",
+      "sha256": "e6ccf25ab74f4dfbb23dcbec60bcc38f4050f8e0897024dfc95eb81780fb080e",
+      "retrievedAt": "2026-10-15T08:58:56.834Z"
+    },
+    "sik1": {
+      "file": "sik1.mp3",
+      "url": "https://jyutping.org/audio/sik1.mp3",
+      "sha256": "4cc97bee0e1db72a646656a1d9208f4b24fe35094b30399bb085f7957df1a0b1",
+      "retrievedAt": "2026-10-15T08:58:56.951Z"
+    },
+    "sik6": {
+      "file": "sik6.mp3",
+      "url": "https://jyutping.org/audio/sik6.mp3",
+      "sha256": "7e705e59d38a32582f53c6ecf5dd872c2488357e656c2520c15be951c37ce900",
+      "retrievedAt": "2026-10-15T08:58:57.074Z"
+    },
+    "sim2": {
+      "file": "sim2.mp3",
+      "url": "https://jyutping.org/audio/sim2.mp3",
+      "sha256": "e207b2a4ba6b8fbd448f66d5437406897d347f4a0910a494d37dde824e7a521c",
+      "retrievedAt": "2026-10-15T08:58:57.626Z"
+    },
+    "sing1": {
+      "file": "sing1.mp3",
+      "url": "https://jyutping.org/audio/sing1.mp3",
+      "sha256": "5b15356f1152000d7e0e85d91bc023f60293df5f720b7582aceedf8f10752cd4",
+      "retrievedAt": "2026-10-15T08:58:57.862Z"
+    },
+    "sin1": {
+      "file": "sin1.mp3",
+      "url": "https://jyutping.org/audio/sin1.mp3",
+      "sha256": "d0dfaa5e7266bbca75056a78346b34e245cef5de7fc9bc1e75254e537da783f0",
+      "retrievedAt": "2026-10-15T08:58:57.898Z"
+    },
+    "sip3": {
+      "file": "sip3.mp3",
+      "url": "https://jyutping.org/audio/sip3.mp3",
+      "sha256": "e7fc3c1fab753bbbf0d2224a4daa916e422d9c33b536a8814da576a23924eb60",
+      "retrievedAt": "2026-10-15T08:58:58.447Z"
+    },
+    "sit3": {
+      "file": "sit3.mp3",
+      "url": "https://jyutping.org/audio/sit3.mp3",
+      "sha256": "689eb000776adae8cd81b45435c4407366ee9acb3d18018d46cacbbd6511eaa3",
+      "retrievedAt": "2026-10-15T08:58:58.616Z"
+    },
+    "siu1": {
+      "file": "siu1.mp3",
+      "url": "https://jyutping.org/audio/siu1.mp3",
+      "sha256": "64db7316b22181408f04c483e1abe78712f7ebf52adfcbdb79eff9754dbd95ad",
+      "retrievedAt": "2026-10-15T08:58:58.816Z"
+    },
+    "siu2": {
+      "file": "siu2.mp3",
+      "url": "https://jyutping.org/audio/siu2.mp3",
+      "sha256": "ae7e8caaebe849a98e00c51daab6677a9c9e37151766d7ff72697372e9a54fc5",
+      "retrievedAt": "2026-10-15T08:58:59.291Z"
+    },
+    "soek3": {
+      "file": "soek3.mp3",
+      "url": "https://jyutping.org/audio/soek3.mp3",
+      "sha256": "04c9cfd8d7483b6fd3b252efcd65e641c9db51f97a88a017b3fc60d46c65638b",
+      "retrievedAt": "2026-10-15T08:58:59.540Z"
+    },
+    "siu3": {
+      "file": "siu3.mp3",
+      "url": "https://jyutping.org/audio/siu3.mp3",
+      "sha256": "c1948123d12aa2b36d61029eb44fd77ef4b34f63a58b48fc1596043ed057f7ea",
+      "retrievedAt": "2026-10-15T08:58:59.798Z"
+    },
+    "soeng1": {
+      "file": "soeng1.mp3",
+      "url": "https://jyutping.org/audio/soeng1.mp3",
+      "sha256": "1f05c082e75728e184c76c4595770458ce916ee17f2ed40bf77a183d9e7e7876",
+      "retrievedAt": "2026-10-15T08:59:00.168Z"
+    },
+    "soeng2": {
+      "file": "soeng2.mp3",
+      "url": "https://jyutping.org/audio/soeng2.mp3",
+      "sha256": "a837d8288f9b31327207771701f46d8e91eaf2cfc6062bd20182e17b3a54a818",
+      "retrievedAt": "2026-10-15T08:59:00.291Z"
+    },
+    "soeng6": {
+      "file": "soeng6.mp3",
+      "url": "https://jyutping.org/audio/soeng6.mp3",
+      "sha256": "812a90d1a8f10c442fc7593ea3e537074207066ff7825c1fcaa6efa4fe229e1e",
+      "retrievedAt": "2026-10-15T08:59:00.654Z"
+    },
+    "sou3": {
+      "file": "sou3.mp3",
+      "url": "https://jyutping.org/audio/sou3.mp3",
+      "sha256": "ad076b29bc847da88de5f4653df3fa980b4ee2b1caf2829e2f3f57b069bd20d0",
+      "retrievedAt": "2026-10-15T08:59:00.962Z"
+    },
+    "syu1": {
+      "file": "syu1.mp3",
+      "url": "https://jyutping.org/audio/syu1.mp3",
+      "sha256": "0181dc64d692f83a746da3c3e5d0f9622cce1150d83f8d372463ed2d1fec9600",
+      "retrievedAt": "2026-10-15T08:59:01.040Z"
+    },
+    "syu6": {
+      "file": "syu6.mp3",
+      "url": "https://jyutping.org/audio/syu6.mp3",
+      "sha256": "303866698fbf4f373a99bbc001d69ef87dbdb3c184676d1aa1e67e2178634225",
+      "retrievedAt": "2026-10-15T08:59:01.500Z"
+    },
+    "syun4": {
+      "file": "syun4.mp3",
+      "url": "https://jyutping.org/audio/syun4.mp3",
+      "sha256": "4ea26ac23c613e4c0119da7bf6633c85c34f5bb89ae242b0270c2644ed50a9b4",
+      "retrievedAt": "2026-10-15T08:59:01.877Z"
+    },
+    "syun1": {
+      "file": "syun1.mp3",
+      "url": "https://jyutping.org/audio/syun1.mp3",
+      "sha256": "819c30c3efcd7223220109fb16d9092edfac0e541da906e414fb6d28ca0089f4",
+      "retrievedAt": "2026-10-15T08:59:01.907Z"
+    },
+    "syut3": {
+      "file": "syut3.mp3",
+      "url": "https://jyutping.org/audio/syut3.mp3",
+      "sha256": "492fa7d8c502dd93c0c3c018b70839c63c36823aecc159abb7e12af0acd28aae",
+      "retrievedAt": "2026-10-15T08:59:02.293Z"
+    },
+    "taa1": {
+      "file": "taa1.mp3",
+      "url": "https://jyutping.org/audio/taa1.mp3",
+      "sha256": "17a310db468b1efa1a74aecb492b7e33d71a95a247e52f0b410aea10dacee925",
+      "retrievedAt": "2026-10-15T08:59:02.643Z"
+    },
+    "taap3": {
+      "file": "taap3.mp3",
+      "url": "https://jyutping.org/audio/taap3.mp3",
+      "sha256": "8a8319caa866c27419bc3c7662d07ad53d093918b654380c4b2fd9b09943a793",
+      "retrievedAt": "2026-10-15T08:59:02.738Z"
+    },
+    "tai2": {
+      "file": "tai2.mp3",
+      "url": "https://jyutping.org/audio/tai2.mp3",
+      "sha256": "1f9cb46475ffdac0ab61a8e025a33ce00ef911ab6a0f3178fa984462e16e3879",
+      "retrievedAt": "2026-10-15T08:59:03.046Z"
+    },
+    "tau3": {
+      "file": "tau3.mp3",
+      "url": "https://jyutping.org/audio/tau3.mp3",
+      "sha256": "9ff3a0992376d576aab678baaaf7fb56e1236f999909b6df415eeb2aabad1923",
+      "retrievedAt": "2026-10-15T08:59:03.509Z"
+    },
+    "tau4": {
+      "file": "tau4.mp3",
+      "url": "https://jyutping.org/audio/tau4.mp3",
+      "sha256": "ff7b961560090372e945d7def640ca7103aef8d65ae97fc4d7d05d6df78264c0",
+      "retrievedAt": "2026-10-15T08:59:03.610Z"
+    },
+    "teoi1": {
+      "file": "teoi1.mp3",
+      "url": "https://jyutping.org/audio/teoi1.mp3",
+      "sha256": "0479a7eb2b18cc15e6331f6d4d1b4bc5d41550888f5d76b5d523a98236fe2753",
+      "retrievedAt": "2026-10-15T08:59:03.863Z"
+    },
+    "tim4": {
+      "file": "tim4.mp3",
+      "url": "https://jyutping.org/audio/tim4.mp3",
+      "sha256": "e3201c836051c36a908d8f1c51f3d7ae8226ed1041b69543cf5aa9562dcec7bc",
+      "retrievedAt": "2026-10-15T08:59:04.342Z"
+    },
+    "tin1": {
+      "file": "tin1.mp3",
+      "url": "https://jyutping.org/audio/tin1.mp3",
+      "sha256": "d1cca9d62324d50a58962afc6e55f0f111306f36d33712c729944a3e9a3dc162",
+      "retrievedAt": "2026-10-15T08:59:04.476Z"
+    },
+    "ting1": {
+      "file": "ting1.mp3",
+      "url": "https://jyutping.org/audio/ting1.mp3",
+      "sha256": "f8bf28e200bf593a882779ed11ea6d60919347968a93ab446dd9524c8c37d8f4",
+      "retrievedAt": "2026-10-15T08:59:04.750Z"
+    },
+    "tip3": {
+      "file": "tip3.mp3",
+      "url": "https://jyutping.org/audio/tip3.mp3",
+      "sha256": "c014f9702e7c31125efcb9548f1d0740ae383a8a0fa90af9e8da0c46e396a6c4",
+      "retrievedAt": "2026-10-15T08:59:05.197Z"
+    },
+    "tit3": {
+      "file": "tit3.mp3",
+      "url": "https://jyutping.org/audio/tit3.mp3",
+      "sha256": "7feebaae2f912a076abf6794f001012f055c0bc26dae5e5c517ed83082300958",
+      "retrievedAt": "2026-10-15T08:59:05.331Z"
+    },
+    "tiu3": {
+      "file": "tiu3.mp3",
+      "url": "https://jyutping.org/audio/tiu3.mp3",
+      "sha256": "63c05b3ae80d2bc279699e1421827f4d5d738c022f310e0ff8dd39339a1ed28a",
+      "retrievedAt": "2026-10-15T08:59:05.549Z"
+    },
+    "tong1": {
+      "file": "tong1.mp3",
+      "url": "https://jyutping.org/audio/tong1.mp3",
+      "sha256": "cbe33608ba853010e7bbd56c49e73f49a7020cc2aee0b1e56bde44b79d4d0f67",
+      "retrievedAt": "2026-10-15T08:59:06.130Z"
+    },
+    "tong4": {
+      "file": "tong4.mp3",
+      "url": "https://jyutping.org/audio/tong4.mp3",
+      "sha256": "209bcec6f7f5bfbbca70411b156a7c11d9e368892922c5d691031dbcfe9b0d88",
+      "retrievedAt": "2026-10-15T08:59:06.153Z"
+    },
+    "tou1": {
+      "file": "tou1.mp3",
+      "url": "https://jyutping.org/audio/tou1.mp3",
+      "sha256": "0df32a04e0271f94e9b9b0a1a2026d59c4193565d62fe01130ba7ff7f41a9e3a",
+      "retrievedAt": "2026-10-15T08:59:06.344Z"
+    },
+    "uk1": {
+      "file": "uk1.mp3",
+      "url": "https://jyutping.org/audio/uk1.mp3",
+      "sha256": "e4ac583934186cc274f9e4dee02fdc81c32f9ec702147c0b109750e690aaf94d",
+      "retrievedAt": "2026-10-15T08:59:06.925Z"
+    },
+    "ung1": {
+      "file": "ung1.mp3",
+      "url": "https://jyutping.org/audio/ung1.mp3",
+      "sha256": "6760e61227c303ee19c3b57c72593edbd3306db40813899528b3546cf6e9ff9e",
+      "retrievedAt": "2026-10-15T08:59:07.172Z"
+    },
+    "tung3": {
+      "file": "tung3.mp3",
+      "url": "https://jyutping.org/audio/tung3.mp3",
+      "sha256": "96ad62419b7f11d09c9776c9cd297e754ce558bbf55531f527b713645f1c507d",
+      "retrievedAt": "2026-10-15T08:59:07.240Z"
+    },
+    "waa1": {
+      "file": "waa1.mp3",
+      "url": "https://jyutping.org/audio/waa1.mp3",
+      "sha256": "ea422a6e3acd8aa28efb968ee1d419d8f1091f44d22153cfcea96fb7bfaf8dd9",
+      "retrievedAt": "2026-10-15T08:59:07.658Z"
+    },
+    "waa2": {
+      "file": "waa2.mp3",
+      "url": "https://jyutping.org/audio/waa2.mp3",
+      "sha256": "39f4a6be72497fa11fa62b7fb692ccc0203d1b9e33d45c43d2fb784668f738f3",
+      "retrievedAt": "2026-10-15T08:59:08.054Z"
+    },
+    "waai6": {
+      "file": "waai6.mp3",
+      "url": "https://jyutping.org/audio/waai6.mp3",
+      "sha256": "abd4c1c34900b9adef56da589264528049809f8518462c9389310a7673412b85",
+      "retrievedAt": "2026-10-15T08:59:08.511Z"
+    },
+    "waa6": {
+      "file": "waa6.mp3",
+      "url": "https://jyutping.org/audio/waa6.mp3",
+      "sha256": "3a6b6a1244cdf95d35f4c1a269fad917191a61b43be424bef583c778beb0168a",
+      "retrievedAt": "2026-10-15T08:59:08.552Z"
+    },
+    "waan1": {
+      "file": "waan1.mp3",
+      "url": "https://jyutping.org/audio/waan1.mp3",
+      "sha256": "51567d9d16ef4cdc987182c44abdd952ed1cd7790049891e22b8ebb94f75fd58",
+      "retrievedAt": "2026-10-15T08:59:08.873Z"
+    },
+    "waang4": {
+      "file": "waang4.mp3",
+      "url": "https://jyutping.org/audio/waang4.mp3",
+      "sha256": "f77a4587a798e423c1c9f0ff9f8e68452024ca4943032485eb050980e32d7b89",
+      "retrievedAt": "2026-10-15T08:59:09.364Z"
+    },
+    "wan1": {
+      "file": "wan1.mp3",
+      "url": "https://jyutping.org/audio/wan1.mp3",
+      "sha256": "bfc2045e289dd6fe79e3096036f32874a44e9e14817d73ead9e744b444c9b484",
+      "retrievedAt": "2026-10-15T08:59:09.388Z"
+    },
+    "wan4": {
+      "file": "wan4.mp3",
+      "url": "https://jyutping.org/audio/wan4.mp3",
+      "sha256": "7dd495fc8592f33ece60df8c268fd20a95d7a115cd3b9337edd6359b3869c899",
+      "retrievedAt": "2026-10-15T08:59:09.780Z"
+    },
+    "wing5": {
+      "file": "wing5.mp3",
+      "url": "https://jyutping.org/audio/wing5.mp3",
+      "sha256": "110e3d9b4e5803a378db267ef94db38be97e114ab99211a8059b21f128c70459",
+      "retrievedAt": "2026-10-15T08:59:10.114Z"
+    },
+    "wan6": {
+      "file": "wan6.mp3",
+      "url": "https://jyutping.org/audio/wan6.mp3",
+      "sha256": "dcd655b0fb3f3dd3bd1d1d615c830b420d698fc1efd6592e5f551b968e372707",
+      "retrievedAt": "2026-10-15T08:59:10.207Z"
+    },
+    "wong4": {
+      "file": "wong4.mp3",
+      "url": "https://jyutping.org/audio/wong4.mp3",
+      "sha256": "3ca20238e439afb0c04bb7f01e3d46e6c237a2b3c8a8bef7b59cd60ece65d46e",
+      "retrievedAt": "2026-10-15T08:59:10.627Z"
+    },
+    "wu1": {
+      "file": "wu1.mp3",
+      "url": "https://jyutping.org/audio/wu1.mp3",
+      "sha256": "61a6815a224475ae7c7c7451b33a66bf39c3763e640ba7ee6aa0f0ca9ae8cf73",
+      "retrievedAt": "2026-10-15T08:59:10.921Z"
+    },
+    "wui4": {
+      "file": "wui4.mp3",
+      "url": "https://jyutping.org/audio/wui4.mp3",
+      "sha256": "2a5355ad13fa11f98fe5b634325b76de42731191346c34a681f1ccd8778dfb97",
+      "retrievedAt": "2026-10-15T08:59:11.102Z"
+    },
+    "wui5": {
+      "file": "wui5.mp3",
+      "url": "https://jyutping.org/audio/wui5.mp3",
+      "sha256": "32c823cd9118c319fbd24b8d2852d9c36fea65a9f01fbbf01b1f0ff205d1e9ca",
+      "retrievedAt": "2026-10-15T08:59:11.461Z"
+    },
+    "zaa1": {
+      "file": "zaa1.mp3",
+      "url": "https://jyutping.org/audio/zaa1.mp3",
+      "sha256": "faa518205c06dd7c059fe0ac6f0f156b6ea9edbafc6bdce86662c6ecede056fc",
+      "retrievedAt": "2026-10-15T08:59:11.671Z"
+    },
+    "zaap6": {
+      "file": "zaap6.mp3",
+      "url": "https://jyutping.org/audio/zaap6.mp3",
+      "sha256": "d45927a39e29a189402300d640a253a88f29c18f99b0dc7ce0b33f316065a958",
+      "retrievedAt": "2026-10-15T08:59:11.860Z"
+    },
+    "zai1": {
+      "file": "zai1.mp3",
+      "url": "https://jyutping.org/audio/zai1.mp3",
+      "sha256": "620cb03ce960ef0e2b29437d02e4a7c54d9b39c1cdc85f498e3ffaf0b7321395",
+      "retrievedAt": "2026-10-15T08:59:12.204Z"
+    },
+    "zan1": {
+      "file": "zan1.mp3",
+      "url": "https://jyutping.org/audio/zan1.mp3",
+      "sha256": "70a4d06f5dbd77d1a5f287d0b291c27990dda6edbb3fdf856589db648b266a5f",
+      "retrievedAt": "2026-10-15T08:59:12.598Z"
+    },
+    "zap1": {
+      "file": "zap1.mp3",
+      "url": "https://jyutping.org/audio/zap1.mp3",
+      "sha256": "b176eee7217a148087d9536296a32733497d3bf489c7f01cc664c4660d4fb12c",
+      "retrievedAt": "2026-10-15T08:59:12.718Z"
+    },
+    "zau2": {
+      "file": "zau2.mp3",
+      "url": "https://jyutping.org/audio/zau2.mp3",
+      "sha256": "89eaca04a9763555b68d9f012cff91ccd7a483dfa4e377e77a5c13fb895fe1df",
+      "retrievedAt": "2026-10-15T08:59:13.041Z"
+    },
+    "ze2": {
+      "file": "ze2.mp3",
+      "url": "https://jyutping.org/audio/ze2.mp3",
+      "sha256": "803aa96942f1df2db1026e109ce5b4c317909e60429608df3aa0e7e20265b568",
+      "retrievedAt": "2026-10-15T08:59:13.377Z"
+    },
+    "ze6": {
+      "file": "ze6.mp3",
+      "url": "https://jyutping.org/audio/ze6.mp3",
+      "sha256": "ce7977f732b44fe1f3bcdb919de0767e0e0cd11453f5c4201dc7f02825de6f70",
+      "retrievedAt": "2026-10-15T08:59:13.570Z"
+    },
+    "zek3": {
+      "file": "zek3.mp3",
+      "url": "https://jyutping.org/audio/zek3.mp3",
+      "sha256": "8fabbc159ad88a27d6cf18810c1da39696592bb6a1ab3b82737190609f5d88ef",
+      "retrievedAt": "2026-10-15T08:59:13.883Z"
+    },
+    "zeng2": {
+      "file": "zeng2.mp3",
+      "url": "https://jyutping.org/audio/zeng2.mp3",
+      "sha256": "203020903f94c70bc82084df5d78105a075b3df603df52bcf74ba6f90ee314fc",
+      "retrievedAt": "2026-10-15T08:59:14.217Z"
+    },
+    "zeng6": {
+      "file": "zeng6.mp3",
+      "url": "https://jyutping.org/audio/zeng6.mp3",
+      "sha256": "44d8617cdfbdc89c6fe4029198b799420281f220ff8e27314fcc9877407ed6dd",
+      "retrievedAt": "2026-10-15T08:59:14.372Z"
+    },
+    "zeoi3": {
+      "file": "zeoi3.mp3",
+      "url": "https://jyutping.org/audio/zeoi3.mp3",
+      "sha256": "6c9d378d48ceb0541b4465891dc55525c25a04d2e6a4d7d1c000d6cb801fb88e",
+      "retrievedAt": "2026-10-15T08:59:14.704Z"
+    },
+    "zeon2": {
+      "file": "zeon2.mp3",
+      "url": "https://jyutping.org/audio/zeon2.mp3",
+      "sha256": "1f4a2b678ac1138866d1fb8982c615366f758a83f217a8467545df47c05550aa",
+      "retrievedAt": "2026-10-15T08:59:15.034Z"
+    },
+    "zeot1": {
+      "file": "zeot1.mp3",
+      "url": "https://jyutping.org/audio/zeot1.mp3",
+      "sha256": "41e25d29b8abfbc6745dad672555bb68c154bceb768beb902e21f71059727c27",
+      "retrievedAt": "2026-10-15T08:59:15.238Z"
+    },
+    "zi1": {
+      "file": "zi1.mp3",
+      "url": "https://jyutping.org/audio/zi1.mp3",
+      "sha256": "2af9288825dbba4e8450013d68fb8c1625708e0db4b0ae3bcd3f75b21f5f1fd0",
+      "retrievedAt": "2026-10-15T08:59:15.374Z"
+    },
+    "zi6": {
+      "file": "zi6.mp3",
+      "url": "https://jyutping.org/audio/zi6.mp3",
+      "sha256": "283c5b7e8349b6b95f315b114fe79dcae32d0be235fb81c36d79a598a3548347",
+      "retrievedAt": "2026-10-15T08:59:15.884Z"
+    },
+    "zo2": {
+      "file": "zo2.mp3",
+      "url": "https://jyutping.org/audio/zo2.mp3",
+      "sha256": "0a30eb62cc8edb3cb0d93012b8edf86054f5edfc1be160c72449ecf388fa3e43",
+      "retrievedAt": "2026-10-15T08:59:16.078Z"
+    },
+    "zip3": {
+      "file": "zip3.mp3",
+      "url": "https://jyutping.org/audio/zip3.mp3",
+      "sha256": "15d7449ad22701514ea5c7da5475a28b8180864fd0a5da2ebcabb81319eb8e60",
+      "retrievedAt": "2026-10-15T08:59:16.100Z"
+    },
+    "zoek3": {
+      "file": "zoek3.mp3",
+      "url": "https://jyutping.org/audio/zoek3.mp3",
+      "sha256": "3c5c1dda7b129f862cf3116831da69b283ab8337158b3303667877adf3588188",
+      "retrievedAt": "2026-10-15T08:59:16.576Z"
+    },
+    "zoek6": {
+      "file": "zoek6.mp3",
+      "url": "https://jyutping.org/audio/zoek6.mp3",
+      "sha256": "373b84065098d9c48001c5f9406b78cdacc3975dce9b46e55b9d2dbc0aae9c5e",
+      "retrievedAt": "2026-10-15T08:59:16.864Z"
+    },
+    "zou2": {
+      "file": "zou2.mp3",
+      "url": "https://jyutping.org/audio/zou2.mp3",
+      "sha256": "7f5c8fe39302a9077ac4a69640eece64a92156504923f1b1e1744b6d2bbbe567",
+      "retrievedAt": "2026-10-15T08:59:16.938Z"
+    },
+    "zou6": {
+      "file": "zou6.mp3",
+      "url": "https://jyutping.org/audio/zou6.mp3",
+      "sha256": "acf2c290bde10f2bde8fda9e26bfcc0ddc2736a357bb3db45059ea9e94fb1774",
+      "retrievedAt": "2026-10-15T08:59:17.427Z"
+    },
+    "zung1": {
+      "file": "zung1.mp3",
+      "url": "https://jyutping.org/audio/zung1.mp3",
+      "sha256": "f7ca69dfaf89697fb9042fe1ee6587eaac24253352b07ad9f6eab749de16c897",
+      "retrievedAt": "2026-10-15T08:59:17.531Z"
+    },
+    "zyu1": {
+      "file": "zyu1.mp3",
+      "url": "https://jyutping.org/audio/zyu1.mp3",
+      "sha256": "6864c88f8400359fd9a082b8d9086b9de6d05ac10b87d414bc4888a647ad302e",
+      "retrievedAt": "2026-10-15T08:59:17.621Z"
+    },
+    "zyu6": {
+      "file": "zyu6.mp3",
+      "url": "https://jyutping.org/audio/zyu6.mp3",
+      "sha256": "1d10b96cc5b3bf7fda2970a2fb231c7db9b91d6395db2a8fcb6f98082da00312",
+      "retrievedAt": "2026-10-15T08:59:18.152Z"
+    },
+    "zyun1": {
+      "file": "zyun1.mp3",
+      "url": "https://jyutping.org/audio/zyun1.mp3",
+      "sha256": "d6600ead270399b2821af0a3c33097ebbf18295193298cdc4a32ed31e7a0c63e",
+      "retrievedAt": "2026-10-15T08:59:18.314Z"
+    },
+    "zyun2": {
+      "file": "zyun2.mp3",
+      "url": "https://jyutping.org/audio/zyun2.mp3",
+      "sha256": "1e43e6ce91445e5476332319eb77beea7e1b881f043ea48bbb1aa953303beb3f",
+      "retrievedAt": "2026-10-15T08:59:18.526Z"
+    },
+    "zyut6": {
+      "file": "zyut6.mp3",
+      "url": "https://jyutping.org/audio/zyut6.mp3",
+      "sha256": "1eb0364b509692f89863b255aa2f10922df81fc99eabd5182ab5be916d46059c",
+      "retrievedAt": "2026-10-15T08:59:18.957Z"
+    },
+    "kei4": {
+      "file": "kei4.mp3",
+      "url": "https://jyutping.org/audio/kei4.mp3",
+      "sha256": "daeb64dbe533811c6484942b9d8ce39057f37977505d203c8ebb6b72cd33ac01",
+      "retrievedAt": "2026-10-15T09:02:36.895Z"
+    },
+    "goe3": {
+      "file": "goe3.mp3",
+      "url": "https://jyutping.org/audio/goe3.mp3",
+      "sha256": "90389f9537ed93adf7782eaf62b114f03ae932fc1796a6a451a957a03bb7c4f2",
+      "retrievedAt": "2026-10-15T09:02:37.210Z"
+    },
+    "sat1": {
+      "file": "sat1.mp3",
+      "url": "https://jyutping.org/audio/sat1.mp3",
+      "sha256": "e019d858b23e515cfa9b17fe29446f089d59a951f0d40ac4c92ac5987bcf8f43",
+      "retrievedAt": "2026-10-15T09:24:09.752Z"
+    },
+    "ze1": {
+      "file": "ze1.mp3",
+      "url": "https://jyutping.org/audio/ze1.mp3",
+      "sha256": "84274e40a56f7527e52e8008753d3e5e21f0e043d3e5558ad188347335ea97e6",
+      "retrievedAt": "2026-10-15T09:24:09.862Z"
+    }
+  }
+}

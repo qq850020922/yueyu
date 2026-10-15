@@ -1,0 +1,7 @@
+{
+  "_说明": "可选的本地音频配置。songs/poems 的 key 必须与网站显示的歌名/诗名完全一致；file 是 media/songs/ 或 media/poems/ 下的文件名；start/end 是教学段落的秒数（可省略）。改完保存刷新页面。仅服务器模式（node server.js）需要此文件；双击 index.html 的本地模式按文件名自动识别。",
+  "songs": {
+    "上海滩": { "file": "上海滩.mp3", "start": 15, "end": 50 }
+  },
+  "poems": {}
+}
