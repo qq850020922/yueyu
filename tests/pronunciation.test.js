@@ -30,7 +30,8 @@ test('all 19 initials and 55 teaching items have matching Cantonese syllables', 
     if (!f.onlyCompound) assert.equal(final(syllable), f.id);
   }
   assert.equal(lessons.finals.a, 'sam1');
-  assert.equal(lessons.finals.eo, 'seon1');
+  assert.equal(lessons.finals.eo, 'ceot1');
+  for (const f of finals) assert(f.examples.some(e => e.j === lessons.finals[f.id]), 'teaching syllable must have a named example: ' + f.id);
 });
 
 test('lesson examples and spelling targets have exact local recordings and correct categories', () => {
@@ -65,10 +66,20 @@ function playerFixture() {
     pause() { this.paused = true; }
   }
   const player = vm.runInNewContext(read('js/pronunciation.js') + '\nPRONUNCIATION', {
-    Audio, PRONUNCIATION_FILES: files, PHONEME_FILES: phonemes, setTimeout, clearTimeout,
+    Audio, PRONUNCIATION_FILES: files, PHONEME_FILES: phonemes, PHONETIC_LESSONS: lessons, setTimeout, clearTimeout,
   });
   return { player, sounds };
 }
+
+test('final teaching playback uses the original complete recording exactly once', async () => {
+  const { player, sounds } = playerFixture();
+  const promise = player.play(['final-example:im']);
+  assert.equal(sounds.length, 1);
+  assert.equal(sounds[0].src, 'media/pronunciation/gim3.mp3');
+  assert.equal(sounds[0].plays, 1);
+  sounds[0].onended();
+  assert.equal(await promise, true);
+});
 
 test('all base sounds are distinct clips with traceable boundaries and non-silent PCM', () => {
   const { pcm8 } = require('../tools/build-phonemes');

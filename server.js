@@ -12,7 +12,7 @@ const { discoverSongs, indexSongs } = require('./tools/index-songs');
 
 const PORT = process.env.PORT || 3000;
 const ROOT = __dirname;
-const DATA_DIR = path.join(ROOT, 'server-data');
+const DATA_DIR = process.env.YGT_DATA_DIR || path.join(ROOT, 'server-data');
 const DB_FILE = path.join(DATA_DIR, 'users.json');
 const TOKEN_TTL = 30 * 24 * 3600 * 1000; // 30 天
 
@@ -96,7 +96,7 @@ async function handleAPI(req, res, pathname) {
     const name = String(b && b.name || '').trim(), pass = String(b && b.pass || '');
     if (!/^[\w\u4e00-\u9fa5-]{2,24}$/.test(name)) return send(res, 400, { error: '用户名需 2–24 位（中英文/数字/下划线/短横线）' });
     if (pass.length < 4 || pass.length > 64) return send(res, 400, { error: '密码需 4–64 位' });
-    if (db.users[name]) return send(res, 409, { error: '用户名已被注册' });
+    if (['__proto__', 'prototype', 'constructor'].includes(name) || Object.hasOwn(db.users, name)) return send(res, 409, { error: '用户名已被注册或不可用' });
     const salt = crypto.randomBytes(16).toString('hex');
     db.users[name] = { salt, h: hash(pass, salt), created: Date.now(), progress: [], stats: { tone: 0, pinyin: 0, law: 0 } };
     const token = newToken();
@@ -108,7 +108,7 @@ async function handleAPI(req, res, pathname) {
   if (pathname === '/api/login' && req.method === 'POST') {
     const b = await readBody(req).catch(() => null);
     const name = String(b && b.name || '').trim(), pass = String(b && b.pass || '');
-    const u = db.users[name];
+    const u = Object.hasOwn(db.users, name) ? db.users[name] : null;
     if (!u) return send(res, 401, { error: '用户名或密码不对' });
     const h = hash(pass, u.salt);
     const ok = h.length === u.h.length && crypto.timingSafeEqual(Buffer.from(h), Buffer.from(u.h));
@@ -152,10 +152,15 @@ async function handleAPI(req, res, pathname) {
 
 /* ---------- 静态文件 ---------- */
 function serveStatic(req, res, pathname) {
-  let p = decodeURIComponent(pathname);
+  let p;
+  try { p = decodeURIComponent(pathname); } catch (_) { res.writeHead(400); return res.end('400'); }
   if (p === '/') p = '/index.html';
-  const f = path.normalize(path.join(ROOT, p));
-  if (!f.startsWith(ROOT)) { res.writeHead(403); return res.end('403'); }
+  const f = path.resolve(ROOT, '.' + p);
+  const relative = path.relative(ROOT, f);
+  if (relative.startsWith('..') || path.isAbsolute(relative) ||
+      !(relative === 'index.html' || /^(js|css|media)[\\/]/.test(relative))) {
+    res.writeHead(403); return res.end('403');
+  }
   fs.readFile(f, (err, data) => {
     if (err) { res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' }); return res.end('404 Not Found'); }
     const headers = { 'Content-Type': MIME[path.extname(f).toLowerCase()] || 'application/octet-stream', 'Cache-Control': 'no-cache', 'Accept-Ranges': 'bytes' };
@@ -178,7 +183,7 @@ function serveStatic(req, res, pathname) {
 /* ---------- 启动 ---------- */
 loadDB();
 indexSongs();
-http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
   const pathname = (req.url || '/').split('?')[0];
   if (pathname.startsWith('/api/')) {
     handleAPI(req, res, pathname).catch(e => send(res, 500, { error: e.message || 'server error' }));
@@ -186,7 +191,7 @@ http.createServer((req, res) => {
   }
   serveStatic(req, res, pathname);
 }).listen(PORT, () => {
-  console.log(`[粤讲粤掂] 服务器已启动: http://localhost:${PORT}`);
+  console.log(`[粤讲粤掂] 服务器已启动: http://localhost:${server.address().port}`);
   console.log(`[粤讲粤掂] 多用户模式：注册/登录/云端进度已启用（数据目录 server-data/）`);
   console.log(`[粤讲粤掂] 已注册用户数: ${Object.keys(db.users).length}`);
 });

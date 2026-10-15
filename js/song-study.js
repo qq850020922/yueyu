@@ -4,8 +4,12 @@ const SONG_STUDY = (() => {
   let frame = null, timer = null, segment = null, urls = [], loading = 0;
   const $ = s => host.querySelector(s);
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
-  const read = key => { try { return JSON.parse(localStorage.getItem(key)) || {}; } catch (_) { return {}; } };
-  const write = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); } catch (_) { deps.toast('浏览器无法保存学习进度'); } };
+  const read = key => { try { const scoped = deps.storageKey(key); return scoped ? JSON.parse(localStorage.getItem(scoped)) || {} : {}; } catch (_) { return {}; } };
+  const write = (key, value) => {
+    const scoped = deps.storageKey(key);
+    if (!scoped) return;
+    try { localStorage.setItem(scoped, JSON.stringify(value)); } catch (_) { deps.toast('浏览器无法保存学习进度'); }
+  };
   const key = () => 'ygt_song_' + (selected?.id || 'text') + '_' + source;
   const time = n => Number.isFinite(n) ? Math.floor(n / 60) + ':' + (n % 60).toFixed(2).padStart(5, '0') : '未标记';
   function stop() {
@@ -125,6 +129,7 @@ const SONG_STUDY = (() => {
     $('#songSaveReading').onclick = () => {
       const value = $('#songReading').value.trim().toLowerCase();
       if (!/^[a-z]+[1-6]$/.test(value)) { deps.toast('请输入完整粤拼，例如 nei5'); return; }
+      if (!deps.requireLogin()) return;
       const saved = read(key()); (saved.readings ||= {})[li + ':' + ci] = value;
       write(key(), saved); renderRows(); speak(value);
     };
@@ -158,6 +163,7 @@ const SONG_STUDY = (() => {
       if (act === 'clip') playLine(i);
       else if (act === 'read') { silence(); if (!TTS.speak(rows[i].text, { rate:+$('#songRate').value })) deps.toast('系统未安装粤语朗读语音'); }
       else if (audio) {
+        if (!deps.requireLogin()) return;
         rows[i][act] = audio.currentTime;
         const saved = read(key()); (saved.timing ||= {})[i] = { start:rows[i].start, end:rows[i].end };
         write(key(), saved); renderRows();
@@ -165,6 +171,7 @@ const SONG_STUDY = (() => {
     });
     host.addEventListener('change', e => {
       if (e.target.matches('[data-done]')) {
+        if (!deps.storageKey(key())) { renderRows(); deps.requireLogin(); return; }
         const saved = read(key()); (saved.done ||= {})[e.target.dataset.done] = e.target.checked;
         write(key(), saved); renderRows();
       }
@@ -188,5 +195,13 @@ const SONG_STUDY = (() => {
     $('#songRefresh').onclick = scan; scan(); renderLibrary();
     window.addEventListener('beforeunload', () => urls.forEach(u => URL.revokeObjectURL(u)), { once:true });
   }
-  return { mount, stop };
+  function refreshAccount() {
+    if (!host) return;
+    stop();
+    const remembered = read('ygt_song_selected');
+    const index = items.findIndex(s => s.id === remembered);
+    if (index >= 0) choose(index);
+    else if (selected) analyze(false);
+  }
+  return { mount, stop, refreshAccount };
 })();

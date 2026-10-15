@@ -33,8 +33,8 @@ const NAV = [
   { id: 'guide',    icon: '🧭', label: '学习指南' },
 ];
 
-let checkedDays = new Set(LS.get('ygt_progress', []));
-let stats = LS.get('ygt_stats', { tone: 0, pinyin: 0, law: 0 });
+let checkedDays = new Set();
+let stats = { tone: 0, pinyin: 0, law: 0 };
 let settings = LS.get('ygt_settings', { rate: 0.8, voice: '' });
 let currentMonth = 'm1';
 
@@ -49,7 +49,7 @@ function streak() {
   return s;
 }
 function gotBadges() { return BADGES.filter(b => completedCount() >= b.days); }
-function saveProgress() { LS.set('ygt_progress', [...checkedDays]); renderSideProgress(); buildHome(); buildPlan(); scheduleSync(); }
+function saveProgress() { if (!requireLogin()) return; saveAccountCache(); renderSideProgress(); buildHome(); buildPlan(); scheduleSync(); }
 
 /* ---------- 发音引擎接线 ---------- */
 function refreshVoiceChip(state, name) {
@@ -84,6 +84,7 @@ function refreshVoiceOptions() {
 
 /* ---------- 导航 ---------- */
 function switchPage(id) {
+  if (id === 'plan' && !requireLogin()) return;
   TTS.stopLoop(); pauseAllMedia();
   $$('.page').forEach(p => p.classList.toggle('active', p.id === 'page-' + id));
   $$('.nav-item').forEach(b => b.classList.toggle('active', b.dataset.page === id));
@@ -108,7 +109,7 @@ function buildHome() {
     <h1>粤讲粤掂</h1>
     <div class="hero-sub">专为普通话母语者打造的粤语自学舱：粤拼 → 九声六调 → 诗歌跟读 → 歌曲跟唱 → 90 天成军。掂（dim6）= 搞定——越讲，越掂！</div>
     <div class="hero-cta">
-      <button class="btn primary" data-goto-plan="${cur.d}">▶️ 开始今天的学习（第 ${cur.d} 天）</button>
+      <button class="btn primary" data-goto-plan="${cur.d}">${AUTH.ready ? `▶️ 开始今天的学习（第 ${cur.d} 天）` : '登录后开始计划学习'}</button>
       <button class="btn" data-say="三碗半牛腩面" data-rate="0.7">🔊 听口诀：三碗半牛腩面</button>
       <button class="btn" data-goto="guide">🧭 先看学习方法</button>
     </div>
@@ -121,7 +122,7 @@ function buildHome() {
     <div class="stat"><span class="big">${stats.tone}</span><div class="lbl">听音辨调最佳<br>/10 分</div></div>
   </div>
 
-  <div class="card today-card" id="homeToday">
+  ${AUTH.ready ? `<div class="card today-card" id="homeToday">
     <div class="day-no">今日任务 · DAY ${cur.d} / ${totalDays}</div>
     <h3>${esc(cur.t)}</h3>
     <ul class="day-list">${cur.learn.map(x => `<li><span class="ic">学</span>${esc(x)}</li>`).join('')}</ul>
@@ -131,7 +132,7 @@ function buildHome() {
       <button class="btn primary small" data-goto-page="${cur.page}">去「${esc((NAV.find(n => n.id === cur.page) || {}).label || cur.page)}」学习</button>
       <button class="btn small" data-check-day="${cur.d}">打卡完成第 ${cur.d} 天</button>
     </div>
-  </div>
+  </div>` : '<div class="note-box" id="homeToday">登录后查看今日任务、打卡与个人学习进度。<button class="btn small" data-login>登录 / 注册</button></div>'}
 
   <div class="section-title">🗺️ 三个月路线图 <small>难度逐步上升 · 每天只需 15–30 分钟</small></div>
   <div class="roadmap">
@@ -223,10 +224,19 @@ function finalSampleNote(f) {
   if (/(m|n|ng)$/.test(f.id)) return '元音连到鼻音韵尾，一口气收尾，不拆成两个音。';
   return '留意示范音节中的韵母部分，保持连贯口形。';
 }
+function finalExample(f) {
+  const j = PHONETIC_LESSONS.finals[f.id];
+  return f.examples.find(e => e.j === j) || { c: '', j };
+}
+function finalBreakdown(f) {
+  const sample = finalExample(f), d = decompose(sample.j);
+  if (f.onlyCompound) return `${sample.c} ${sample.j}：短元音 ${f.id} 包含在 ${d.fin} 中，不能把整个 ${d.fin} 当作 ${f.id}。`;
+  return `${sample.c} ${sample.j} = ${d.ini || '零声母'} + ${d.fin} + 第 ${d.tone} 调；重点听 ${f.id}。`;
+}
 function aloneBtn(f) {
-  const syllable = PHONETIC_LESSONS.finals[f.id];
+  const sample = finalExample(f);
   return `<div class="hudu-line">
-    <button class="say phonetic" data-phonetic-final="${esc(f.id)}" title="播放完整示范音节 ${esc(syllable)}">示范音 ${esc(syllable)}</button>
+    <button class="say phonetic" data-phonetic-final="${esc(f.id)}" title="${esc(finalBreakdown(f))}">示范字 ${esc(sample.c)} ${esc(sample.j)}</button>
   </div>`;
 }
 function buildFinals() {
@@ -235,7 +245,7 @@ function buildFinals() {
     <h1>🅰️ 韵母 55 个 <span class="tag">五组分区 · 全部可点读</span> ${vidBtn('粤语 粤拼 韵母 发音教学', '看视频学')}</h1>
     <div class="sub">通过示范字学习韵母，结合口形说明练习元音、复元音、鼻音尾和入声尾。</div>
   </div>
-  <div class="note-box"><b>韵母示范：</b>按钮播放完整示范音节，例如 ei → fei1、im → sim2。示范音可能带有声母，请留意声母之后的韵母部分；a、eo 等短元音需在完整韵母中体会。</div>
+  <div class="note-box"><b>韵母示范：</b>飞 fei1 中的 ei、剑 gim3 中的 im。先听完整字音，再按口形说明练习韵母。a、eo 等短元音在完整韵母中体会。录音来自 <a href="https://jyutping.org/jyutping/" target="_blank" rel="noopener">粤拼方案</a> 的完整音节，保留原声，不截取、不拼接。</div>
   <div class="phonetic-toolbar"><button class="btn small" data-stop-pronunciation title="停止播放" aria-label="停止播放">⏹</button><span id="finalPlaybackStatus" role="status" aria-live="polite"></span></div>
   ${FINAL_GROUPS.map(g => `
     <div class="group-head"><h3>${esc(g.name)}</h3><span class="desc">${esc(g.desc)}</span></div>
@@ -244,6 +254,7 @@ function buildFinals() {
       <div class="phon-card" data-final="${g.id}:${i}" role="button" tabindex="0">
         <div class="sym">${esc(f.id)} <small>${esc(f.ipa)}</small></div>
         ${aloneBtn(f)}
+        <div class="phonetic-hint">${esc(finalBreakdown(f))}</div>
         <div class="phonetic-how">${esc(f.how)}</div>
         <div class="phonetic-hint">${esc(finalSampleNote(f))}</div>
         <div class="cmp">${esc(f.mandarin)}${f.onlyCompound ? ' <span class="tag">只出现在复合韵母</span>' : ''}</div>
@@ -277,7 +288,8 @@ function finalModal(f) {
     <div class="modal-body">
       <div class="kv">
         <div class="k">韵母发音</div><div class="v">
-          <button class="ex-tile phonetic-tile" data-phonetic-final="${esc(f.id)}"><b>${esc(f.id)}</b><div class="j">${esc(PHONETIC_LESSONS.finals[f.id])}</div><div class="m">完整示范音节</div></button>
+          <button class="ex-tile phonetic-tile" data-phonetic-final="${esc(f.id)}"><b>${esc(finalExample(f).c)}</b><div class="j">${esc(finalExample(f).j)}</div><div class="m">示范字录音</div></button>
+          <div class="phonetic-hint">${esc(finalBreakdown(f))}</div>
           <span class="phonetic-hint">${esc(finalSampleNote(f))}</span></div>
         <div class="k">发音要领</div><div class="v">${esc(f.how)}</div>
         <div class="k">易错点</div><div class="v">${f.pitfall.startsWith('⚠️') ? `<div class="warn-box" style="margin:0">${esc(f.pitfall)}</div>` : esc(f.pitfall)}</div>
@@ -607,6 +619,8 @@ const JYUT_DICT = (() => {
 function buildSongs() {
   SONG_STUDY.mount($('#page-songs'), {
     toast,
+    storageKey: key => AUTH.ready ? accountKey(key) : null,
+    requireLogin,
     embedded: async source => {
       try {
         const buffer = source instanceof File ? await source.arrayBuffer() : await (await fetch(source)).arrayBuffer();
@@ -658,12 +672,16 @@ function progressRing(pct) {
   </div>`;
 }
 function buildPlan() {
+  if (!AUTH.ready) {
+    $('#page-plan').innerHTML = '<div class="page-head"><h1>90 天学习计划</h1><p>登录后查看你的学习计划与进度。</p><button class="btn primary" data-login>登录 / 注册</button></div>';
+    return;
+  }
   const done = completedCount(), pct = Math.round(done / totalDays * 100), cur = currentDayObj();
   const month = PLAN.find(m => m.id === currentMonth) || PLAN[0];
   $('#page-plan').innerHTML = `
   <div class="page-head">
     <h1>🗓️ 90 天学习计划 <span class="tag">打卡永久保存</span></h1>
-    <div class="sub">三阶段渐进：拼音关 → 句型关 → 输出关。每天 15–30 分钟：先学、再练、按"过关标准"自测，达标就打卡。进度存在本机浏览器，刷新不丢。</div>
+    <div class="sub">${esc(AUTH.user.name)} 的学习计划 · 拼音关 → 句型关 → 输出关。每天 15–30 分钟，达标后打卡，进度保存到当前账号。</div>
   </div>
   <div class="plan-summary">
     ${progressRing(pct)}
@@ -794,7 +812,7 @@ function answerQuiz(k) {
 }
 function renderQuizResult() {
   const s = quizState.score, m = quizState.mode;
-  if (s > (stats[m] || 0)) { stats[m] = s; LS.set('ygt_stats', stats); scheduleSync(); }
+  if (AUTH.ready && s > (stats[m] || 0)) { stats[m] = s; saveAccountCache(); scheduleSync(); }
   const msg = s >= 9 ? '🏆 掂过碌蔗！可以出师了' : s >= 7 ? '👍 有板有枝，继续保持' : s >= 5 ? '💪 过半了，回炉重点章节再来' : '🌱 正常的——回「九声六调/韵母」页磨一磨再来战';
   $('#page-quiz').innerHTML = `
   <div class="quiz-box quiz-result">
@@ -924,31 +942,62 @@ function buildGuide() {
 /* ============================================================
    F13 用户系统（v1.1 · 服务器模式）
    ============================================================ */
-const AUTH = { on: false, user: LS.get('ygt_user', null), syncTimer: null };
-async function apiFetch(method, url, body) {
+const AUTH = { on: false, ready: false, user: null, syncTimer: null, pending: Promise.resolve(), version: 0 };
+try { AUTH.user = JSON.parse(sessionStorage.getItem('ygt_session') || 'null'); } catch (_) {}
+function accountKey(key) { return 'ygt_account:' + encodeURIComponent(AUTH.user.name) + ':' + key; }
+function saveAccountCache() {
+  if (!AUTH.ready) return;
+  LS.set(accountKey('progress'), [...checkedDays]); LS.set(accountKey('stats'), stats);
+}
+function requireLogin() {
+  if (AUTH.ready) return true;
+  if (AUTH.user && AUTH.on) toast('正在验证登录，请稍后再试');
+  else if (AUTH.on) openLoginModal();
+  else toast('计划学习需要登录，请通过本地服务器打开网页');
+  return false;
+}
+function refreshAccountViews() {
+  pauseAllMedia();
+  quizState.mode = null; quizState.qs = []; quizState.answered = true;
+  renderSideProgress(); buildHome(); buildPlan(); buildQuiz(); renderAuthBtn();
+  SONG_STUDY.refreshAccount();
+}
+async function apiFetch(method, url, body, user = AUTH.user) {
   try {
     const r = await fetch(url, {
       method,
-      headers: { ...(body ? { 'Content-Type': 'application/json' } : {}), ...(AUTH.user ? { Authorization: 'Bearer ' + AUTH.user.token } : {}) },
+      headers: { ...(body ? { 'Content-Type': 'application/json' } : {}), ...(user ? { Authorization: 'Bearer ' + user.token } : {}) },
       body: body ? JSON.stringify(body) : undefined,
     });
     return await r.json();
   } catch (e) { return null; }
 }
 function scheduleSync(now) {
-  if (!AUTH.on || !AUTH.user) return;
+  if (!AUTH.ready) return;
   clearTimeout(AUTH.syncTimer);
-  AUTH.syncTimer = setTimeout(() => { apiFetch('POST', '/api/progress', { progress: [...checkedDays], stats }); }, now ? 0 : 800);
+  const user = AUTH.user, body = { progress: [...checkedDays], stats: { ...stats } };
+  AUTH.syncTimer = setTimeout(() => { AUTH.syncTimer = null; syncSnapshot(user, body); }, now ? 0 : 800);
+}
+function syncSnapshot(user, body) {
+  AUTH.pending = AUTH.pending.then(async () => {
+    const result = await apiFetch('POST', '/api/progress', body, user);
+    if (AUTH.user?.token !== user.token) return;
+    if (result?.error === 'bad token') { await doLogout(false); toast('登录已过期，请重新登录'); }
+    else if (!result?.ok) toast('进度同步失败，已保存在当前账号的本机缓存');
+  });
+  return AUTH.pending;
 }
 async function initAuth() {
   const pong = await apiFetch('GET', '/api/ping');
-  if (!pong || !pong.ok) return;           // 纯静态模式：不显示登录入口
+  if (!pong || !pong.ok) return;
   AUTH.on = true;
   renderAuthBtn();
   if (AUTH.user && AUTH.user.token) {
-    const res = await apiFetch('GET', '/api/progress');
-    if (res && res.ok) { mergeRemote(res); }
-    else if (res && (res.error === 'bad token' || res.error === 'no user')) { doLogout(false); }
+    const user = AUTH.user, version = AUTH.version;
+    const res = await apiFetch('GET', '/api/progress', undefined, user);
+    if (version !== AUTH.version || AUTH.user?.token !== user.token) return;
+    if (res && res.ok) { AUTH.ready = true; mergeRemote(res); }
+    else { await doLogout(false); }
   }
 }
 function renderAuthBtn() {
@@ -958,7 +1007,7 @@ function renderAuthBtn() {
     b = document.createElement('button');
     b.id = 'authBtn'; b.className = 'btn small';
     $('.topbar-tools').prepend(b);
-    b.addEventListener('click', () => { if (AUTH.user) { if (confirm('退出登录？（本机进度保留）')) doLogout(true); } else openLoginModal(); });
+    b.addEventListener('click', () => { if (AUTH.user) { if (confirm('退出当前账号？')) doLogout(true); } else openLoginModal(); });
   }
   b.textContent = AUTH.user ? `👤 ${AUTH.user.name} · 退出` : '👤 登录';
 }
@@ -967,7 +1016,7 @@ function openLoginModal() {
     <div class="modal-head"><div style="font-weight:700;font-size:16px">👤 登录 / 注册</div>
       <button class="close" data-close>✕</button></div>
     <div class="modal-body">
-      <div class="note-box">注册后打卡与测验成绩自动同步云端，换台电脑登录进度也不丢；本机匿名进度会与云端自动合并。</div>
+      <div class="note-box">登录后开始计划学习。打卡与测验成绩保存到各自账号；歌曲学习记录按账号保存在本机。</div>
       <div class="kv" style="grid-template-columns:64px 1fr">
         <div class="k">用户名</div><div class="v"><input id="lgName" maxlength="24" placeholder="2–24 个字符" style="width:100%;padding:8px 12px;border:1px solid var(--line);border-radius:9px;font-size:14px"></div>
         <div class="k">密码</div><div class="v"><input id="lgPass" type="password" maxlength="64" placeholder="至少 4 位" style="width:100%;padding:8px 12px;border:1px solid var(--line);border-radius:9px;font-size:14px"></div>
@@ -981,38 +1030,46 @@ function openLoginModal() {
   const go = async isReg => {
     const name = $('#lgName').value.trim(), pass = $('#lgPass').value;
     if (name.length < 2 || pass.length < 4) { $('#lgMsg').textContent = '用户名至少 2 个字符、密码至少 4 位'; return; }
-    $('#lgMsg').textContent = '';
-    const res = await apiFetch('POST', isReg ? '/api/register' : '/api/login', { name, pass });
+    const version = ++AUTH.version;
+    $('#lgMsg').textContent = '正在登录…';
+    $('#lgDo').disabled = $('#lgReg').disabled = true;
+    const res = await apiFetch('POST', isReg ? '/api/register' : '/api/login', { name, pass }, null);
+    if (version !== AUTH.version) return;
     if (res && res.ok && res.token) {
-      AUTH.user = { name, token: res.token };
-      LS.set('ygt_user', AUTH.user);
-      closeModal(); renderAuthBtn();
+      AUTH.user = { name: res.name, token: res.token };
+      checkedDays = new Set(); stats = { tone: 0, pinyin: 0, law: 0 };
+      sessionStorage.setItem('ygt_session', JSON.stringify(AUTH.user));
       const p = await apiFetch('GET', '/api/progress');
-      if (p && p.ok) mergeRemote(p);
+      if (version !== AUTH.version) return;
+      if (!p?.ok) { await doLogout(false); toast('登录验证失败，请重新登录'); return; }
+      AUTH.ready = true; mergeRemote(p);
+      closeModal();
       toast(isReg ? '🎉 注册成功，欢迎加入！' : `👋 欢迎回来，${name}！`);
     } else {
-      $('#lgMsg').textContent = (res && res.error) || '网络错误，请稍后再试';
+      if ($('#lgMsg')) { $('#lgMsg').textContent = (res && res.error) || '网络错误，请稍后再试'; $('#lgDo').disabled = $('#lgReg').disabled = false; }
     }
   };
   $('#lgDo').onclick = () => go(false);
   $('#lgReg').onclick = () => go(true);
 }
 function mergeRemote(p) {
-  const before = checkedDays.size;
-  (p.progress || []).forEach(d => checkedDays.add(d));
-  ['tone', 'pinyin', 'law'].forEach(k => { stats[k] = Math.max(stats[k] | 0, (p.stats && p.stats[k]) | 0); });
-  LS.set('ygt_progress', [...checkedDays]);
-  LS.set('ygt_stats', stats);
-  renderSideProgress(); buildHome(); buildPlan(); buildQuiz();
-  scheduleSync(true);
-  if (checkedDays.size > before) toast(`已合并云端进度：共 ${checkedDays.size} 天`);
+  checkedDays = new Set(p.progress || []);
+  stats = { tone: 0, pinyin: 0, law: 0, ...p.stats };
+  saveAccountCache(); refreshAccountViews();
 }
-function doLogout(callServer) {
-  if (callServer) apiFetch('POST', '/api/logout');
-  AUTH.user = null;
-  LS.set('ygt_user', null);
-  renderAuthBtn();
-  if (callServer) toast('已退出登录（本机进度保留）');
+async function doLogout(callServer) {
+  const user = AUTH.user, body = { progress: [...checkedDays], stats: { ...stats } }, wasReady = AUTH.ready;
+  AUTH.version++; clearTimeout(AUTH.syncTimer); AUTH.syncTimer = null;
+  AUTH.user = null; AUTH.ready = false;
+  sessionStorage.removeItem('ygt_session');
+  checkedDays = new Set(); stats = { tone: 0, pinyin: 0, law: 0 }; currentMonth = 'm1';
+  refreshAccountViews();
+  if ($('#page-plan').classList.contains('active')) switchPage('home');
+  if (callServer && user) {
+    if (wasReady) await syncSnapshot(user, body);
+    await apiFetch('POST', '/api/logout', undefined, user);
+    toast('已退出登录');
+  }
 }
 
 /* Base sounds and complete example syllables share one cancellable player. */
@@ -1026,14 +1083,14 @@ function playLesson(kind, id) {
     `韵母 ${id} · 完整示范音节 ${syllable}`;
   const status = $(kind === 'initials' ? '#initialPlaybackStatus' : '#finalPlaybackStatus');
   if (status) status.textContent = label;
-  return playSyllables([syllable]);
+  return playSyllables([kind === 'finals' ? 'final-example:' + id : syllable]);
 }
 function spellingSteps(syllable, character) {
   const d = decompose(syllable);
   if (!d) return [];
   const steps = [];
   if (d.ini) steps.push({ sound: PHONETIC_LESSONS.initials[d.ini], label: `声母 ${d.ini} · 呼读示范` });
-  steps.push({ sound: PHONETIC_LESSONS.finals[d.fin], label: `韵母 ${d.fin} · 完整音节示范` });
+  steps.push({ sound: 'final-example:' + d.fin, label: `韵母 ${d.fin} · 完整音节示范` });
   steps.push({ sound: syllable, label: `合口：${character || ''} ${syllable}` });
   return steps;
 }
@@ -1313,6 +1370,7 @@ document.addEventListener('click', e => {
   if (gp2) { goto(gp2.dataset.gotoPage); return; }
   const gpl = e.target.closest('[data-goto-plan]');
   if (gpl) {
+    if (!requireLogin()) return;
     currentMonth = 'm' + (Math.floor((+gpl.dataset.gotoPlan - 1) / 30) + 1);
     buildPlan(); goto('plan');
     setTimeout(() => { const el = document.querySelector(`[data-check-day="${gpl.dataset.gotoPlan}"]`); if (el) el.closest('.day-card').scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 80);
@@ -1329,6 +1387,7 @@ document.addEventListener('click', e => {
   }
   const chk = e.target.closest('[data-check-day]');
   if (chk) {
+    if (!requireLogin()) return;
     const d = +chk.dataset.checkDay;
     if (checkedDays.has(d)) checkedDays.delete(d);
     else {
@@ -1347,6 +1406,7 @@ document.addEventListener('click', e => {
   const mt = e.target.closest('[data-month]');
   if (mt) { currentMonth = mt.dataset.month; buildPlan(); return; }
   if (e.target.closest('[data-close]') || e.target.id === 'modalMask') { closeModal(); return; }
+  if (e.target.closest('[data-login]')) { requireLogin(); return; }
   if (e.target.closest('#menuBtn')) { $('#sidebar').classList.toggle('open'); return; }
 });
 
@@ -1377,9 +1437,10 @@ document.addEventListener('change', e => {
 });
 document.addEventListener('click', e => {
   if (e.target.closest('#resetProgress')) {
+    if (!requireLogin()) return;
     if (confirm('确定清空全部打卡与测验成绩吗？此操作不可恢复。')) {
       checkedDays = new Set(); stats = { tone: 0, pinyin: 0, law: 0 };
-      LS.set('ygt_progress', []); LS.set('ygt_stats', stats);
+      saveAccountCache();
       saveProgress(); buildQuiz(); toast('已重置，重新出发！');
     }
   }

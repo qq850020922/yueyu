@@ -6,7 +6,9 @@ const PRONUNCIATION = (() => {
   const unified = () => source === 'unified' && typeof UNIFIED_VOICE_FILES !== 'undefined';
   const files = () => unified() ? UNIFIED_VOICE_FILES : (typeof PRONUNCIATION_FILES === 'undefined' ? {} : PRONUNCIATION_FILES);
   const isPhoneme = syllable => typeof PHONEME_FILES !== 'undefined' && Object.hasOwn(PHONEME_FILES, syllable);
-  const has = syllable => isPhoneme(syllable) || Object.hasOwn(files(), syllable);
+  const finalExample = key => typeof PHONETIC_LESSONS !== 'undefined' && key.startsWith('final-example:') ? PHONETIC_LESSONS.finals[key.slice(14)] : null;
+  const has = syllable => isPhoneme(syllable) || (finalExample(syllable) ?
+    typeof PRONUNCIATION_FILES !== 'undefined' && Object.hasOwn(PRONUNCIATION_FILES, finalExample(syllable)) : Object.hasOwn(files(), syllable));
 
   function stop() {
     generation++;
@@ -28,7 +30,8 @@ const PRONUNCIATION = (() => {
 
   function playOne(syllable, rate, token) {
     return new Promise(resolve => {
-      const src = isPhoneme(syllable) ? 'media/phonemes/' + PHONEME_FILES[syllable] :
+      const example = finalExample(syllable);
+      const src = example ? 'media/pronunciation/' + PRONUNCIATION_FILES[example] : isPhoneme(syllable) ? 'media/phonemes/' + PHONEME_FILES[syllable] :
         (unified() ? 'media/voice-cuhk/' : 'media/pronunciation/') + files()[syllable];
       const item = new Audio(src);
       audio = item;

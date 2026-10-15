@@ -20,6 +20,37 @@ async function main() {
   const evaluate=async expression=>{ const r=await call('Runtime.evaluate',{expression,awaitPromise:true,returnByValue:true}); if(r.exceptionDetails) throw Error(JSON.stringify(r.exceptionDetails)); return r.result.value; };
   await call('Runtime.enable'); await call('Page.enable');
   await call('Page.navigate',{url:'http://localhost:3000'}); await delay(1800);
+  await evaluate(`(() => {
+    const original = window.fetch;
+    window.__accounts = { alpha: {progress:[],stats:{tone:0,pinyin:0,law:0}}, beta: {progress:[],stats:{tone:0,pinyin:0,law:0}} };
+    window.confirm = () => true;
+    window.fetch = async (url, options = {}) => {
+      if (!['/api/login','/api/register','/api/progress','/api/logout'].includes(url)) return original(url, options);
+      const body = options.body ? JSON.parse(options.body) : {};
+      const name = (options.headers?.Authorization || '').replace('Bearer ', '');
+      let result;
+      if (url === '/api/login' || url === '/api/register') result = {ok:true,token:body.name,name:body.name};
+      else if (url === '/api/logout') result = {ok:true};
+      else if (!window.__accounts[name]) result = {error:'bad token'};
+      else if (options.method === 'POST') { window.__accounts[name] = body; result = {ok:true}; }
+      else result = {ok:true,...window.__accounts[name]};
+      return new Response(JSON.stringify(result), {headers:{'Content-Type':'application/json'}});
+    };
+    localStorage.setItem('ygt_progress', '[1,2,3]');
+    document.querySelector('[data-page=plan]').click();
+  })()`);
+  assert(await evaluate("!!document.querySelector('#lgName') && !document.querySelector('#page-plan').classList.contains('active')"), 'anonymous plan access must require login');
+  async function login(name) {
+    await evaluate(`document.querySelector('#lgName').value=${JSON.stringify(name)};document.querySelector('#lgPass').value='test-password';document.querySelector('#lgDo').click()`);
+    await delay(250);
+  }
+  await login('alpha');
+  await evaluate("document.querySelector('[data-page=plan]').click()");
+  assert(await evaluate("document.querySelectorAll('#page-plan .day-check').length > 0"));
+  assert.equal(await evaluate("document.querySelector('#sideProgressText').textContent.startsWith('0 /')"),true, 'legacy anonymous progress must not merge');
+  await evaluate("document.querySelector('[data-check-day=\"1\"]').click()");
+  await delay(950);
+  assert.deepEqual(await evaluate('window.__accounts.alpha.progress'),[1]);
   assert.equal(await evaluate("typeof SONG_STUDY"), 'object');
   await evaluate("document.querySelector('[data-page=songs]').click()");
   assert.equal(await evaluate("document.querySelectorAll('#page-songs a[href]').length"),0);
@@ -60,8 +91,8 @@ async function main() {
     const buttons=[...document.querySelectorAll('#page-initials [data-phonetic-initial],#page-finals [data-phonetic-final]')];
     for(const b of buttons){ b.click(); await Promise.resolve(); }
     PRONUNCIATION.stop(); window.Audio=original;
-    const expected=[...INITIALS.map(v=>PHONETIC_LESSONS.initials[v.id]),...FINAL_GROUPS.flatMap(g=>g.finals.map(f=>PHONETIC_LESSONS.finals[f.id]))];
-    return {buttons:buttons.length,plays:played.length,examples:played.every((s,i)=>s==='media/voice-cuhk/'+UNIFIED_VOICE_FILES[expected[i]])};
+    const expected=[...INITIALS.map(v=>'media/voice-cuhk/'+UNIFIED_VOICE_FILES[PHONETIC_LESSONS.initials[v.id]]),...FINAL_GROUPS.flatMap(g=>g.finals.map(f=>'media/pronunciation/'+PRONUNCIATION_FILES[PHONETIC_LESSONS.finals[f.id]]))];
+    return {buttons:buttons.length,plays:played.length,examples:played.every((s,i)=>s===expected[i])};
   })()`);
   assert.equal(clicks.buttons,74); assert.equal(clicks.plays,74); assert(clicks.examples);
   const newDecoded=await evaluate(`(async()=>{
@@ -72,6 +103,14 @@ async function main() {
     }await ctx.close();return n;
   })()`);
   assert.equal(newDecoded,74);
+  const finalDecoded=await evaluate(`(async()=>{
+    const ctx=new AudioContext();let n=0;
+    for(const syllable of Object.values(PHONETIC_LESSONS.finals)){
+      const b=await ctx.decodeAudioData(await(await fetch('media/pronunciation/'+PRONUNCIATION_FILES[syllable])).arrayBuffer());
+      if(!b.getChannelData(0).some(v=>Math.abs(v)>.001))throw Error('Silent final example: '+syllable);n++;
+    }await ctx.close();return n;
+  })()`);
+  assert.equal(finalDecoded,55);
   const spelling=await evaluate(`(async()=>{
     const OriginalAudio=window.Audio, played=[], objects=[];
     window.Audio=class{constructor(src){this.src=src;objects.push(this);}play(){played.push(this.src);return Promise.resolve();}pause(){}};
@@ -81,7 +120,7 @@ async function main() {
     objects[2].onended();await Promise.resolve();
     PRONUNCIATION.stop();window.Audio=OriginalAudio;return played;
   })()`);
-  assert.deepEqual(spelling,['media/voice-cuhk/naa4.wav','media/voice-cuhk/fei1.wav','media/voice-cuhk/nei5.wav']);
+  assert.deepEqual(spelling,['media/voice-cuhk/naa4.wav','media/pronunciation/fei1.mp3','media/voice-cuhk/nei5.wav']);
   for (const width of [1365,390,320]) {
     await call('Emulation.setDeviceMetricsOverride',{width,height:900,deviceScaleFactor:1,mobile:width<500});
     await delay(100);
@@ -99,10 +138,23 @@ async function main() {
       fs.writeFileSync(path.join(os.tmpdir(),`canto-${page}-${width}.png`),Buffer.from(shot.data,'base64'));
     }
   }
+  await evaluate("document.querySelector('#songText').value='[00:00.00]你好\\n[00:00.20]学习';document.querySelector('#songAnalyze').click()");
+  assert(await evaluate("document.querySelector('[data-done=\"0\"]').checked"), 'alpha song progress retained');
+  await evaluate("document.querySelector('#authBtn').click()"); await delay(200);
+  assert(await evaluate("document.querySelector('#sideProgressText').textContent.startsWith('0 /') && !document.querySelector('[data-done=\"0\"]').checked"), 'logout clears visible account progress');
+  await evaluate("document.querySelector('#authBtn').click()"); await login('beta');
+  assert(await evaluate("document.querySelector('#sideProgressText').textContent.startsWith('0 /') && !document.querySelector('[data-done=\"0\"]').checked"), 'beta must not inherit alpha progress');
+  await evaluate("document.querySelector('[data-page=plan]').click();document.querySelector('[data-check-day=\"2\"]').click();document.querySelector('#authBtn').click()");
+  await delay(200);
+  assert.deepEqual(await evaluate('window.__accounts.beta.progress'),[2], 'logout flushes pending progress to its owner');
+  assert.deepEqual(await evaluate('window.__accounts.alpha.progress'),[1]);
+  await evaluate("document.querySelector('#authBtn').click()"); await login('alpha');
+  assert(await evaluate("document.querySelector('#sideProgressText').textContent.startsWith('1 /') && document.querySelector('[data-done=\"0\"]').checked"), 'alpha progress restored independently');
+  assert(await evaluate("JSON.parse(sessionStorage.getItem('ygt_session')).name==='alpha' && !localStorage.getItem('ygt_session')"));
   await call('Page.navigate',{url:'file:///' + path.resolve('index.html').replace(/\\/g,'/')}); await delay(1600);
   assert(await evaluate("document.querySelector('#songAudio audio')?.src.includes('/media/songs/') && document.querySelector('#songText').value.length > 0"), 'file mode must load indexed songs and lyrics');
   assert.equal(errors.length,0,JSON.stringify(errors));
-  console.log('PASS: '+decoded+' example WAV decodes; 74 restored teaching buttons; default songs and lyrics in server/file mode; paired import, LRC segment stop, character learning, progress, TXT boundaries, desktop/mobile, no runtime errors.');
+  console.log('PASS: '+decoded+' WAVs and 55 final MP3s decode; 74 teaching buttons; login gate, two-account plan/song isolation and logout flush; default songs, LRC clips, character learning, desktop/mobile, no runtime errors.');
   await call('Browser.close');
 }
 main().catch(e=>{console.error(e);process.exitCode=1;}).finally(()=>{ if(ws)ws.close(); chrome.kill(); });
